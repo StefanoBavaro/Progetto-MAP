@@ -6,6 +6,7 @@ package com.company;
 
     DiscreteAttribute(final String name, final int index, final String values[]) {
         super(name, index);
+        this.values = new String[values.length];
     }
 
     int getNumberOfDistinctValues() {

@@ -113,7 +113,7 @@ class Data {
         String playTennisValues[] = new String[2];
         playTennisValues[0] = "yes";
         playTennisValues[1] = "no";
-        attributeSet[3] = new DiscreteAttribute("playTennis", 4, playTennisValues);
+        attributeSet[4] = new DiscreteAttribute("playTennis", 4, playTennisValues);
     }
 
     int getNumberOfExamples() {
@@ -123,7 +123,6 @@ class Data {
     int getNumberOfAttributes() {
         return attributeSet.length;
     }
-
 
     Object getAttributeValue(int exampleIndex, int attributeIndex) {
         return data[exampleIndex][attributeIndex];
@@ -148,8 +147,6 @@ class Data {
     public static void main(String args[]) {
         Data trainingSet = new Data();
         System.out.println(trainingSet);
-
-
     }
 
 }
