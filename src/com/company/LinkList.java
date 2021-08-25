@@ -5,10 +5,11 @@ class LinkList {
 	boolean isEmpty() {
 			return inizioLista == null;
 	}
-	 Puntatore firstList() {
+	Puntatore firstList() {
 			return null;
 		}
-	 boolean endList(Puntatore p) {
+		
+	boolean endList(Puntatore p) {
 			if (isEmpty()) {
 				return true;
 			}
@@ -18,7 +19,8 @@ class LinkList {
 				return ((Puntatore) p).link.successivo == null;
 				}
 			}
-		Object readList(Puntatore p) {
+			
+	Object readList(Puntatore p) {
 			if (isEmpty()) {
 				throw new IndexOutOfBoundsException("Lista vuota");
 			}
