@@ -1,6 +1,6 @@
 package com.company;
 
-class Attribute {
+abstract class Attribute {
 
     private String name;
     private int index;
