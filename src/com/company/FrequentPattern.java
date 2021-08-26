@@ -37,10 +37,7 @@ class FrequentPattern {
 	}
 	
 	public Item getItem(int index) {
-		if (index < fp.length) {
-			return fp[index];
-		}
-		throw new IndexOutOfBoundsException();
+		return fp[index];
 	}
 	
 	public float getSupport() {
@@ -53,13 +50,11 @@ class FrequentPattern {
 	
 	public String toString() {
 		String value = "";
+		value += "(" + fp[0] + ")";
 		for (int i = 0; i < fp.length - 1; i++) {
-			value += fp[i] + " AND ";
-			if (fp.length > 0) {
-				value += fp[fp.length - 1];
-				value += "[" + support + "]";
-			}
+			value += " AND " + "(" + fp[i + 1] + ")";
 		}
+		value += " [" + support + "]";
 		return value;
 	}
 

@@ -1,35 +1,25 @@
 package com.company;
 
 public class EmergingPatternMiner {
-	private LinkList[] epList;
+	private LinkList epList; // lista di EmergingPattern
 	
 	public EmergingPatternMiner(Data dataBackground, FrequentPatternMiner fpList, float minG) {
-		/*
-		Comportamento: Si scandiscono tutti i frequent pattern in fpList , per
-	ognuno di essi si calcola il grow rate usando dataBackground e se tale
-	valore è maggiore uguale di minG allora il pattern è aggiunto ad epList
-	(fare uso del metodo computeEmergingPattern).
-		 */
 		LinkList list = fpList.getOutputFP();
-		int i = 0;
-		epList = new LinkList[i];
+		epList = new LinkList();
 		Puntatore p = list.firstList();
 		while (!list.endList(p)) {
 			FrequentPattern toExamine = (FrequentPattern) list.readList(p);
-			float growRate = toExamine.computeSupport(dataBackground);
-			if (growRate >= minG) {
-				i++;
-				epList = new LinkList[i];
-				EmergingPattern toInsert = computeEmergingPattern(dataBackground, toExamine,growRate);
-				epList[i].add(toInsert);
+			EmergingPattern toInsert = computeEmergingPattern(dataBackground, toExamine,minG);
+			if (toInsert != null) {
+				epList.add(toInsert);
 			}
+			p = list.succ(p);
 		}
 	}
 	
 	public float computeGrowRate(Data dataBackground, FrequentPattern fp) {
 		return fp.getSupport() / fp.computeSupport(dataBackground);
 	}
-	
 	
 	public EmergingPattern computeEmergingPattern(Data dataBackgroun, FrequentPattern fp, float minGR) {
 		float growRate = computeGrowRate(dataBackgroun, fp);
@@ -41,11 +31,13 @@ public class EmergingPatternMiner {
 	
 	public String toString() {
 		String ou = "";
-		for (int i = 0; i < epList.length; i++){
-			ou += epList[i];
+		Puntatore p = epList.firstList();
+		int i = 1;
+		while (!epList.endList(p)) {
+			ou += i + ": " + epList.readList(p) + "\n";
+			p = epList.succ(p);
+			i++;
 		}
 		return ou;
 	}
-	
-	
 }

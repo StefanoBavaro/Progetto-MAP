@@ -1,7 +1,7 @@
 package com.company;
 
 class FrequentPatternMiner {
-	private LinkList outputFP = new LinkList();
+	private LinkList outputFP = new LinkList(); //lista di frequent Pattern
 	
 	
 	FrequentPatternMiner(Data data, float minSup) {
@@ -62,7 +62,7 @@ class FrequentPatternMiner {
 	}
 	
 	public FrequentPattern refineFrequentPattern(FrequentPattern FP, Item item) {
-		FrequentPattern out = FP;
+		FrequentPattern out = new FrequentPattern(FP);
 		out.addItem(item);
 		return out;
 	
@@ -72,9 +72,9 @@ class FrequentPatternMiner {
 	public String toString() {
 		String ou = "";
 		Puntatore p = outputFP.firstList();
-		int i = 0;
+		int i = 1;
 		while (!outputFP.endList(p)) {
-			ou += i + ":";
+			ou += i + ": ";
 			ou += outputFP.readList(p) + "\n";
 			p = outputFP.succ(p);
 			i++;

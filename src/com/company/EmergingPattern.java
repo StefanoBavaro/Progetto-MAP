@@ -13,15 +13,8 @@ public class EmergingPattern extends FrequentPattern {
 	}
 	
 	public String toString() {
-		String value = "";
-		for (int i = 0; i < getPatternLength() - 1; i++) {
-			value += getItem(i) + " AND ";
-			if (getPatternLength() > 0) {
-				value += getItem(getPatternLength() - 1);
-				value += "[" + getSupport() + "]";
-				value += "[" + getGrowRate() + "]";
-			}
-		}
+		String value = super.toString();
+		value += " [" + growrate + "]";
 		return value;
 	}
 }
