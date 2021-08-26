@@ -1,6 +1,7 @@
 package mining;
 
 import data.EmptySetException;
+import utility.EmptyQueueException;
 import utility.LinkList;
 import utility.Puntatore;
 import utility.Queue;
@@ -42,35 +43,38 @@ public class FrequentPatternMiner {
 	}
 	
 	 private LinkList expandFrequentPatterns(Data data, float minSup, Queue fpQueue, LinkList outputFP) {
-		while (!fpQueue.isEmpty()) {
-			FrequentPattern fp = (FrequentPattern) fpQueue.first(); //fp to be refined
-			fpQueue.dequeue();
-			for (int i = 0; i < data.getNumberOfAttributes(); i++) {
-				boolean found = false;
-				for (int j = 0; j < fp.getPatternLength(); j++) //the new item should involve an attribute different form attributes already involved into the items of fp
-					if (fp.getItem(j).getAttribute().equals(data.getAttribute(i))) {
-						found = true;
-						break;
-					}
-				if (!found) { //data.getAttribute(i) is not involve into an item of fp
-					for (int j = 0; j < ((DiscreteAttribute) data.getAttribute(i)).getNumberOfDistinctValues(); j++) {
-						DiscreteItem item = new DiscreteItem(
-								(DiscreteAttribute) data.getAttribute(i),
-								((DiscreteAttribute) (data.getAttribute(i))).getValue(j)
-								);
-						FrequentPattern newFP = refineFrequentPattern(fp, item); //generate refinement
-						newFP.setSupport(newFP.computeSupport(data));
-						if (newFP.getSupport() >= minSup) {
-							fpQueue.enqueue(newFP);
-							//System.out.println(newFP);
-							outputFP.add(newFP);
-						}
-					}
-				}
-				
-		}
-	}
-		return outputFP;
+		 try {
+			 while (!fpQueue.isEmpty()) {
+				 FrequentPattern fp = (FrequentPattern) fpQueue.first(); //fp to be refined
+				 fpQueue.dequeue();
+				 for (int i = 0; i < data.getNumberOfAttributes(); i++) {
+					 boolean found = false;
+					 for (int j = 0; j < fp.getPatternLength(); j++) //the new item should involve an attribute different form attributes already involved into the items of fp
+						 if (fp.getItem(j).getAttribute().equals(data.getAttribute(i))) {
+							 found = true;
+							 break;
+						 }
+					 if (!found) { //data.getAttribute(i) is not involve into an item of fp
+						 for (int j = 0; j < ((DiscreteAttribute) data.getAttribute(i)).getNumberOfDistinctValues(); j++) {
+							 DiscreteItem item = new DiscreteItem(
+									 (DiscreteAttribute) data.getAttribute(i),
+									 ((DiscreteAttribute) (data.getAttribute(i))).getValue(j)
+							 );
+							 FrequentPattern newFP = refineFrequentPattern(fp, item); //generate refinement
+							 newFP.setSupport(newFP.computeSupport(data));
+							 if (newFP.getSupport() >= minSup) {
+								 fpQueue.enqueue(newFP);
+								 //System.out.println(newFP);
+								 outputFP.add(newFP);
+							 }
+						 }
+					 }
+				 }
+			 }
+		 }catch(EmptyQueueException e) {
+			 System.err.println(e.getMessage());
+		 }
+		 return outputFP;
 	}
 	
 	public FrequentPattern refineFrequentPattern(FrequentPattern FP, Item item) {

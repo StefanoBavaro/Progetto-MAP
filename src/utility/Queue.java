@@ -26,14 +26,18 @@ public class Queue {
 		}
 
 
-		public Object first(){
+		public Object first() throws EmptyQueueException {
+			if(this.begin == null){ //o usare il metodo isEmpty?
+				throw new EmptyQueueException("La coda è vuota.");
+			}
 			return this.begin.elem;
 		}
 
-		 public void dequeue() {
+		 public void dequeue() throws EmptyQueueException {
 			if(this.begin == this.end) {
-				if(this.begin == null)
-				System.out.println("The queue is empty!");
+				if(this.begin == null){
+					throw new EmptyQueueException("La coda è vuota.");
+				}
 				else
 					this.begin=this.end=null;
 			}
