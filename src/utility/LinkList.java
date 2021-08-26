@@ -1,15 +1,16 @@
 package utility;
 
-class LinkList {
+public class LinkList {
 	private Puntatore inizioLista = null;
+
 	boolean isEmpty() {
 			return inizioLista == null;
 	}
-	Puntatore firstList() {
+	public Puntatore firstList() {
 			return null;
 		}
 		
-	boolean endList(Puntatore p) {
+	public boolean endList(Puntatore p) {
 			if (isEmpty()) {
 				return true;
 			}
@@ -20,7 +21,7 @@ class LinkList {
 				}
 			}
 			
-	Object readList(Puntatore p) {
+	public Object readList(Puntatore p) {
 			if (isEmpty()) {
 				throw new IndexOutOfBoundsException("Lista vuota");
 			}
@@ -30,7 +31,7 @@ class LinkList {
 				return ((Puntatore) p).link.successivo.link.elemento;
 			}
 		}
-		 void add(Object e) { //aggiunge in testa
+	public void add(Object e) { //aggiunge in testa
 			Puntatore temp;
 
 			if (!isEmpty()) {
@@ -44,7 +45,7 @@ class LinkList {
 
 		}
 		
-		 Puntatore succ(Puntatore p) {
+	public Puntatore succ(Puntatore p) {
 			if (endList(p)) {
 				throw new IndexOutOfBoundsException("Posizione fine lista non valida");
 			}

@@ -1,8 +1,9 @@
 package mining;
 
-import com.company.LinkList;
-import com.company.Puntatore;
-import com.company.Queue;
+import data.EmptySetException;
+import utility.LinkList;
+import utility.Puntatore;
+import utility.Queue;
 import data.Attribute;
 import data.Data;
 import data.DiscreteAttribute;
@@ -11,8 +12,12 @@ public class FrequentPatternMiner {
 	private LinkList outputFP = new LinkList(); //lista di frequent Pattern
 	
 	
-	public FrequentPatternMiner(Data data, float minSup) {
+	public FrequentPatternMiner(Data data, float minSup) throws EmptySetException {
 		Queue fpQueue = new Queue();
+
+		if(data.getNumberOfAttributes()==0){
+			throw new EmptySetException("L'insieme di training è vuoto");  //non sono sicuro che il messaggio sia corretto
+		}
 	
 		for (int i = 0; i < data.getNumberOfAttributes(); i++) {
 			Attribute currentAttribute = data.getAttribute(i);

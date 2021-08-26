@@ -1,6 +1,6 @@
 package utility;
 
-class Puntatore  {
+public class Puntatore  {
 		Cella link;
 		Puntatore(Cella c) {
 			link = c;

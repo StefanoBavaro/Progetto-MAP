@@ -1,6 +1,6 @@
 package utility;
 
-class Queue {
+public class Queue {
 		private Record begin = null;
 		private Record end = null;
 		
@@ -13,11 +13,11 @@ class Queue {
 			}
 		}
 		
-		 boolean isEmpty() {
+		 public boolean isEmpty() {
 			return this.begin == null;
 		}
 
-		 void enqueue(Object e) {
+		 public void enqueue(Object e) {
 			if (this.isEmpty())
 				this.begin = this.end = new Record(e);
 			else { this.end.next = new Record(e);
@@ -26,11 +26,11 @@ class Queue {
 		}
 
 
-		 Object first(){
+		public Object first(){
 			return this.begin.elem;
 		}
 
-		 void dequeue() {
+		 public void dequeue() {
 			if(this.begin == this.end) {
 				if(this.begin == null)
 				System.out.println("The queue is empty!");
