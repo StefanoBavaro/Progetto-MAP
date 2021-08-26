@@ -1,4 +1,11 @@
-package com.company;
+package mining;
+
+import com.company.LinkList;
+import com.company.Puntatore;
+import com.company.Queue;
+import data.Attribute;
+import data.Data;
+import data.DiscreteAttribute;
 
 public class FrequentPatternMiner {
 	private LinkList outputFP = new LinkList(); //lista di frequent Pattern

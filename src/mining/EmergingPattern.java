@@ -1,4 +1,4 @@
-package com.company;
+package mining;
 
 public class EmergingPattern extends FrequentPattern {
 	private final float growrate;

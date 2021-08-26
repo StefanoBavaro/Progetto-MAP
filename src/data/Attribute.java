@@ -1,4 +1,4 @@
-package com.company;
+package data;
 
 public abstract class Attribute {
 

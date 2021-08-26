@@ -1,4 +1,4 @@
-package com.company;
+package utility;
 
 class Queue {
 		private Record begin = null;

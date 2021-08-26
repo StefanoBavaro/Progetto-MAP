@@ -1,5 +1,6 @@
-package com.company;
-
+import data.Data;
+import mining.EmergingPatternMiner;
+import mining.FrequentPatternMiner;
 
 public class MainTest {
 

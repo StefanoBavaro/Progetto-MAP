@@ -1,4 +1,7 @@
-package com.company;
+package mining;
+
+import data.Data;
+import data.DiscreteAttribute;
 
 public class FrequentPattern {
 

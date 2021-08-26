@@ -1,4 +1,6 @@
-package com.company;
+package mining;
+
+import data.Attribute;
 
 public abstract class Item {
 	private Attribute attribute;

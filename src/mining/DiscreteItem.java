@@ -1,4 +1,6 @@
-package com.company;
+package mining;
+
+import data.DiscreteAttribute;
 
 public class DiscreteItem extends Item {
 	public DiscreteItem(DiscreteAttribute attribute, String value) {

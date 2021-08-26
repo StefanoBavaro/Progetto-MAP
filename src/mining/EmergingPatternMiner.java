@@ -1,4 +1,8 @@
-package com.company;
+package mining;
+
+import com.company.LinkList;
+import com.company.Puntatore;
+import data.Data;
 
 public class EmergingPatternMiner {
 	private LinkList epList; // lista di EmergingPattern
