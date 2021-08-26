@@ -1,21 +1,21 @@
 package com.company;
 
- class ContinuousAttribute extends Attribute {
+public class ContinuousAttribute extends Attribute {
 
     private float max;
     private float min;
 
-    ContinuousAttribute(final String name, final int index, final float min, final float max) {
+    public ContinuousAttribute(final String name, final int index, final float min, final float max) {
         super(name, index);
         this.min = min;
         this.max = max;
     }
 
-     float getMin() {
+    public float getMin() {
         return min;
     }
 
-     float getMax() {
+    public float getMax() {
         return max;
     }
 
