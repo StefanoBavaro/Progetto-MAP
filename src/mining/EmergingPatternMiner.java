@@ -9,7 +9,7 @@ public class EmergingPatternMiner {
 	private LinkList epList; // lista di EmergingPattern
 	
 	public EmergingPatternMiner(Data dataBackground, FrequentPatternMiner fpList, float minG) throws EmptySetException {
-		if(dataBackground.getNumberOfExamples()==0){
+		if (dataBackground.getNumberOfExamples() == 0) {
 			throw new EmptySetException("L'insieme di training è vuoto"); //non sono sicuro che il messaggio sia corretto
 		}
 
@@ -20,7 +20,7 @@ public class EmergingPatternMiner {
 			FrequentPattern toExamine = (FrequentPattern) list.readList(p);
 			try {
 				epList.add(computeEmergingPattern(dataBackground, toExamine, minG));
-			}catch(EmergingPatternException e){
+			} catch (EmergingPatternException e) {
 				System.err.println(e.getMessage());
 			}
 			p = list.succ(p);
@@ -35,7 +35,7 @@ public class EmergingPatternMiner {
 		float growRate = computeGrowRate(dataBackgroun, fp);
 		if (growRate > minGR) {
 			return new EmergingPattern(fp, growRate);
-		}else{
+		} else {
 			throw new EmergingPatternException("Il pattern non soddisfa il minimo grow rate.");
 		}
 	}

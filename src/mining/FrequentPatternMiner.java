@@ -16,7 +16,7 @@ public class FrequentPatternMiner {
 	public FrequentPatternMiner(Data data, float minSup) throws EmptySetException {
 		Queue fpQueue = new Queue();
 
-		if(data.getNumberOfAttributes()==0){
+		if (data.getNumberOfAttributes() == 0) {
 			throw new EmptySetException("L'insieme di training è vuoto");  //non sono sicuro che il messaggio sia corretto
 		}
 	
@@ -71,7 +71,7 @@ public class FrequentPatternMiner {
 					 }
 				 }
 			 }
-		 }catch(EmptyQueueException e) {
+		 } catch (EmptyQueueException e) {
 			 System.err.println(e.getMessage());
 		 }
 		 return outputFP;
