@@ -17,9 +17,9 @@ public abstract class Item {
 		return value;
 	}
 	
-	abstract boolean checkItemCondition(Object value);
+	public abstract boolean checkItemCondition(Object value);
 	
-	public String toString(){
+	public String toString() {
 		return attribute.toString() + "=" + value.toString();
 	}
 }

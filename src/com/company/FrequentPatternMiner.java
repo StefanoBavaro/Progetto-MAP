@@ -1,10 +1,10 @@
 package com.company;
 
-class FrequentPatternMiner {
+public class FrequentPatternMiner {
 	private LinkList outputFP = new LinkList(); //lista di frequent Pattern
 	
 	
-	FrequentPatternMiner(Data data, float minSup) {
+	public FrequentPatternMiner(Data data, float minSup) {
 		Queue fpQueue = new Queue();
 	
 		for (int i = 0; i < data.getNumberOfAttributes(); i++) {
@@ -81,12 +81,10 @@ class FrequentPatternMiner {
 		}
 		return ou;
 	}
-
-	// creato da me
-	public LinkList getOutputFP(){
+	// metodo creato da Lorenzo usato per il costruttore di FrequentPatternMiner
+	public LinkList getOutputFP() {
 		return outputFP;
 	}
-	
 	
 }
 	

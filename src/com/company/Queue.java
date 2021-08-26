@@ -1,24 +1,18 @@
 package com.company;
 
 class Queue {
-
 		private Record begin = null;
-
 		private Record end = null;
 		
 		private class Record {
-
 	 		 Object elem;
-
 	 		 Record next;
-
 			 Record(Object e) {
 				this.elem = e; 
 				this.next = null;
 			}
 		}
 		
-
 		 boolean isEmpty() {
 			return this.begin == null;
 		}

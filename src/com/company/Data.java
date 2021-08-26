@@ -1,12 +1,12 @@
 package com.company;
 
-class Data {
+public class Data {
 
     private Object data[][];
     private int numberOfExamples;
     private Attribute attributeSet[];
     
-    Data(boolean isTarget){
+    public Data(boolean isTarget){
         
         //data
         
@@ -153,19 +153,19 @@ class Data {
         
     }
 
-    int getNumberOfExamples() {
+    public int getNumberOfExamples() {
         return numberOfExamples;
     }
 
-    int getNumberOfAttributes() {
+    public int getNumberOfAttributes() {
         return attributeSet.length;
     }
 
-    Object getAttributeValue(int exampleIndex, int attributeIndex) {
+    public Object getAttributeValue(int exampleIndex, int attributeIndex) {
         return data[exampleIndex][attributeIndex];
     }
 
-    Attribute getAttribute(int attributeIndex) {
+    public Attribute getAttribute(int attributeIndex) {
         return attributeSet[attributeIndex];
     }
 

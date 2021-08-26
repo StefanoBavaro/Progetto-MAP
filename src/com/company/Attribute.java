@@ -1,20 +1,20 @@
 package com.company;
 
-abstract class Attribute {
+public abstract class Attribute {
 
     private String name;
     private int index;
 
-    Attribute(final String name, final int index) {
+    public Attribute(final String name, final int index) {
         this.name = name;
         this.index = index;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    int getIndex() {
+    public int getIndex() {
         return index;
     }
     

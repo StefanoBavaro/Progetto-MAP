@@ -9,7 +9,7 @@ public class EmergingPatternMiner {
 		Puntatore p = list.firstList();
 		while (!list.endList(p)) {
 			FrequentPattern toExamine = (FrequentPattern) list.readList(p);
-			EmergingPattern toInsert = computeEmergingPattern(dataBackground, toExamine,minG);
+			EmergingPattern toInsert = computeEmergingPattern(dataBackground, toExamine, minG);
 			if (toInsert != null) {
 				epList.add(toInsert);
 			}
@@ -24,7 +24,7 @@ public class EmergingPatternMiner {
 	public EmergingPattern computeEmergingPattern(Data dataBackgroun, FrequentPattern fp, float minGR) {
 		float growRate = computeGrowRate(dataBackgroun, fp);
 		if (growRate > minGR) {
-			return new EmergingPattern(fp,growRate);
+			return new EmergingPattern(fp, growRate);
 		}
 		return null;
 	}
