@@ -6,6 +6,4 @@ public class EmptySetException extends Exception {
         super(message);
     }
 
-    public EmptySetException() {
-    }
 }
