@@ -13,11 +13,12 @@ class ContinuosItem extends Item implements Serializable {
 	@Override
 	boolean checkItemCondition(Object value) {
 		Interval interval = (Interval) getValue();
-		return interval.checkValueInclusion((float) value);
+		float v = (float) value;
+		return interval.checkValueInclusion(v);
 	}
 	
 	public String toString() {
 		Interval interval =(Interval) getValue();
-		return getAttribute().toString() + "in " + interval.toString();
+		return getAttribute().toString() + " in " + interval.toString();
 	}
 }
