@@ -5,10 +5,10 @@ public class Queue<T> {
     private Record end = null;
 
     private class Record {
-        Object elem;
+        T elem;
         Record next;
 
-        Record(Object e) {
+        Record(T e) {
             this.elem = e;
             this.next = null;
         }
@@ -18,7 +18,7 @@ public class Queue<T> {
         return this.begin == null;
     }
 
-    public void enqueue(Object e) {
+    public void enqueue(T e) {
         if (this.isEmpty())
             this.begin = this.end = new Record(e);
         else {
@@ -28,7 +28,7 @@ public class Queue<T> {
     }
 
 
-    public Object first() throws EmptyQueueException {
+    public T first() throws EmptyQueueException {
         if (this.isEmpty()) {
             throw new EmptyQueueException("La coda è vuota.");
         }
