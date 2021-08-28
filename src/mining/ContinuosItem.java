@@ -2,7 +2,9 @@ package mining;
 
 import data.ContinuousAttribute;
 
-class ContinuosItem extends Item{
+import java.io.Serializable;
+
+class ContinuosItem extends Item implements Serializable {
 	
 	ContinuosItem(ContinuousAttribute attribute, Interval value) {
 		super(attribute,value);

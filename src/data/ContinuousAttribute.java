@@ -1,6 +1,8 @@
 package data;
 
-public class ContinuousAttribute extends Attribute {
+import java.util.Iterator;
+
+public class ContinuousAttribute extends Attribute implements Iterable<Float> {
 
     private float max;
     private float min;
@@ -18,6 +20,10 @@ public class ContinuousAttribute extends Attribute {
     public float getMax() {
         return max;
     }
-
-
+    
+    
+    @Override
+    public Iterator<Float> iterator () {
+        return new ContinuousAttributeIterator(min, max, 5);
+    }
 }
