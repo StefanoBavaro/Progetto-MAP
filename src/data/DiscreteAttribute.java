@@ -17,5 +17,5 @@ public class DiscreteAttribute extends Attribute {
     public String getValue(final int index) {
         return values[index];
     }
-    
+
 }
