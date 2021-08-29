@@ -1,6 +1,8 @@
 package mining;
 
-class Interval {
+import java.io.Serializable;
+
+class Interval implements Serializable {
 	private float inf;
 	private float sup;
 	

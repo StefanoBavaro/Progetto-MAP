@@ -1,6 +1,8 @@
 package data;
 
-public class DiscreteAttribute extends Attribute {
+import java.io.Serializable;
+
+public class DiscreteAttribute extends Attribute implements Serializable {
 
     private String[] values;
 

@@ -37,7 +37,7 @@ public class Queue<T> {
 
     public void dequeue() throws EmptyQueueException {
         if (this.begin == this.end) {
-            if (this.begin == null) {
+            if (this.isEmpty()) {
                 throw new EmptyQueueException("La coda è vuota.");
             } else
                 this.begin = this.end = null;

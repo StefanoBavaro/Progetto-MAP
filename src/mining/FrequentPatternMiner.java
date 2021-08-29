@@ -7,6 +7,7 @@ import utility.Queue;
 import data.Data;
 import data.DiscreteAttribute;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -23,7 +24,7 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
 
 
     public FrequentPatternMiner(Data data, float minSup) throws EmptySetException {
-        Queue<FrequentPattern> fpQueue = new Queue<>();
+        Queue<FrequentPattern> fpQueue = new Queue<FrequentPattern>();
 
         if (data.getNumberOfAttributes() == 0) {
             throw new EmptySetException("L'insieme di training è vuoto");  //non sono sicuro che il messaggio sia corretto
@@ -67,14 +68,15 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
     }
 
     private List expandFrequentPatterns(Data data, float minSup, Queue fpQueue, List outputFP) {
+        //Con queue<FrequentPattern> non funziona
+        // nel primo while stava !fpQueue.isEmpty()
         try {
             while (!fpQueue.isEmpty()) {
                 FrequentPattern fp = (FrequentPattern) fpQueue.first(); //fp to be refined
                 fpQueue.dequeue();
                 for (int i = 0; i < data.getNumberOfAttributes(); i++) {
                     boolean found = false;
-                    for (int j = 0; j < fp.getPatternLength();
-                         j++) //the new item should involve an attribute different form attributes already involved into the items of fp
+                    for (int j = 0; j < fp.getPatternLength(); j++) //the new item should involve an attribute different form attributes already involved into the items of fp
                         if (fp.getItem(j).getAttribute().equals(data.getAttribute(i))) {
                             found = true;
                             break;
@@ -145,14 +147,17 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
     }
     
     public void salva(String nomeFile) throws FileNotFoundException, IOException {
-        ObjectOutputStream ou = new ObjectOutputStream(new FileOutputStream(nomeFile));
+        FileOutputStream file = new FileOutputStream(nomeFile);
+        ObjectOutputStream ou = new ObjectOutputStream(file);
         ou.writeObject(this);
+        file.close();
         ou.close();
     }
     
     public static FrequentPatternMiner carica(String nomeFile) throws FileNotFoundException,IOException,ClassNotFoundException {
         ObjectInputStream in = new ObjectInputStream(new FileInputStream(nomeFile));
         FrequentPatternMiner obj = (FrequentPatternMiner) in.readObject();
+        System.out.println(obj);
         in.close();
         return obj;
     }

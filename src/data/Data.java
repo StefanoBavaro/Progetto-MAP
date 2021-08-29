@@ -143,8 +143,8 @@ public class Data {
 		outLookValues[2]="sunny";
 		attributeSet.add( new DiscreteAttribute("Outlook",0, outLookValues));
 		
-
-		attributeSet.add(new ContinuousAttribute("Temperature", 1, 0f, 30.3f));
+		// piccola modifica
+		attributeSet.add(new ContinuousAttribute("Temperature", 1, 0f, 30.31f));
 		
 		String umidityValues[]=new String[2];
 		umidityValues[0]="high";

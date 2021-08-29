@@ -1,8 +1,9 @@
 package data;
 
+import java.io.Serializable;
 import java.util.Iterator;
 
-public class ContinuousAttribute extends Attribute implements Iterable<Float> {
+public class ContinuousAttribute extends Attribute implements Iterable<Float>, Serializable {
 
     private float max;
     private float min;

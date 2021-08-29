@@ -49,7 +49,7 @@ public class MainTest {
 				
 				
 				try{
-					FrequentPatternMiner fpMiner=new FrequentPatternMiner(dataTarget, minsup);	
+					FrequentPatternMiner fpMiner=new FrequentPatternMiner(dataTarget, minsup);
 					try {
 						fpMiner.salva("FP_playtennis_minSup"+minsup+".dat");
 					} catch (IOException e1) {

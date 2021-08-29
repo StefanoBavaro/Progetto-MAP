@@ -2,7 +2,9 @@ package mining;
 
 import data.Attribute;
 
-abstract class Item {
+import java.io.Serializable;
+
+abstract class Item implements Serializable{
     private Attribute attribute;
     private Object value;
 

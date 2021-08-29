@@ -65,8 +65,10 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializ
     }
     
     public void salva(String nomeFile) throws FileNotFoundException, IOException {
-        ObjectOutputStream ou = new ObjectOutputStream(new FileOutputStream(nomeFile));
+        FileOutputStream file = new FileOutputStream(nomeFile);
+        ObjectOutputStream ou = new ObjectOutputStream(file);
         ou.writeObject(this);
+        file.close();
         ou.close();
     }
     
