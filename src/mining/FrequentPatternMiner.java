@@ -67,12 +67,11 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
         this.sort();
     }
 
-    private List expandFrequentPatterns(Data data, float minSup, Queue fpQueue, List outputFP) {
-        //Con queue<FrequentPattern> non funziona
+    private List expandFrequentPatterns(Data data, float minSup, Queue<FrequentPattern> fpQueue, List outputFP) {
         // nel primo while stava !fpQueue.isEmpty()
         try {
             while (!fpQueue.isEmpty()) {
-                FrequentPattern fp = (FrequentPattern) fpQueue.first(); //fp to be refined
+                FrequentPattern fp =  fpQueue.first(); //fp to be refined
                 fpQueue.dequeue();
                 for (int i = 0; i < data.getNumberOfAttributes(); i++) {
                     boolean found = false;
@@ -157,7 +156,6 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
     public static FrequentPatternMiner carica(String nomeFile) throws FileNotFoundException,IOException,ClassNotFoundException {
         ObjectInputStream in = new ObjectInputStream(new FileInputStream(nomeFile));
         FrequentPatternMiner obj = (FrequentPatternMiner) in.readObject();
-        System.out.println(obj);
         in.close();
         return obj;
     }
