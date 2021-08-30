@@ -3,9 +3,16 @@ package mining;
 import data.EmptySetException;
 import data.Data;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.*;
 
-public class EmergingPatternMiner implements Iterable<EmergingPattern> {
+public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializable {
     private List<EmergingPattern> epList = new LinkedList<EmergingPattern>();
 
     public EmergingPatternMiner(Data dataBackground, FrequentPatternMiner fpList, float minG) throws EmptySetException {
@@ -55,5 +62,20 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern> {
             i++;
         }
         return out;
+    }
+    
+    public void salva(String nomeFile) throws FileNotFoundException, IOException {
+        FileOutputStream file = new FileOutputStream(nomeFile);
+        ObjectOutputStream ou = new ObjectOutputStream(file);
+        ou.writeObject(this);
+        file.close();
+        ou.close();
+    }
+    
+    public static EmergingPatternMiner carica(String nomeFile) throws FileNotFoundException,IOException,ClassNotFoundException{
+        ObjectInputStream in =  new ObjectInputStream(new FileInputStream(nomeFile));
+        EmergingPatternMiner obj = (EmergingPatternMiner) in.readObject();
+        in.close();
+        return obj;
     }
 }

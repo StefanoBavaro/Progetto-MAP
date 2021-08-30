@@ -2,24 +2,26 @@ package mining;
 
 import data.Attribute;
 
-public abstract class Item {
+import java.io.Serializable;
+
+abstract class Item implements Serializable{
     private Attribute attribute;
     private Object value;
 
-    public Item(Attribute attribute, Object value) {
+    Item(Attribute attribute, Object value) {
         this.attribute = attribute;
         this.value = value;
     }
 
-    public Attribute getAttribute() {
+    Attribute getAttribute() {
         return attribute;
     }
 
-    public Object getValue() {
+    Object getValue() {
         return value;
     }
 
-    public abstract boolean checkItemCondition(Object value);
+    abstract boolean checkItemCondition(Object value);
 
     public String toString() {
         return attribute.toString() + "=" + value.toString();

@@ -1,11 +1,12 @@
 package mining;
 
 import data.Data;
-import data.DiscreteAttribute;
+import data.Attribute;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPattern> {
+public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPattern>, Serializable {
 
 
     private List<Item> fp;
@@ -68,13 +69,12 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
         for (int i = 0; i < data.getNumberOfExamples(); i++) {
             //indice item
             boolean isSupporting = true;
-            for (int j = 0; j < this.getPatternLength(); j++) {
-                //DiscreteItem
-                DiscreteItem item = (DiscreteItem) this.getItem(j);
-                DiscreteAttribute attribute = (DiscreteAttribute) item.getAttribute();
+            for (Item p: this) {
+                //Item
+                Attribute attribute =  p.getAttribute();
                 //Extract the example value
                 Object valueInExample = data.getAttributeValue(i, attribute.getIndex());
-                if (!item.checkItemCondition(valueInExample)) {
+                if (!p.checkItemCondition(valueInExample)) {
                     isSupporting = false;
                     break; //the ith example does not satisfy fp
                 }
