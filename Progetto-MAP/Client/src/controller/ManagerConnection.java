@@ -7,6 +7,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.InetAddress;
 import java.net.Socket;
+import java.net.SocketException;
 
 class ManagerConnection {
 	private Socket socket;
@@ -26,6 +27,7 @@ class ManagerConnection {
 	void initConnection(String address, String port) throws IOException {
 		InetAddress addr = InetAddress.getByName(address);
 		socket = new Socket(addr, new Integer(port));
+		openStreams();
 	}
 	
 	void openStreams() throws IOException {
@@ -34,13 +36,12 @@ class ManagerConnection {
 	}
 	
 	void closeStreams() throws IOException {
-		in.close();
 		ou.close();
+		in.close();
 	}
 	
 	void closeConnection() throws IOException {
-		in.close();
-		ou.close();
+		closeStreams();
 		socket.close();
 	}
 	
@@ -50,5 +51,14 @@ class ManagerConnection {
 	
 	ObjectOutputStream getOutputStream() {
 		return ou;
+	}
+	
+	void ServerComunication(int op, float sup, float rate, String target, String back) throws IOException{
+		openStreams();
+		getOutputStream().writeObject(op);
+		getOutputStream().writeObject(sup);
+		getOutputStream().writeObject(rate);
+		getOutputStream().writeObject(target);
+		getOutputStream().writeObject(back);
 	}
 }
