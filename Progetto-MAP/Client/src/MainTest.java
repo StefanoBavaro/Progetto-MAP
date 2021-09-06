@@ -1,29 +1,37 @@
-import java.io.FileNotFoundException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.InetAddress;
-import java.net.Socket;
-import java.sql.SQLException;
-
-import keyboardinput.Keyboard;
 
 
-public class MainTest {
-
-	/**
-	 * @param args
-	 *
-	 * Crea l’oggetto InetAddress che modella l’indirizzo del Server in rete. Crea l’oggetto Socket che
-	 * deve collegarsi a tale Server. Inizializza i flussi di oggetti in e out per la trasmissione/ricezione
-	 * di oggetti a/da server. Interagisce con l’utente per capire se questi vuore caricare un risultato
-	 * esistente su file o crearne uno nuovo. In entrambi i casi trasmette la relativa richiesta e i
-	 * necessari parametri al server (per esempio, min sup, minGr, nome tabella target, nome tabella
-	 * backgorund) al server e ne aspetta la risposta che sarà poi stampata video.
-	 */
-	public static void main(String[] args) throws IOException {
+public class MainTest extends Application {
 	
+	
+	@Override
+	public void start(Stage primaryStage) throws IOException {
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("controller/fxml/InsertPort.fxml"));
+			primaryStage.setTitle("EP Miner");
+			primaryStage.setScene(new Scene(root));
+			primaryStage.show();
+		}catch (IOException e){
+			System.out.println(e.getMessage());
+			System.exit(-1);
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}
+
+	/*
 		InetAddress addr = InetAddress.getByName(args[0]);
 		System.out.println("addr = " + addr + "\nport=" + args[1]);
 		Socket socket = new Socket(addr, new Integer(args[1]));
@@ -83,5 +91,5 @@ public class MainTest {
 		
 		
 	}
+*/
 
-}

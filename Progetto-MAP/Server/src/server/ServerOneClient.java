@@ -6,7 +6,7 @@ import database.DatabaseConnectionException;
 import database.NoValueException;
 import mining.EmergingPatternMiner;
 import mining.FrequentPatternMiner;
-
+import utility.Constants;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -33,11 +33,11 @@ public class ServerOneClient extends Thread {
                 float minGr = (float) in.readObject();
                 String targetName = (String) in.readObject();
                 String backgroundName = (String) in.readObject();
-                System.out.println("Opzione: " + opzione +
-                                   "\nminSup: " + minSup +
-                                   "\nminGr: " + minGr +
-                                   "\ntargetName: " + targetName +
-                                   "\nbackgroundName: " + backgroundName);
+                System.out.println(Constants.OPTION + ": " + opzione + "\n" +
+                                   Constants.MIN_SUP + ": " + minSup + "\n" +
+                                   Constants.MIN_GROW + ": " + minGr + "\n" +
+                                   Constants.TARGET + ": " + targetName + "\n" +
+                                   Constants.BACKGROUND + ": " + backgroundName);
                 if (opzione == 1) {
                     try {
                         Data dataTarget = new Data(targetName);
@@ -45,71 +45,71 @@ public class ServerOneClient extends Thread {
                         try {
                             FrequentPatternMiner fpMiner = new FrequentPatternMiner(dataTarget, minSup);
                             try {
-                                fpMiner.salva("FP_" + targetName + "_minSup" + minSup + ".dat");
+                                fpMiner.salva(Constants.FP_SAVE + targetName + Constants.MIN_SUP_SAVE + minSup + ".dat");
                             } catch (IOException e) {
-                                System.err.println("Impossibile salvare il file per i Frequent Pattern: " + e.getMessage());
+                                System.err.println(Constants.FREQUENT_PATTERN_SAVE_FAILED + ": " + e.getMessage());
                             }
                             out.writeObject(fpMiner.toString());
                             try {
                                 EmergingPatternMiner epMiner = new EmergingPatternMiner(dataBackground, fpMiner, minGr);
                                 try {
-                                    epMiner.salva("EP_targ_" + targetName + "_back_" + backgroundName + "_minSup" + minSup + "_minGr" + minGr + ".dat");
+                                    epMiner.salva(Constants.EP_SAVE + targetName + Constants.BACK_SAVE + backgroundName + Constants.MIN_SUP_SAVE + minSup + Constants.MIN_GROW_RATE_SAVE + minGr + ".dat");
                                 } catch (IOException e) {
-                                    System.err.println("Impossibile salvare il file per gli Emerging Pattern: " + e.getMessage());
+                                    System.err.println(Constants.EMERGING_PATTERN_SAVE_FAILED + ": " + e.getMessage());
                                 }
                                 out.writeObject(epMiner.toString());
                             } catch (EmptySetException e) {
                                 System.err.println(e.getMessage());
-                                out.writeObject("Frequent Pattern non trovati con questi valori di supporto e di growrate");
+                                out.writeObject(Constants.FREQUENT_PATTERN_ERROR_VALUE);
                             } catch (ClassCastException e) {
                                 System.err.println(e.getMessage());
-                                out.writeObject("I dati della tabella di background non sono compatibili con quelli della tabella target");
+                                out.writeObject(Constants.NO_COMPATIBLE_DATA);
                             }
 
                         } catch (EmptySetException e) {
                             System.err.println(e.getMessage());
-                            out.writeObject("Non sono stati trovati dati che corrispondono a tali parametri");
+                            out.writeObject(Constants.NOT_FOUND_DATA_PARAMETERS);
                             out.writeObject("");
                         }
                     } catch (NoValueException e) {
                         System.err.println(e.getMessage());
-                        out.writeObject("Nessun valore trovato nelle tabelle");
+                        out.writeObject(Constants.NOT_FOUND_DATA);
                         out.writeObject("");
                     } catch (DatabaseConnectionException e) {
-                        System.err.println("Errore di connessione al Database " + e.getMessage());
-                        out.writeObject("Errore di connessione al Database");
+                        System.err.println(Constants.ERROR_CONNECTION_DB + e.getMessage());
+                        out.writeObject(Constants.ERROR_CONNECTION_DB);
                         out.writeObject("");
                     } catch (SQLException e) {
                         // scrivo degli oggetti per poter far ripetere il ciclo
-                        System.err.println("Tabelle non trovate nel database");
-                        out.writeObject("Tabelle non trovate nel database");
+                        System.err.println(Constants.NOT_FOUND_TABLES);
+                        out.writeObject(Constants.NOT_FOUND_TABLES);
                         out.writeObject("");
                     }
                 } else if (opzione == 2) {
                     try {
-                        FrequentPatternMiner fpMiner = FrequentPatternMiner.carica("FP_" + targetName + "_minSup" + minSup + ".dat");
+                        FrequentPatternMiner fpMiner = FrequentPatternMiner.carica(Constants.FP_SAVE + targetName + Constants.MIN_SUP_SAVE + minSup + ".dat");
                         out.writeObject(fpMiner.toString());
-                        EmergingPatternMiner epMiner = EmergingPatternMiner.carica("EP_targ_" + targetName + "_back_" + backgroundName + "_minSup" + minSup + "_minGr" + minGr + ".dat");
+                        EmergingPatternMiner epMiner = EmergingPatternMiner.carica(Constants.EP_SAVE + targetName + Constants.BACK_SAVE + backgroundName + Constants.MIN_SUP_SAVE + minSup + Constants.MIN_GROW_RATE_SAVE + minGr + ".dat");
                         out.writeObject(epMiner.toString());
                     } catch (ClassNotFoundException | IOException e) {
                         // invio messaggio al Server
                         System.err.println(e.getMessage());
-                        out.writeObject("Dati non trovati in archivio per i parametri inseriti");
+                        out.writeObject(Constants.NOT_FOUND_ARCHIVE_DATA);
                         out.writeObject("");
                     }
                 }
             }
         } catch (IOException e) {
-            System.err.println("Errore di comunicazione con il client: " + e.getMessage());
+            System.err.println(Constants.COMUNICATION_CLIENT_ERROR + ": " + e.getMessage());
         } catch (ClassNotFoundException e) {
-            System.err.println("Errore di casting: " + e.getMessage());
+            System.err.println(Constants.CASTING_ERROR + ": " + e.getMessage());
         } finally {
             try {
                 socket.close();
                 in.close();
                 out.close();
             } catch (IOException e) {
-                System.err.println("Errore nella chiusura dello stream");
+                System.err.println(Constants.STREAM_ERROR);
             }
         }
     }
