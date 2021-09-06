@@ -1,5 +1,7 @@
 package database;
 
+import utility.Costants;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -44,7 +46,7 @@ public class DbAccess {
 					throw new DatabaseConnectionException(e.toString());
 			} 
 		catch (ClassNotFoundException e) {
-			System.out.println("Impossibile trovare il Driver: " + DRIVER_CLASS_NAME);
+			System.out.println(Costants.DRIVER_NOT_FOUND + DRIVER_CLASS_NAME);
 			throw new DatabaseConnectionException(e.toString());
 		}
 		
@@ -52,7 +54,7 @@ public class DbAccess {
 			conn = DriverManager.getConnection(connectionString, USER_ID, PASSWORD);
 			
 		} catch (SQLException e) {
-			System.out.println("Impossibile connettersi al DB");
+			System.out.println(Costants.ERROR_CONNECTION_DB);
 			e.printStackTrace();
 			throw new DatabaseConnectionException(e.toString());
 		}
@@ -66,7 +68,7 @@ public class DbAccess {
 		try {
 			conn.close();
 		} catch (SQLException e) {
-			System.out.println("Impossibile chiudere la connessione");
+			System.out.println(Costants.ERROR_CLOSING_CONNECTION);
 		}
 	}
 

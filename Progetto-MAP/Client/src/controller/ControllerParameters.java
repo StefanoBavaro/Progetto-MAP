@@ -1,64 +1,68 @@
 package controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
+import utility.Costants;
 import javafx.event.ActionEvent;
+import utility.ControllerException;
+
 import java.io.IOException;
 
 
 public class ControllerParameters extends Controller{
 	
 	@FXML
-	RadioButton discovery;
+	private RadioButton discovery;
 	@FXML
-	RadioButton archive;
+	private RadioButton archive;
 	@FXML
-	TextField minSup;
+	private TextField minSup;
 	@FXML
-	TextField growRate;
+	private TextField growRate;
 	@FXML
-	TextField targ;
+	private TextField targ;
 	@FXML
-	TextField back;
+	private TextField back;
 	
-	
-	@FXML
-	public void exit(ActionEvent actionEvent) {
-		try {
-			((Stage) (((Button) actionEvent.getSource()).getScene().getWindow())).close();
-			ManagerConnection.getManagerConnection().closeConnection();
-		}catch(IOException e){
-			printAlert(Alert.AlertType.ERROR, "Errore di chiusura della connessione", ButtonType.OK);
-		}
+	// dubbio loading--------------------------------------------------------------------------
+	public ControllerResults loadingController (ActionEvent actionEvent, String nameFile) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/PrintResults.fxml"));
+		setRoot(loader.load());
+		setStage(new Stage());
+		getStage().setTitle(Costants.TITLE);
+		setScene(new Scene(getRoot()));
+		getStage().setScene(getScene());
+		getStage().show();
+		return loader.getController();
 	}
 	
-	void checkEmptyParameters() {
+	void checkEmptyParameters() throws ControllerException {
 		//target background supporto growrate
 		if (!discovery.isSelected() && !archive.isSelected()) {
-			throw new IllegalArgumentException("Non è stato selezionato il criterio  di ricerca");
-		} else if (targ.getText() == "") {
-			throw new IllegalArgumentException("Non è stato inserito nessuno valore in target");
-		} else if (back.getText() == "") {
-			throw new IllegalArgumentException("Non è stato inserito nessuno valore in backGround");
-		} else if (minSup.getText() == "") {
-			throw new IllegalArgumentException("Non è stato inserito nessuno valore in supporto");
-		} else if (growRate.getText() == "") {
-			throw new IllegalArgumentException("Non è stato inserito nessuno valore in growRate");
+			throw new ControllerException(Costants.NOT_SELECTED_SEARCH_OPTION);
+		} else if (targ.getText().isEmpty()) {
+			throw new ControllerException(Costants.EMPTY_TARGET_FIELD);
+		} else if (back.getText().isEmpty()) {
+			throw new ControllerException(Costants.EMPTY_BACKGROUND_FIELD);
+		} else if (minSup.getText().isEmpty()) {
+			throw new ControllerException(Costants.EMPTY_SUPPORT_FIELD);
+		} else if (growRate.getText().isEmpty()) {
+			throw new ControllerException(Costants.EMPTY_GROWRATE_FIELD);
 		}
 	}
 	
-	void checkNumber(float sup, float rate) {
-		if (sup <= 0 || sup > 1) {
-			throw new IllegalArgumentException("Il valore di support deve essere compreso tra 0 e 1");
+	void checkNumber(float sup, float rate) throws ControllerException{
+		if (sup <= Costants.VALUE_ZERO || sup > Costants.VALUE_ONE) {
+			throw new ControllerException(Costants.ERROR_SUPPORT_VALUE);
 		}
-		if(rate <= 0){
-			throw new IllegalArgumentException("Il valore di growRate deve essere maggiore di 0");
+		if(rate <= Costants.VALUE_ZERO){
+			throw new ControllerException(Costants.ERROR_GROWRATE_VALUE);
 		}
 	}
 	@FXML
@@ -73,13 +77,12 @@ public class ControllerParameters extends Controller{
 	
 	// verrà richiamata sempre dopo il controllo dei parametri vuoti
 	int optionValue() {
-		return (archive.isSelected() ? 2 : 1);
+		return (archive.isSelected() ? Costants.VALUE_TWO : Costants.VALUE_ONE);
 	}
 	
 	
 	public void patternMining (ActionEvent actionEvent) {
 		try {
-			System.out.println(targ.getText());
 			checkEmptyParameters();
 			int option = optionValue();
 			float sup = new Float(minSup.getText());
@@ -87,18 +90,21 @@ public class ControllerParameters extends Controller{
 			checkNumber(sup, rate);
 			String target = targ.getText();
 			String background = back.getText();
-			try {
-				ManagerConnection.getManagerConnection().ServerComunication(option, sup, rate, target, background);
-			} catch (IOException e) {
-				printAlert(Alert.AlertType.ERROR, "Errore nell'invio dei dati al Server", ButtonType.OK);
-			}
-			loading(actionEvent, "PrintResult");
-		} catch (IOException e) {
-			printAlert(Alert.AlertType.ERROR, "Errore nel Caricamento della pagina", ButtonType.OK);
-		} /*catch (NumberFormatException e) {
-			printAlert(Alert.AlertType.ERROR, "Inserire valori numerici in support e growrate", ButtonType.OK);
-		} */catch (IllegalArgumentException e) {
+			ManagerConnection.getManagerConnection().ServerComunication(option, sup, rate, target, background);
+			
+			// ---------------------------------------dubbio ------------------------------------
+			String freqPattern = (String) (ManagerConnection.getManagerConnection().getInputStream().readObject());
+			String emergPattern = (String) (ManagerConnection.getManagerConnection().getInputStream().readObject());
+			//---------------------------------------------------------------------------------------
+			
+			ControllerResults controllerResults = loadingController(actionEvent, "fxml/PrintResults");
+			controllerResults.printResults(freqPattern,emergPattern, sup, rate, target, background);
+		} catch (IOException  | ClassNotFoundException e) {
+			printAlert(Alert.AlertType.ERROR, Costants.ERROR_SENDING_DATA_SERVER, ButtonType.OK);
+		} catch (ControllerException e) {
 			printAlert(Alert.AlertType.ERROR, e.getMessage(), ButtonType.OK);
+		} catch (IllegalArgumentException e) {
+			printAlert(Alert.AlertType.ERROR, "In support e growRate devono essere inseriti valori numerici", ButtonType.OK);
 		}
 	}
 }

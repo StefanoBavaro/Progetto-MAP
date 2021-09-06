@@ -1,6 +1,6 @@
 package utility;
 
-public class Constants {
+public class Costants {
 	
 	//Server messages
 	public static final String OPTION = "Opzione";
@@ -29,4 +29,13 @@ public class Constants {
 	public static final String EP_SAVE = "EP_targ_";
 	public static final String BACK_SAVE = "_back_";
 	public static final String MIN_GROW_RATE_SAVE = "_minGr";
+	
+	public static final int ITERATOR_VALUES = 5;
+	public static final String DRIVER_NOT_FOUND = "Impossibile trovare il Driver: ";
+	public static final String ERROR_DB_CONNECTION = "Impossibile connettersi al DB";
+	public static final String ERROR_CLOSING_CONNECTION = "Impossibile chiudere la connessione";
+	public static final String ERROR_SOCKET = "Errore nella creazione del socket";
+	public static final String EMPTY_TRAININGSET = "L'insieme di training � vuoto";
+	public static final String GROWRATE_NOT_VALID = "Il pattern non soddisfa il minimo grow rate";
+	
 }

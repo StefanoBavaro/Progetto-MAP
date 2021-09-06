@@ -1,5 +1,7 @@
 package server;
 
+import utility.Costants;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -32,7 +34,7 @@ public class MultiServer {
                 s.close();
             }
         }catch(IOException e){
-            System.out.println("Errore nella creazione del socket");
+            System.out.println(Costants.ERROR_SOCKET);
         }
     }
 }

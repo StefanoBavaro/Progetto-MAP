@@ -14,7 +14,7 @@ public class MainTest extends Application {
 	@Override
 	public void start(Stage primaryStage) throws IOException {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("controller/fxml/InsertPort.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("fxml/InsertPort.fxml"));
 			primaryStage.setTitle("EP Miner");
 			primaryStage.setScene(new Scene(root));
 			primaryStage.show();

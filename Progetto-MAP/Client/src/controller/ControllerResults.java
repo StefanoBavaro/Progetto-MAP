@@ -1,27 +1,52 @@
 package controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.stage.Stage;
+import utility.Costants;
+
+import java.io.IOException;
 
 public class ControllerResults extends Controller{
 	
 	@FXML
-	Label support;
+	private Label support;
 	@FXML
-	Label growRate;
+	private Label growRate;
 	@FXML
-	Label target;
+	private Label target;
 	@FXML
-	Label background;
+	private Label background;
 	@FXML
-	TextArea area;
+	private TextArea area;
+	
 	
 	public void printResults (String frequentPattern, String mergingPattern, float minsup, float rate, String targetName, String backgroundName) {
 		support.setText(String.valueOf(minsup));
 		growRate.setText(String.valueOf(rate));
 		target.setText(targetName);
 		background.setText(backgroundName);
-		area.setText("Frequent Pattern\n" + frequentPattern + "\nEmerging Pattern \n" + mergingPattern);
+		area.setText(Costants.FREQUENT_PATTERN_PRINT + frequentPattern + Costants.EMERGING_PATTERN_PRINT + mergingPattern);
+	}
+	
+	@FXML
+	public void newSearch(ActionEvent actionEvent) {
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/InsertParameters"));
+			setRoot(loader.load());
+			setStage(new Stage());
+			getStage().setTitle(Costants.TITLE);
+			setScene(new Scene(getRoot()));
+			getStage().setScene(getScene());
+			getStage().show();
+		} catch (IOException e) {
+			printAlert(Alert.AlertType.ERROR, Costants.ERROR_LOADING_PAGE, ButtonType.OK);
+		}
 	}
 }
