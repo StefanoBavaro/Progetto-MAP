@@ -1,5 +1,6 @@
 package controller;
 
+import connection.ManagerConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
@@ -56,4 +57,5 @@ public abstract class Controller {
     public void setStage (Stage stage) {
         this.stage = stage;
     }
+    
 }

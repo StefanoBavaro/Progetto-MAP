@@ -1,5 +1,6 @@
 package controller;
 
+import connection.ManagerConnection;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.Node;
@@ -25,7 +26,7 @@ public class ControllerPort extends Controller {
 			String addr = address.getText();
 			String p = port.getText();
 			ManagerConnection.getManagerConnection().initConnection(addr,p);
-			loadingConnection(actionEvent, "/fxml/InsertParameters");
+			loadingClient(actionEvent);
 		} catch (LoadException e) {
 			printAlert(Alert.AlertType.ERROR, Costants.ERROR_LOADING_PAGE, ButtonType.OK);
 		} catch (IOException e) {
@@ -33,17 +34,19 @@ public class ControllerPort extends Controller {
 		}
 	}
 	
-	public void loadingConnection(ActionEvent actionEvent, String nameFile) throws IOException{
-		FXMLLoader loader = new FXMLLoader(getClass().getResource(nameFile + ".fxml"));
+	
+	@FXML
+	public void helpCommand() {
+		printAlert(Alert.AlertType.NONE, Costants.HELP, ButtonType.OK);
+	}
+	
+	
+	private void loadingClient(ActionEvent actionEvent) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource(Costants.INSERT_PARAMETERS));
 		setRoot(loader.load());
 		setStage((Stage)((Node) actionEvent.getSource()).getScene().getWindow());
 		setScene(new Scene(getRoot()));
 		getStage().setScene(getScene());
 		getStage().show();
-	}
-	
-	@FXML
-	public void helpCommand() {
-		printAlert(Alert.AlertType.NONE, Costants.HELP, ButtonType.OK);
 	}
 }

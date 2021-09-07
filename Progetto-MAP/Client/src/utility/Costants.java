@@ -7,6 +7,10 @@ public class Costants {
 	public static final String ERROR_OPENING_STREAMS = "Errore nell'apertura degli streams";
 	public static final String ERROR_LOADING_PAGE = "Errore nel caricamento della pagina";
 	
+	//resources
+	public static final String PRINT_RESULT = "/fxml/PrintResults.fxml";
+	public static final String INSERT_PARAMETERS = "/fxml/InsertParameters.fxml";
+	
 	//wrong values
 	public static final String NOT_SELECTED_SEARCH_OPTION = "Non è stato selezionato il criterio  di ricerca";
 	public static final String EMPTY_TARGET_FIELD ="Non è stato inserito nessuno valore in target";
@@ -15,6 +19,7 @@ public class Costants {
 	public static final String EMPTY_GROWRATE_FIELD = "Non è stato inserito nessuno valore in growRate";
 	public static final String ERROR_SUPPORT_VALUE = "Il valore di support deve essere compreso tra 0 e 1";
 	public static final String ERROR_GROWRATE_VALUE = "Il valore di growRate deve essere maggiore di 0";
+	public static final String ERROR_NUMBER = "In support e growRate devono essere inseriti valori numerici";
 	
 	//VALUES
 	public static final int VALUE_ZERO = 0;

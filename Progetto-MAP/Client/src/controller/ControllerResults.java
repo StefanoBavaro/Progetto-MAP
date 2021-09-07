@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -27,7 +28,7 @@ public class ControllerResults extends Controller{
 	private TextArea area;
 	
 	
-	public void printResults (String frequentPattern, String mergingPattern, float minsup, float rate, String targetName, String backgroundName) {
+	void printResults (String frequentPattern, String mergingPattern, float minsup, float rate, String targetName, String backgroundName) {
 		support.setText(String.valueOf(minsup));
 		growRate.setText(String.valueOf(rate));
 		target.setText(targetName);
@@ -38,13 +39,14 @@ public class ControllerResults extends Controller{
 	@FXML
 	public void newSearch(ActionEvent actionEvent) {
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/InsertParameters"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource(Costants.INSERT_PARAMETERS));
 			setRoot(loader.load());
 			setStage(new Stage());
 			getStage().setTitle(Costants.TITLE);
 			setScene(new Scene(getRoot()));
 			getStage().setScene(getScene());
 			getStage().show();
+			((Stage) (((Button) actionEvent.getSource()).getScene().getWindow())).close();
 		} catch (IOException e) {
 			printAlert(Alert.AlertType.ERROR, Costants.ERROR_LOADING_PAGE, ButtonType.OK);
 		}
