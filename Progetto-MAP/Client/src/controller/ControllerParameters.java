@@ -83,6 +83,12 @@ public class ControllerParameters extends Controller{
 		return (archive.isSelected() ? Costants.VALUE_TWO : Costants.VALUE_ONE);
 	}
 	
+	private void checkError(String freqPattern, String emergPattern) throws ControllerException {
+		if (emergPattern.isEmpty()) {
+			throw new ControllerException(freqPattern);
+		}
+	}
+	
 	@FXML
 	public void patternMining (ActionEvent actionEvent) {
 		try {
@@ -98,8 +104,9 @@ public class ControllerParameters extends Controller{
 			String freqPattern = ManagerConnection.getManagerConnection().readString();
 			String emergPattern = ManagerConnection.getManagerConnection().readString();
 			
+			checkError(freqPattern, emergPattern);
 			ControllerResults controllerResults = loadingController();
-			controllerResults.printResults(freqPattern,emergPattern, sup, rate, target, background);
+			controllerResults.printResults(freqPattern, emergPattern, sup, rate, target, background);
 			((Stage) (((Button) actionEvent.getSource()).getScene().getWindow())).close();
 		} catch (IOException  | ClassNotFoundException e) {
 			printAlert(Alert.AlertType.ERROR, Costants.ERROR_SENDING_DATA_SERVER, ButtonType.OK);

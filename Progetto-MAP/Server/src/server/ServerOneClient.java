@@ -61,9 +61,11 @@ public class ServerOneClient extends Thread {
                             } catch (EmptySetException e) {
                                 System.err.println(e.getMessage());
                                 out.writeObject(Costants.FREQUENT_PATTERN_ERROR_VALUE);
+                                out.writeObject("");
                             } catch (ClassCastException e) {
                                 System.err.println(e.getMessage());
                                 out.writeObject(Costants.NO_COMPATIBLE_DATA);
+                                out.writeObject("");
                             }
 
                         } catch (EmptySetException e) {
