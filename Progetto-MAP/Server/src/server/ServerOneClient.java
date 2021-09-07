@@ -13,11 +13,32 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.sql.SQLException;
 
+/**
+ * Classe che modella la comunicazione con un singolo client su un thread separato
+ */
 public class ServerOneClient extends Thread {
+    /**
+     * Terminale lato server del canale tramite cui avviene lo scambio di oggetti client-server
+     */
     private Socket socket;
+
+    /**
+     * Flusso di oggetti in input al server.
+     */
     private ObjectInputStream in;
+
+    /**
+     * Flusso di oggetti in output dal server al client
+     */
     private ObjectOutputStream out;
 
+    /**
+     * Costruttore della classe; inizializza l'attributo this.socket con il parametro.
+     * Inizializza in e out e poi avvia il thread invocando il metodo start() (ereditato dalla classe Thread).
+     *
+     * @param s terminale lato server
+     * @throws IOException
+     */
     public ServerOneClient(Socket s) throws IOException {
         socket = s;
         in = new ObjectInputStream(s.getInputStream());
@@ -25,6 +46,14 @@ public class ServerOneClient extends Thread {
         start();
     }
 
+    /** !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+     * Ridefinisce il metodo run() della classe Thread (variazione funzionale).
+     * Gestisce le richieste del client, in particolare:
+     * <ul>
+     *     <li> Se l'opzione scelta è quella di "Nuova scoperta", apprende pattern/regole e li salva in un file.
+     *     <li> Se l'opzione scelta è quella di ..."</li>
+     * </ul>
+     */
     public void run() {
         try {
             while (true) {
