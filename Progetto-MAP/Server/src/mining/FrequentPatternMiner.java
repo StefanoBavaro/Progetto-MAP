@@ -6,8 +6,7 @@ import utility.EmptyQueueException;
 import utility.Queue;
 import data.Data;
 import data.DiscreteAttribute;
-
-import java.io.File;
+import utility.Costants;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -27,7 +26,7 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
         Queue<FrequentPattern> fpQueue = new Queue<FrequentPattern>();
 
         if (data.getNumberOfAttributes() == 0) {
-            throw new EmptySetException("L'insieme di training � vuoto");  //non sono sicuro che il messaggio sia corretto
+                throw new EmptySetException(Costants.EMPTY_TRAININGSET);  //non sono sicuro che il messaggio sia corretto
         }
 
         for (int i = 0; i < data.getNumberOfAttributes(); i++) {

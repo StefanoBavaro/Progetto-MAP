@@ -1,15 +1,13 @@
-package controller;
-
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+package connection;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.net.SocketException;
 
-class ManagerConnection {
+
+public class ManagerConnection {
 	private Socket socket;
 	private ObjectOutputStream ou;
 	private ObjectInputStream in;
@@ -20,45 +18,48 @@ class ManagerConnection {
 	// rendo il costruttore privato in modo da avere una classe singoletto
 	private ManagerConnection() {}
 	
-	static ManagerConnection getManagerConnection() {
+	public static ManagerConnection getManagerConnection() {
 		return SINGLETON;
 	}
 	
-	void initConnection(String address, String port) throws IOException {
+	public void initConnection(String address, String port) throws IOException {
 		InetAddress addr = InetAddress.getByName(address);
 		socket = new Socket(addr, new Integer(port));
 		openStreams();
 	}
 	
-	void openStreams() throws IOException {
+	private void openStreams() throws IOException {
 		ou = new ObjectOutputStream(socket.getOutputStream());
 		in = new ObjectInputStream(socket.getInputStream());
 	}
 	
-	void closeStreams() throws IOException {
+	private void closeStreams() throws IOException {
 		ou.close();
 		in.close();
 	}
 	
-	void closeConnection() throws IOException {
+	public void closeConnection() throws IOException {
 		closeStreams();
 		socket.close();
 	}
 	
-	ObjectInputStream getInputStream() {
+	public ObjectInputStream getInputStream() {
 		return in;
 	}
 	
-	ObjectOutputStream getOutputStream() {
+	public ObjectOutputStream getOutputStream() {
 		return ou;
 	}
 	
-	void ServerComunication(int op, float sup, float rate, String target, String back) throws IOException{
-		openStreams();
+	public void ServerComunication(int op, float sup, float rate, String target, String back) throws IOException{
 		getOutputStream().writeObject(op);
 		getOutputStream().writeObject(sup);
 		getOutputStream().writeObject(rate);
 		getOutputStream().writeObject(target);
 		getOutputStream().writeObject(back);
+	}
+	
+	public String readString() throws IOException, ClassNotFoundException {
+		return (String) in.readObject();
 	}
 }
