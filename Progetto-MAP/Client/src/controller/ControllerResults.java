@@ -46,6 +46,8 @@ public class ControllerResults extends Controller{
 			setScene(new Scene(getRoot()));
 			getStage().setScene(getScene());
 			getStage().show();
+			getStage().setMinHeight(Costants.MIN_WIDTH_MAIN);
+			getStage().setMinWidth(Costants.MIN_WIDTH_P);
 			((Stage) (((Button) actionEvent.getSource()).getScene().getWindow())).close();
 		} catch (IOException e) {
 			printAlert(Alert.AlertType.ERROR, Costants.ERROR_LOADING_PAGE, ButtonType.OK);

@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import utility.Costants;
 
 import java.io.IOException;
 
@@ -14,10 +15,12 @@ public class MainTest extends Application {
 	@Override
 	public void start(Stage primaryStage) throws IOException {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("fxml/InsertPort.fxml"));
-			primaryStage.setTitle("EP Miner");
+			Parent root = FXMLLoader.load(getClass().getResource(Costants.INSERT_PORT));
+			primaryStage.setTitle(Costants.TITLE);
 			primaryStage.setScene(new Scene(root));
 			primaryStage.show();
+			primaryStage.setMinWidth(Costants.MIN_WIDTH_MAIN);
+			primaryStage.setMinHeight(Costants.MIN_HEIGHT);
 		}catch (IOException e){
 			System.out.println(e.getMessage());
 			System.exit(-1);

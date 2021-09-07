@@ -48,5 +48,7 @@ public class ControllerPort extends Controller {
 		setScene(new Scene(getRoot()));
 		getStage().setScene(getScene());
 		getStage().show();
+		getStage().setMinHeight(Costants.MIN_WIDTH_MAIN);
+		getStage().setMinWidth(Costants.MIN_WIDTH_P);
 	}
 }

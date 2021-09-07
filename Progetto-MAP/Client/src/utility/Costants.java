@@ -8,6 +8,7 @@ public class Costants {
 	public static final String ERROR_LOADING_PAGE = "Errore nel caricamento della pagina";
 	
 	//resources
+	public static final String INSERT_PORT = "fxml/InsertPort.fxml";
 	public static final String PRINT_RESULT = "/fxml/PrintResults.fxml";
 	public static final String INSERT_PARAMETERS = "/fxml/InsertParameters.fxml";
 	
@@ -41,5 +42,8 @@ public class Costants {
 										"- La terza finestra, che si avvia solo se i parametri inseriti risultano validi, restituisce l'output del programma ovvero i Frequent Pattern e gli Emerging Pattern trovati";
 	
 	
-	
+	// limit width and height
+	public static int MIN_WIDTH_MAIN = 500;
+	public static int MIN_HEIGHT = 400;
+	public static int MIN_WIDTH_P = 600;
 }

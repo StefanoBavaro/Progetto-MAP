@@ -41,6 +41,8 @@ public class ControllerParameters extends Controller{
 		setScene(new Scene(getRoot()));
 		getStage().setScene(getScene());
 		getStage().show();
+		getStage().setMinWidth(500);
+		getStage().setMinHeight(600);
 		return loader.getController();
 	}
 	
