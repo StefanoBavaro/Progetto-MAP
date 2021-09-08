@@ -4,7 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import utility.Costants;
+import utility.Constants;
 
 import java.io.IOException;
 
@@ -15,12 +15,12 @@ public class MainTest extends Application {
 	@Override
 	public void start(Stage primaryStage) throws IOException {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource(Costants.INSERT_PORT));
-			primaryStage.setTitle(Costants.TITLE);
+			Parent root = FXMLLoader.load(getClass().getResource(Constants.INSERT_PORT));
+			primaryStage.setTitle(Constants.TITLE);
 			primaryStage.setScene(new Scene(root));
 			primaryStage.show();
-			primaryStage.setMinWidth(Costants.MIN_WIDTH_MAIN);
-			primaryStage.setMinHeight(Costants.MIN_HEIGHT);
+			primaryStage.setMinWidth(Constants.MIN_WIDTH_MAIN);
+			primaryStage.setMinHeight(Constants.MIN_HEIGHT);
 		}catch (IOException e){
 			System.out.println(e.getMessage());
 			System.exit(-1);

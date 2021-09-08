@@ -2,7 +2,7 @@ package data;
 
 import java.io.Serializable;
 import java.util.Iterator;
-import utility.Costants;
+import utility.Constants;
 public class ContinuousAttribute extends Attribute implements Iterable<Float>, Serializable {
 
     private float max;
@@ -25,6 +25,6 @@ public class ContinuousAttribute extends Attribute implements Iterable<Float>, S
     
     @Override
     public Iterator<Float> iterator () {
-        return new ContinuousAttributeIterator(min, max, Costants.ITERATOR_VALUES);
+        return new ContinuousAttributeIterator(min, max, Constants.ITERATOR_VALUES);
     }
 }

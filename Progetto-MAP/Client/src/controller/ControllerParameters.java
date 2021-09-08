@@ -10,7 +10,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import utility.Costants;
+import utility.Constants;
 import javafx.event.ActionEvent;
 import utility.ControllerException;
 
@@ -34,10 +34,10 @@ public class ControllerParameters extends Controller{
 	
 	
 	public ControllerResults loadingController() throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource(Costants.PRINT_RESULT));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.PRINT_RESULT));
 		setRoot(loader.load());
 		setStage(new Stage());
-		getStage().setTitle(Costants.TITLE);
+		getStage().setTitle(Constants.TITLE);
 		setScene(new Scene(getRoot()));
 		getStage().setScene(getScene());
 		getStage().show();
@@ -47,26 +47,33 @@ public class ControllerParameters extends Controller{
 	}
 	
 	private void checkEmptyParameters() throws ControllerException {
-		//target background supporto growrate
+		String error = new String();
 		if (!discovery.isSelected() && !archive.isSelected()) {
-			throw new ControllerException(Costants.NOT_SELECTED_SEARCH_OPTION);
-		} else if (targ.getText().isEmpty()) {
-			throw new ControllerException(Costants.EMPTY_TARGET_FIELD);
-		} else if (back.getText().isEmpty()) {
-			throw new ControllerException(Costants.EMPTY_BACKGROUND_FIELD);
-		} else if (minSup.getText().isEmpty()) {
-			throw new ControllerException(Costants.EMPTY_SUPPORT_FIELD);
-		} else if (growRate.getText().isEmpty()) {
-			throw new ControllerException(Costants.EMPTY_GROWRATE_FIELD);
+			error += Constants.NOT_SELECTED_SEARCH_OPTION + "\n";
+		}
+		if (targ.getText().isEmpty()) {
+			error += Constants.EMPTY_TARGET_FIELD + "\n";
+		}
+		if (back.getText().isEmpty()) {
+			error += Constants.EMPTY_BACKGROUND_FIELD + "\n";
+		}
+		if (minSup.getText().isEmpty()) {
+			error += Constants.EMPTY_SUPPORT_FIELD + "\n";
+		}
+		if (growRate.getText().isEmpty()) {
+			error += Constants.EMPTY_GROWRATE_FIELD;
+		}
+		if (!error.isEmpty()) {
+			throw new ControllerException(error);
 		}
 	}
 	
 	private void checkNumber(float sup, float rate) throws ControllerException{
-		if (sup <= Costants.VALUE_ZERO || sup > Costants.VALUE_ONE) {
-			throw new ControllerException(Costants.ERROR_SUPPORT_VALUE);
+		if (sup <= Constants.VALUE_ZERO || sup > Constants.VALUE_ONE) {
+			throw new ControllerException(Constants.ERROR_SUPPORT_VALUE);
 		}
-		if(rate <= Costants.VALUE_ZERO){
-			throw new ControllerException(Costants.ERROR_GROWRATE_VALUE);
+		if(rate <= Constants.VALUE_ZERO){
+			throw new ControllerException(Constants.ERROR_GROWRATE_VALUE);
 		}
 	}
 	
@@ -82,12 +89,14 @@ public class ControllerParameters extends Controller{
 	
 	// verrà richiamata sempre dopo il controllo dei parametri vuoti
 	private int optionValue() {
-		return (archive.isSelected() ? Costants.VALUE_TWO : Costants.VALUE_ONE);
+		return (archive.isSelected() ? Constants.VALUE_TWO : Constants.VALUE_ONE);
 	}
 	
 	private void checkError(String freqPattern, String emergPattern) throws ControllerException {
-		if (emergPattern.isEmpty()) {
+		if (emergPattern.equals(Constants.DEFAULT)) {
 			throw new ControllerException(freqPattern);
+		} else if (freqPattern.isEmpty() && emergPattern.isEmpty()) {
+			throw new ControllerException(Constants.ERROR_TABLES);
 		}
 	}
 	
@@ -111,11 +120,11 @@ public class ControllerParameters extends Controller{
 			controllerResults.printResults(freqPattern, emergPattern, sup, rate, target, background);
 			((Stage) (((Button) actionEvent.getSource()).getScene().getWindow())).close();
 		} catch (IOException  | ClassNotFoundException e) {
-			printAlert(Alert.AlertType.ERROR, Costants.ERROR_SENDING_DATA_SERVER, ButtonType.OK);
+			printAlert(Alert.AlertType.ERROR, Constants.ERROR_SENDING_DATA_SERVER, ButtonType.OK);
 		} catch (ControllerException e) {
 			printAlert(Alert.AlertType.ERROR, e.getMessage(), ButtonType.OK);
 		} catch (IllegalArgumentException e) {
-			printAlert(Alert.AlertType.ERROR, Costants.ERROR_NUMBER, ButtonType.OK);
+			printAlert(Alert.AlertType.ERROR, Constants.ERROR_NUMBER, ButtonType.OK);
 		}
 	}
 }
