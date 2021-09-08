@@ -9,24 +9,55 @@ import java.sql.SQLException;
 import javax.management.InstanceNotFoundException;
 
 /**
- * Gestisce l'accesso al DB per la lettura dei dati di training
+ * Classe che gestisce l'accesso al DB per la lettura dei dati di training
  * @author Map Tutor
- *
  */
 public class DbAccess {
 
+	/**
+	 * Nome del driver del DBMS al quale ci si vuole collegare
+	 */
 	private final String DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
+
+	/**
+	 * Protocollo per aprire il db
+	 */
 	private final String DBMS = "jdbc:mysql";
+
+	/**
+	 * Identificativo del server su cui risiede la base di dat
+	 */
 	private final String SERVER = "localhost";
+
+	/**
+	 * La porta su cui il DBMS accetta le connessioni
+	 */
 	private final int PORT = 3306;
+
+	/**
+	 * Nome della base di dati
+	 */
 	private final String DATABASE = "Map";
+
+	/**
+	 * Nome dell’utente per l’accesso alla base di dati
+	 */
 	private final String USER_ID = "Student";
+
+	/**
+	 * Password di autenticazione per l’utente identificato da USER_ID
+	 */
 	private final String PASSWORD = "map";
 
+	/**
+	 * Gestisce una connessione al db
+	 */
 	private Connection conn;
 
 	/**
-	 * Inizializza una connessione al DB
+	 * Impartisce al class loader l’ordine di caricare il driver mysql;
+	 * inizializza la connessione al db riferita da conn.
+	 * @throws DatabaseConnectionException
 	 */
 	public void initConnection() throws DatabaseConnectionException{
 		String connectionString =  DBMS + "://" + SERVER + ":" + PORT + "/" + DATABASE
@@ -60,10 +91,17 @@ public class DbAccess {
 		}
 		
 	}
+
+	/**
+	 * @return il valore dell'attributo conn.
+	 */
 	public  Connection getConnection(){
 		return conn;
 	}
 
+	/**
+	 * Chiude la connessione conn
+	 */
 	public void closeConnection() {
 		try {
 			conn.close();

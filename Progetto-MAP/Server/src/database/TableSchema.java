@@ -9,9 +9,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-
-
-
+/**
+ * Classe che modella lo schema di una tabella nel database relazionale
+ */
 public class TableSchema {
 	private Connection connection;
 	
@@ -39,13 +39,14 @@ public class TableSchema {
 	        				 res.getString("COLUMN_NAME"),
 	        				 mapSQL_JAVATypes.get(res.getString("TYPE_NAME")))
 	        				 );
-	
-	         
-	         
 	      }
 	      res.close();
 		
 	}
+
+	/**
+	 * Inner class che modella lo schema di una colonna del database relazionale.
+	 */
 	public class Column{
 		private String name;
 		private String type;
@@ -64,10 +65,7 @@ public class TableSchema {
 		}
 	}
 	List<Column> tableSchema=new ArrayList<Column>();
-	
 
-	  
-	
 		public int getNumberOfAttributes(){
 			return tableSchema.size();
 		}

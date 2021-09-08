@@ -96,7 +96,7 @@ public class Data {
 				db.closeConnection();
 			}
 	}
-	
+
 	/**
 	 * Restituisce il valore del membro numberOfExamples
 	 * @return cardinalità dell'insieme di transazioni

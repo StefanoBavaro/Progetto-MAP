@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ac409f-852c-4df9-9f4d-a7b19b6d1be2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_17__2_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/MainTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerPort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerPort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/ManagerConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/fxml/InsertPort.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/fxml/InsertPort.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/data/ContinuousAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/ContinuousAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/data/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/database/DbAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/database/DbAccess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/mining/EmergingPatternMiner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/mining/EmergingPatternMiner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/mining/FrequentPatternMiner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/mining/FrequentPatternMiner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/server/MultiServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/server/MultiServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/server/ServerOneClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/server/ServerOneClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/MultiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/MultiServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/ServerOneClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ServerOneClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DatabaseConnectionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DatabaseConnectionException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DbAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DbAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/NoValueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/NoValueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/QUERY_TYPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/QUERY_TYPE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/TableData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TableData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/TableSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TableSchema.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +63,7 @@
       <updated>1630663235501</updated>
       <workItem from="1630663240364" duration="22000" />
       <workItem from="1631012134805" duration="1414000" />
-      <workItem from="1631024929329" duration="6903000" />
+      <workItem from="1631024929329" duration="10019000" />
     </task>
     <servers />
   </component>
