@@ -1,5 +1,8 @@
 package utility;
 
+/**
+ * Classe di costanti del progetto
+ */
 public class Costants {
 	
 	//Server messages
