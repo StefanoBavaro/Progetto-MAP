@@ -2,7 +2,7 @@ package mining;
 
 import data.EmptySetException;
 import data.Data;
-import utility.Costants;
+import utility.Constants;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -17,7 +17,7 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializ
 
     public EmergingPatternMiner(Data dataBackground, FrequentPatternMiner fpList, float minG) throws EmptySetException {
         if (dataBackground.getNumberOfExamples() == 0) {
-            throw new EmptySetException(Costants.EMPTY_TRAININGSET); //non sono sicuro che il messaggio sia corretto
+            throw new EmptySetException(Constants.EMPTY_TRAININGSET); //non sono sicuro che il messaggio sia corretto
         }
 
         List<FrequentPattern> list = fpList.getOutputFP();
@@ -42,7 +42,7 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializ
         if (growRate > minGR) {
             return new EmergingPattern(fp, growRate);
         } else {
-            throw new EmergingPatternException(Costants.GROWRATE_NOT_VALID);
+            throw new EmergingPatternException(Constants.GROWRATE_NOT_VALID);
         }
     }
 

@@ -1,6 +1,6 @@
 package server;
 
-import utility.Costants;
+import utility.Constants;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -60,7 +60,7 @@ public class MultiServer {
                 s.close();
             }
         }catch(IOException e){
-            System.out.println(Costants.ERROR_SOCKET);
+            System.out.println(Constants.ERROR_SOCKET);
         }
     }
 }

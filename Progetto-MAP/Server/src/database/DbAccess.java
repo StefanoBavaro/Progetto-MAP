@@ -1,12 +1,10 @@
 package database;
 
-import utility.Costants;
+import utility.Constants;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
-import javax.management.InstanceNotFoundException;
 
 /**
  * Classe che gestisce l'accesso al DB per la lettura dei dati di training
@@ -77,7 +75,7 @@ public class DbAccess {
 					throw new DatabaseConnectionException(e.toString());
 			} 
 		catch (ClassNotFoundException e) {
-			System.out.println(Costants.DRIVER_NOT_FOUND + DRIVER_CLASS_NAME);
+			System.out.println(Constants.DRIVER_NOT_FOUND + DRIVER_CLASS_NAME);
 			throw new DatabaseConnectionException(e.toString());
 		}
 		
@@ -85,7 +83,7 @@ public class DbAccess {
 			conn = DriverManager.getConnection(connectionString, USER_ID, PASSWORD);
 			
 		} catch (SQLException e) {
-			System.out.println(Costants.ERROR_CONNECTION_DB);
+			System.out.println(Constants.ERROR_CONNECTION_DB);
 			e.printStackTrace();
 			throw new DatabaseConnectionException(e.toString());
 		}
@@ -106,7 +104,7 @@ public class DbAccess {
 		try {
 			conn.close();
 		} catch (SQLException e) {
-			System.out.println(Costants.ERROR_CLOSING_CONNECTION);
+			System.out.println(Constants.ERROR_CLOSING_CONNECTION);
 		}
 	}
 
