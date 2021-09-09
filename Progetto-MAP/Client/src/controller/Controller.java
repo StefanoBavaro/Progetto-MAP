@@ -34,27 +34,27 @@ public abstract class Controller {
         }
     }
     
-    public Stage getStage () {
+    Stage getStage () {
         return stage;
     }
     
-    public Parent getRoot() {
+    Parent getRoot() {
         return root;
     }
     
-    public Scene getScene () {
+    Scene getScene () {
         return scene;
     }
     
-    public void setRoot (Parent root) {
+    void setRoot (Parent root) {
         this.root = root;
     }
     
-    public void setScene (Scene scene) {
+    void setScene (Scene scene) {
         this.scene = scene;
     }
     
-    public void setStage (Stage stage) {
+    void setStage (Stage stage) {
         this.stage = stage;
     }
     

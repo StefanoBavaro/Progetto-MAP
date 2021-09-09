@@ -23,6 +23,7 @@ public class Constants {
 	public static final String ERROR_GROWRATE_VALUE = "Il valore di growRate deve essere maggiore di 0";
 	public static final String ERROR_NUMBER = "In support e growRate devono essere inseriti valori numerici";
 	public static final String ERROR_TABLES = "Tabelle non trovate";
+	
 	//VALUES
 	public static final int VALUE_ZERO = 0;
 	public static final int VALUE_ONE = 1;

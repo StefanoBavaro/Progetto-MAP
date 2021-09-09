@@ -7,6 +7,8 @@ import database.NoValueException;
 import mining.EmergingPatternMiner;
 import mining.FrequentPatternMiner;
 import utility.Constants;
+
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -95,6 +97,10 @@ public class ServerOneClient extends Thread {
                         EmergingPatternMiner epMiner = EmergingPatternMiner.carica(
                                 Constants.EP_SAVE + targetName + Constants.BACK_SAVE + backgroundName + Constants.MIN_SUP_SAVE + minSup + Constants.MIN_GROW_RATE_SAVE + minGr + ".dat");
                         out.writeObject(epMiner.toString());
+                    } catch(FileNotFoundException e) {
+                        System.err.println(e.getMessage());
+                        out.writeObject(Constants.FILE_NOT_FOUND);
+                        out.writeObject(Constants.DEFAULT);
                     } catch (ClassNotFoundException | IOException e) {
                         // invio messaggio al Server
                         System.err.println(e.getMessage());

@@ -23,6 +23,7 @@ public class Constants {
 	public static final String COMUNICATION_CLIENT_ERROR = "Errore di comunicazione con il client";
 	public static final String CASTING_ERROR = "Errore di casting";
 	public static final String STREAM_ERROR = "Errore nella chiusura dello stream";
+	public static final String FILE_NOT_FOUND = "File non trovati";
 	
 	// save/load files
 	public static final String FP_SAVE = "FP_";
