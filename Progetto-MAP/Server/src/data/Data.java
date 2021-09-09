@@ -18,22 +18,16 @@ public class Data {
 	/**
 	 * Matrice di Object che ha numero di righe pari al numero di transazioni da memorizzare
 	 * e numero di colonne pari al numero di attributi in ciascuna transazione
-	 *
-	 * @uml.property  name="data" multiplicity="(0 -1)" dimension="2"
 	 */
 	private Object data [][];
 
 	/**
 	 * Cardinalità dell’insieme di transazioni
-	 *
-	 * @uml.property  name="numberOfExamples"
 	 */
 	private int numberOfExamples;
 
 	/**
 	 * Lista di attributi, che sono avvalorati in ciascuna transazione
-	 * @uml.property  name="attributeSet"
-	 * @uml.associationEnd  multiplicity="(0 -1)"
 	 */
 	private List<Attribute> attributeSet=new LinkedList<Attribute>();
 
@@ -100,7 +94,6 @@ public class Data {
 	/**
 	 * Restituisce il valore del membro numberOfExamples
 	 * @return cardinalità dell'insieme di transazioni
-	 * @uml.property  name="numberOfExamples"
 	 */
 	public int getNumberOfExamples(){
 		return numberOfExamples;

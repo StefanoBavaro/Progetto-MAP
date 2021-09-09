@@ -5,7 +5,7 @@ import java.util.Iterator;
 /**
  * Classe che modella l’iteratore che itera sugli elementi della sequenza composta da numValues valori
  * reali equidistanti tra di loro (cut points) compresi tra min e max ottenuti per mezzo di discretizzazione.
- * La classe implementa i metodi della interfaccia generica Iterator<T> tipizzata con Float.
+ * La classe implementa i metodi della interfaccia generica Iterator < T > tipizzata con Float.
  */
 class ContinuousAttributeIterator implements Iterator<Float> {
 
@@ -43,7 +43,7 @@ class ContinuousAttributeIterator implements Iterator<Float> {
 
 	/**
 	 * Restituisce true se la posizione dell'iteratore è inferiore al numero di intervalli di discretizzazione, falso altrimenti
-	 * @return booleano che indica se j<=numValues
+	 * @return booleano che indica se j <= numValues
 	 */
 	@Override
 	public boolean hasNext() {

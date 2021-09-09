@@ -2,48 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ac409f-852c-4df9-9f4d-a7b19b6d1be2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/MainTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerParameters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerPort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerPort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerResults.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/fxml/PrintResults.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/fxml/PrintResults.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/utility/Costants.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/utility/Costants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/data/Attribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/Attribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/data/ContinuousAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/ContinuousAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/data/ContinuousAttributeIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/ContinuousAttributeIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/data/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/data/DiscreteAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/DiscreteAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/data/EmptySetException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/EmptySetException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/database/DatabaseConnectionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/database/DatabaseConnectionException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/database/DbAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/database/DbAccess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/database/NoValueException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/database/NoValueException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/database/QUERY_TYPE.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/database/QUERY_TYPE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/database/TableData$TupleData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/database/TableData$TupleData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/database/TableData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/database/TableData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/database/TableSchema$Column.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/database/TableSchema$Column.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/database/TableSchema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/database/TableSchema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/mining/ComparatorGrowRate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/mining/ComparatorGrowRate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/mining/ContinuosItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/mining/ContinuosItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/mining/DiscreteItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/mining/DiscreteItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/mining/EmergingPatternMiner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/mining/EmergingPatternMiner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/mining/FrequentPatternMiner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/mining/FrequentPatternMiner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/server/MultiServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/server/MultiServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/server/ServerOneClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/server/ServerOneClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/utility/Costants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/utility/EmptyQueueException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/utility/EmptyQueueException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/utility/Queue$Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/utility/Queue$Record.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/utility/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/utility/Queue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/EmptySetException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/EmptySetException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/ContinuousAttributeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ContinuousAttributeIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/ContinuosItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ContinuosItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/DiscreteItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/DiscreteItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mining/EmergingPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/EmergingPatternException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPatternException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/EmergingPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPatternMiner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/FrequentPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/MultiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/MultiServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/ServerOneClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ServerOneClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/Interval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,19 +60,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MultiServer" />
@@ -120,6 +77,7 @@
       <workItem from="1630663240364" duration="22000" />
       <workItem from="1631012134805" duration="1414000" />
       <workItem from="1631024929329" duration="24123000" />
+      <workItem from="1631227217902" duration="657000" />
     </task>
     <servers />
   </component>
