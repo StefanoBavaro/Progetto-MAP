@@ -51,7 +51,6 @@ public class ServerOneClient extends Thread {
                             } catch (IOException e) {
                                 System.err.println(Constants.FREQUENT_PATTERN_SAVE_FAILED + ": " + e.getMessage());
                             }
-                            out.writeObject(fpMiner.toString());
                             try {
                                 EmergingPatternMiner epMiner = new EmergingPatternMiner(dataBackground, fpMiner, minGr);
                                 try {
@@ -59,6 +58,7 @@ public class ServerOneClient extends Thread {
                                 } catch (IOException e) {
                                     System.err.println(Constants.EMERGING_PATTERN_SAVE_FAILED + ": " + e.getMessage());
                                 }
+                                out.writeObject(fpMiner.toString());
                                 out.writeObject(epMiner.toString());
                             } catch (EmptySetException e) {
                                 System.err.println(e.getMessage());
@@ -93,9 +93,9 @@ public class ServerOneClient extends Thread {
                     try {
                         FrequentPatternMiner fpMiner = FrequentPatternMiner.carica(
                                 Constants.FP_SAVE + targetName + Constants.MIN_SUP_SAVE + minSup + ".dat");
-                        out.writeObject(fpMiner.toString());
                         EmergingPatternMiner epMiner = EmergingPatternMiner.carica(
                                 Constants.EP_SAVE + targetName + Constants.BACK_SAVE + backgroundName + Constants.MIN_SUP_SAVE + minSup + Constants.MIN_GROW_RATE_SAVE + minGr + ".dat");
+                        out.writeObject(fpMiner.toString());
                         out.writeObject(epMiner.toString());
                     } catch(FileNotFoundException e) {
                         System.err.println(e.getMessage());
