@@ -96,7 +96,6 @@ public class ServerOneClient extends Thread {
                                 out.writeObject(Constants.NO_COMPATIBLE_DATA);
                                 out.writeObject("");
                             }
-
                         } catch (EmptySetException e) {
                             System.err.println(e.getMessage());
                             out.writeObject(Constants.NOT_FOUND_DATA_PARAMETERS);

@@ -97,12 +97,12 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" onAction="#newSearch" prefWidth="120.0" text="Nuova Ricerca" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <Button mnemonicParsing="false" onAction="#newSearch" prefHeight="28.0" prefWidth="164.0" text="Nuova Ricerca" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                <font>
                   <Font name="Verdana" size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#exit" prefWidth="120.0" text="Esci" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button mnemonicParsing="false" onAction="#exit" prefHeight="28.0" prefWidth="164.0" text="Esci" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="Verdana" size="14.0" />
                </font>

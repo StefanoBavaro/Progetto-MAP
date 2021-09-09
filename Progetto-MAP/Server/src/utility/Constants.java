@@ -1,7 +1,7 @@
 package utility;
 
 /**
- * Classe di costanti del progetto
+ * Classe di costanti del Server
  */
 public class Constants {
 	

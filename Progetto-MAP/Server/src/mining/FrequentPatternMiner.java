@@ -55,7 +55,6 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
                     fp.setSupport(fp.computeSupport(data));
                     if (fp.getSupport() >= minSup) { // 1-FP CANDIDATE
                         fpQueue.enqueue(fp);
-                        //System.out.println(fp);
                         outputFP.add(fp);
                     }
                 }

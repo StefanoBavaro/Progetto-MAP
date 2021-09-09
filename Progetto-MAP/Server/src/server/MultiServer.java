@@ -49,6 +49,7 @@ public class MultiServer {
             try {
                 while (true) {
                     Socket socket = s.accept();
+                    System.out.println(socket);
                     try {
                         new ServerOneClient(socket);
                         System.out.println("Nuovo client connesso");
