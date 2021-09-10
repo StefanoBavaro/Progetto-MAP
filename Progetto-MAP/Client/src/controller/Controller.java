@@ -10,7 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Alert;
 import javafx.stage.Stage;
-import utility.Costants;
+import utility.Constants;
 import java.io.IOException;
 
 public abstract class Controller {
@@ -30,31 +30,31 @@ public abstract class Controller {
             ((Stage) (((Button) actionEvent.getSource()).getScene().getWindow())).close();
             ManagerConnection.getManagerConnection().closeConnection();
         }catch(IOException e){
-            printAlert(Alert.AlertType.ERROR, Costants.CLOSING_CONNECTION_ERROR, ButtonType.OK);
+            printAlert(Alert.AlertType.ERROR, Constants.CLOSING_CONNECTION_ERROR, ButtonType.OK);
         }
     }
     
-    public Stage getStage () {
+    Stage getStage () {
         return stage;
     }
     
-    public Parent getRoot() {
+    Parent getRoot() {
         return root;
     }
     
-    public Scene getScene () {
+    Scene getScene () {
         return scene;
     }
     
-    public void setRoot (Parent root) {
+    void setRoot (Parent root) {
         this.root = root;
     }
     
-    public void setScene (Scene scene) {
+    void setScene (Scene scene) {
         this.scene = scene;
     }
     
-    public void setStage (Stage stage) {
+    void setStage (Stage stage) {
         this.stage = stage;
     }
     

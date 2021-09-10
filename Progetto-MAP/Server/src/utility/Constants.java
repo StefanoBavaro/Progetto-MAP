@@ -1,6 +1,6 @@
 package utility;
 
-public class Costants {
+public class Constants {
 	
 	//Server messages
 	public static final String OPTION = "Opzione";
@@ -8,6 +8,7 @@ public class Costants {
 	public static final String MIN_GROW = "minGr";
 	public static final String TARGET = "TargetName";
 	public static final String BACKGROUND = "backgroundName";
+	public static final String NEW_CLIENT = "Nuovo client connesso";
 	
 	// print errors
 	public static final String FREQUENT_PATTERN_SAVE_FAILED = "Impossibile salvare il file per i Frequent Pattern";
@@ -22,6 +23,7 @@ public class Costants {
 	public static final String COMUNICATION_CLIENT_ERROR = "Errore di comunicazione con il client";
 	public static final String CASTING_ERROR = "Errore di casting";
 	public static final String STREAM_ERROR = "Errore nella chiusura dello stream";
+	public static final String FILE_NOT_FOUND = "File non trovati";
 	
 	// save/load files
 	public static final String FP_SAVE = "FP_";
@@ -37,5 +39,8 @@ public class Costants {
 	public static final String ERROR_SOCKET = "Errore nella creazione del socket";
 	public static final String EMPTY_TRAININGSET = "L'insieme di training � vuoto";
 	public static final String GROWRATE_NOT_VALID = "Il pattern non soddisfa il minimo grow rate";
+	
+	// error value
+	public static final String DEFAULT = "E";
 	
 }

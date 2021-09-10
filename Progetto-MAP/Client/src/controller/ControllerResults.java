@@ -10,7 +10,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
-import utility.Costants;
+import utility.Constants;
 
 import java.io.IOException;
 
@@ -33,24 +33,31 @@ public class ControllerResults extends Controller{
 		growRate.setText(String.valueOf(rate));
 		target.setText(targetName);
 		background.setText(backgroundName);
-		area.setText(Costants.FREQUENT_PATTERN_PRINT + frequentPattern + Costants.EMERGING_PATTERN_PRINT + mergingPattern);
-	}
+		if (frequentPattern.isEmpty()) {
+			area.setText(Constants.FREQUENT_PATTERN_EMPTY + Constants.EMERGING_PATTERN_PRINT + mergingPattern);
+		} else if (mergingPattern.isEmpty()) {
+			area.setText(Constants.FREQUENT_PATTERN_PRINT + frequentPattern + "\nEmerging pattern vuoto");
+		} else {
+			area.setText(
+					Constants.FREQUENT_PATTERN_PRINT + frequentPattern + Constants.EMERGING_PATTERN_PRINT + mergingPattern);
+			}
+		}
 	
 	@FXML
 	public void newSearch(ActionEvent actionEvent) {
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource(Costants.INSERT_PARAMETERS));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.INSERT_PARAMETERS));
 			setRoot(loader.load());
 			setStage(new Stage());
-			getStage().setTitle(Costants.TITLE);
+			getStage().setTitle(Constants.TITLE);
 			setScene(new Scene(getRoot()));
 			getStage().setScene(getScene());
 			getStage().show();
-			getStage().setMinHeight(Costants.MIN_WIDTH_MAIN);
-			getStage().setMinWidth(Costants.MIN_WIDTH_P);
+			getStage().setMinHeight(Constants.MIN_WIDTH_MAIN);
+			getStage().setMinWidth(Constants.MIN_WIDTH_P);
 			((Stage) (((Button) actionEvent.getSource()).getScene().getWindow())).close();
 		} catch (IOException e) {
-			printAlert(Alert.AlertType.ERROR, Costants.ERROR_LOADING_PAGE, ButtonType.OK);
+			printAlert(Alert.AlertType.ERROR, Constants.ERROR_LOADING_PAGE, ButtonType.OK);
 		}
 	}
 }
