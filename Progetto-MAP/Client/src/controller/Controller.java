@@ -67,7 +67,7 @@ public abstract class Controller {
     /**
      * Metodo che restiutisce stage che rappresenta la finestra
      *
-     * @return l'attributo d'istanza stage
+     * @return lo stage del Controller
      */
     Stage getStage () {
         return stage;
@@ -76,7 +76,7 @@ public abstract class Controller {
     /**
      * Metodo che restituisce root, il nodo genitore della scena
      *
-     * @return l'attributo d'istanza root
+     * @return la root del Controller
      */
     Parent getRoot() {
         return root;
@@ -85,7 +85,7 @@ public abstract class Controller {
     /**
      * Metodo che restituisce scene, avente le informazioni grafiche
      *
-     * @return l'attributo d'istanza scene
+     * @return la scena del Controller
      */
     Scene getScene () {
         return scene;
