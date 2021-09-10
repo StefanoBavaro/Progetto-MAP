@@ -3,7 +3,7 @@ package utility;
 /**
  * Classe che rappresenta le eccezioni sollevate in caso di errori nella gestione dei Controller
  *
- * @author Lorenzo, Jacopo, Stefano
+ * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
  */
 public class ControllerException extends Exception {
 	

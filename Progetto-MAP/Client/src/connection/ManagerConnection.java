@@ -9,7 +9,7 @@ import java.net.Socket;
 /**
  * Classe che rappresenta la gestione della connessione tra il Client e il Server
  *
- * @author Lorenzo, Jacopo, Stefano
+ * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
  */
 
 public class ManagerConnection {
@@ -21,7 +21,7 @@ public class ManagerConnection {
 	private Socket socket;
 	
 	/**
-	 * <code> ou </code> rappresenta l'oggetto di OutputStream per la scrivere i dati al Server
+	 * <code> ou </code> rappresenta l'oggetto di OutputStream per scrivere i dati al Server
 	 *
 	 */
 	private ObjectOutputStream ou;
@@ -33,8 +33,8 @@ public class ManagerConnection {
 	private ObjectInputStream in;
 	
 	/**
-	 * <code> SINGLETON </code> rappresenta il singoletto istanziato al momento
-	 * della creazione di una connessione con il Server
+	 * <code> SINGLETON </code> rappresenta il singoletto istanziato al momentodella creazione
+	 * di una connessione con il Server
 	 *
 	 */
 	private static final ManagerConnection SINGLETON = new ManagerConnection();
@@ -58,12 +58,12 @@ public class ManagerConnection {
 	/**
 	 * Metodo che inizializza la connessione con il Server
 	 *
-	 * @param address rappresenta l'indirizzo del Server
+	 * @param address rappresenta l'indirizzo alla quale collegarsi
 	 *
 	 * @param port rappresenta la porta alla quale collegarsi
 	 *
 	 *
-	 * @throws IOException sollevata in caso ci siano errori nell'inizializzare  la connessione
+	 * @throws IOException sollevata in caso ci siano errori nell'inizializzare della connessione
 	 */
 	public void initConnection(String address, String port) throws IOException {
 		InetAddress addr = InetAddress.getByName(address);

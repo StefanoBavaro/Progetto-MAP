@@ -3,7 +3,7 @@ package utility;
 /**
  * Classe che rappresenta le costanti del Client
  *
- * @author Lorenzo, Jacopo, Stefano
+ * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
  */
 public class Constants {
 	//print errors

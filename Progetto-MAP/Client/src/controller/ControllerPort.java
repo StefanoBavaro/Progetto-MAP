@@ -17,7 +17,8 @@ import javafx.scene.control.ButtonType;
 /**
  * Classe che gestisce il Controller per la connessione al Server
  *
- * @author Lorenzo, Jacopo, Stefano
+ *
+ * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
  */
 public class ControllerPort extends Controller {
 	

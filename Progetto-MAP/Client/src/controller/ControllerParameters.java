@@ -19,6 +19,8 @@ import java.io.IOException;
 /**
  * Classe che rappresenta il Controller per la gestione dell'immissione dei parametri da inviare al Server
  *
+ *
+ * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
  */
 public class ControllerParameters extends Controller{
 	
@@ -87,8 +89,8 @@ public class ControllerParameters extends Controller{
 	/**
 	 * Metodo che controlla i parametri non inseriti per la ricerca di un nuovo pattern
 	 *
-	 * @throws ControllerException sollevata in caso in cui ci sono parametri vuoti contenente una stringa che segnala
-	 * quali parametri non sono stati inseriti
+	 * @throws ControllerException sollevata in caso in cui ci sono parametri vuoti, richiamando il costruttore con
+	 * la stringa contente una descrizione sui parametri non inseriti
 	 *
 	 */
 	private void checkEmptyParameters() throws ControllerException {

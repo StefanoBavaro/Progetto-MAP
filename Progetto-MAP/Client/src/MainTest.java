@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * Classe che rappresenta il main del Client
  *
- * @author Lorenzo, Jacopo, Stefano
+ * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
  */
 public class MainTest extends Application {
 	

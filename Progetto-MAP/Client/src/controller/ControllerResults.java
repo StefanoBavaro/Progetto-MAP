@@ -17,7 +17,8 @@ import java.io.IOException;
 /**
  * Classe Controller per la gestione della stampa dei pattern trovati
  *
- * @author Lorenzo, Jacopo, Stefano
+ *
+ * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
  */
 public class ControllerResults extends Controller{
 	

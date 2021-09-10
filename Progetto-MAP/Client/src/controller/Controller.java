@@ -16,7 +16,8 @@ import java.io.IOException;
 /**
  * Classe astratta che rappresenta i Controller per la gestione dell'interfaccia grafica
  *
- * @author Lorenzo, Jacopo, Stefano
+ *
+ * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
  */
 public abstract class Controller {
     
