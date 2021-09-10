@@ -1,5 +1,10 @@
 package utility;
 
+/**
+ * Classe che rappresenta le costanti del Client
+ *
+ * @author Lorenzo, Jacopo, Stefano
+ */
 public class Constants {
 	//print errors
 	public static final String CLOSING_CONNECTION_ERROR = "Errore di chiusura della connessione";
