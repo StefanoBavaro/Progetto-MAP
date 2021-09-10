@@ -16,23 +16,61 @@ import utility.ControllerException;
 
 import java.io.IOException;
 
-
+/**
+ * Classe che rappresenta il Controller per la gestione dell'immissione dei parametri da inviare al Server
+ *
+ */
 public class ControllerParameters extends Controller{
 	
+	/**
+	 * <code> discovery </code> rappresenta il bottone per l'inserimento del tipo di ricerca "Nuova scoperta"
+	 *
+	 */
 	@FXML
 	private RadioButton discovery;
+	
+	/**
+	 * <code> discovery </code> rappresenta il bottone per l'inserimento del tipo di ricerca "Archivio"
+	 *
+	 */
 	@FXML
 	private RadioButton archive;
+	
+	/**
+	 * <code> minSup </code> rappresenta il testo dove inserire il minimo Supporto per la ricerca dei pattern
+	 *
+	 */
 	@FXML
 	private TextField minSup;
+	
+	/**
+	 * <code> growRate </code> rappresenta il testo dove inserire il growRate per la ricerca dei pattern
+	 *
+	 */
 	@FXML
 	private TextField growRate;
+	
+	/**
+	 * <code> targ </code> rappresenta il testo dove inserire la tabella target per la ricerca dei pattern
+	 *
+	 */
 	@FXML
 	private TextField targ;
+	
+	/**
+	 * <code> targ </code> rappresenta il testo dove inserire la tabella background per la ricerca dei pattern
+	 *
+	 */
 	@FXML
 	private TextField back;
 	
-	
+	/**
+	 * Metodo che si occupa di caricare e restituire il controller della nuva finestra
+	 *
+	 * @return il controller della nuova finestra
+	 *
+	 * @throws IOException sollevata in caso di errore di caricamento della finestra
+	 */
 	public ControllerResults loadingController() throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.PRINT_RESULT));
 		setRoot(loader.load());
@@ -46,6 +84,13 @@ public class ControllerParameters extends Controller{
 		return loader.getController();
 	}
 	
+	/**
+	 * Metodo che controlla i parametri non inseriti per la ricerca di un nuovo pattern
+	 *
+	 * @throws ControllerException sollevata in caso in cui ci sono parametri vuoti contenente una stringa che segnala
+	 * quali parametri non sono stati inseriti
+	 *
+	 */
 	private void checkEmptyParameters() throws ControllerException {
 		String error = new String();
 		if (!discovery.isSelected() && !archive.isSelected()) {
@@ -68,6 +113,16 @@ public class ControllerParameters extends Controller{
 		}
 	}
 	
+	/**
+	 * Metodo che si occupa di controllare che i valori del minimo supporto e del growRate siano corretti
+	 *
+	 * @param sup indica il minimo supporto
+	 *
+	 * @param rate indica il growRate
+	 *
+	 * @throws ControllerException sollevata nel momento in cui il valore del minimo supporto sia maggiore di 1 o minore di 0
+	 * oppure nel momento in cui il valore del growRate è minore di 0
+	 */
 	private void checkNumber(float sup, float rate) throws ControllerException{
 		if (sup <= Constants.VALUE_ZERO || sup > Constants.VALUE_ONE) {
 			throw new ControllerException(Constants.ERROR_SUPPORT_VALUE);
@@ -77,6 +132,11 @@ public class ControllerParameters extends Controller{
 		}
 	}
 	
+	/**
+	 * Metodo che si occupa di pulire i campi per la ricerca dei pattern
+	 *
+	 * @param actionEvent azione compiuta dall'interfaccia nel momento in cui si preme il bottone "Puulisci"
+	 */
 	@FXML
 	public void clear(ActionEvent actionEvent) {
 		discovery.setSelected(false);
@@ -87,11 +147,30 @@ public class ControllerParameters extends Controller{
 		back.clear();
 	}
 	
-	// verrà richiamata sempre dopo il controllo dei parametri vuoti
+	/**
+	 * Metodo che restituisce un valore numerico in base al criterio di ricerca selezionato
+	 *
+	 * @return un intero:
+	 * 		<ul>
+	 * 		 	<li> 2 se è stato selezionato come criteri di ricerca "Archivio"</li>
+	 *			<li> 1 altrimenti </li>
+	 * 		</ul>
+	 */
 	private int optionValue() {
 		return (archive.isSelected() ? Constants.VALUE_TWO : Constants.VALUE_ONE);
 	}
 	
+	/**
+	 * Metodo che controlla che non ci siano stati errori nella ricerca dei pattern
+	 *
+	 * @param freqPattern indica i frequentPattern trovati dal Server
+	 *
+	 * @param emergPattern indica gli EmergingPattern trovati dal Server
+	 *
+	 * @throws ControllerException sollevata nel momento in cui negli emergingPattern si trova il valore di default
+	 * che indica che ci sono stati degli errori nella ricerca oppure quando i pattern sono vuoti
+	 *
+	 */
 	private void checkError(String freqPattern, String emergPattern) throws ControllerException {
 		if (emergPattern.equals(Constants.DEFAULT)) {
 			throw new ControllerException(freqPattern);
@@ -100,6 +179,12 @@ public class ControllerParameters extends Controller{
 		}
 	}
 	
+	/**
+	 * Metodo che si occupa di inviare i dati al Server e in caso non ci siano errori mostrare la nuova finestra dove
+	 * si trovano i risultati
+	 *
+	 * @param actionEvent azione compiuta dall'interfaccia nel momento in cui si preme il bottone "Invia"
+	 */
 	@FXML
 	public void patternMining (ActionEvent actionEvent) {
 		try {
