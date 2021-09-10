@@ -112,7 +112,7 @@ public abstract class Controller {
     /**
      * Metodo di set per l'attributo stage
      *
-     * @param stage rappresenta il nuov stage 
+     * @param stage rappresenta il nuov stage
      */
     void setStage (Stage stage) {
         this.stage = stage;
