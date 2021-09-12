@@ -67,7 +67,7 @@ public class ControllerParameters extends Controller{
 	private TextField back;
 	
 	/**
-	 * Metodo che si occupa di caricare e restituire il controller della nuva finestra
+	 * Metodo che si occupa di caricare e restituire il controller della nuova finestra
 	 *
 	 * @return il controller della nuova finestra
 	 *
@@ -137,7 +137,7 @@ public class ControllerParameters extends Controller{
 	/**
 	 * Metodo che si occupa di pulire i campi per la ricerca dei pattern
 	 *
-	 * @param actionEvent azione compiuta dall'interfaccia nel momento in cui si preme il bottone "Puulisci"
+	 * @param actionEvent azione compiuta dall'interfaccia nel momento in cui si preme il bottone "Pulisci"
 	 */
 	@FXML
 	public void clear(ActionEvent actionEvent) {

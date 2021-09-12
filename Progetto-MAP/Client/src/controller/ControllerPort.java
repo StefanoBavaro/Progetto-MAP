@@ -71,7 +71,7 @@ public class ControllerPort extends Controller {
 	 *
 	 * @param actionEvent indica l'azione eseguita nel momento in cui si preme il bottone "Connetti"
 	 *
-	 * @throws IOException sollevata in caso di errore di caricamento della nuva finestra
+	 * @throws IOException sollevata in caso di errore di caricamento della nuova finestra
 	 */
 	private void loadingClient(ActionEvent actionEvent) throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.INSERT_PARAMETERS));

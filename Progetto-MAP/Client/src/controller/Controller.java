@@ -95,7 +95,7 @@ public abstract class Controller {
     /**
      * Metodo di set per l'attributo root
      *
-     * @param root rappresenta la nuva root
+     * @param root rappresenta la nuova root
      */
     void setRoot (Parent root) {
         this.root = root;
@@ -104,7 +104,7 @@ public abstract class Controller {
     /**
      * Metodo di set per l'attributo scene
      *
-     * @param scene rappresenta la nuva scena
+     * @param scene rappresenta la nuova scena
      */
     void setScene (Scene scene) {
         this.scene = scene;
@@ -113,7 +113,7 @@ public abstract class Controller {
     /**
      * Metodo di set per l'attributo stage
      *
-     * @param stage rappresenta il nuov stage
+     * @param stage rappresenta il nuovo stage
      */
     void setStage (Stage stage) {
         this.stage = stage;

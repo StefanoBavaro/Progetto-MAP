@@ -85,7 +85,7 @@ public class ControllerResults extends Controller{
 		}
 	
 	/**
-	 * Metodo che chiude la finestra e apre una nuova finestra relativa all'inserimo di nuovi parametri
+	 * Metodo che chiude la finestra e apre una nuova finestra relativa all'inserimento di nuovi parametri
 	 *
 	 * @param actionEvent indica l'azione eseguita nel momento in cui si preme il bottone "Nuova Ricerca"
 	 */

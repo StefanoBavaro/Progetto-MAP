@@ -27,7 +27,7 @@ public class ManagerConnection {
 	private ObjectOutputStream ou;
 	
 	/**
-	 * <code> in </code> rappresenta l'oggeto di InputStream per leggere i dati dal Server
+	 * <code> in </code> rappresenta l'oggetto di InputStream per leggere i dati dal Server
 	 *
 	 */
 	private ObjectInputStream in;
@@ -75,7 +75,7 @@ public class ManagerConnection {
 	 * Metodo che istanzia gli oggetti di Input e Output Stream
 	 *
 	 *
-	 * @throws IOException sollevata in caso di errori nell'apertura degli Stram
+	 * @throws IOException sollevata in caso di errori nell'apertura degli Stream
 	 */
 	private void openStreams() throws IOException {
 		ou = new ObjectOutputStream(socket.getOutputStream());
