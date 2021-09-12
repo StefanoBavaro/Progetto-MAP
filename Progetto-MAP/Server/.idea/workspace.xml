@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ac409f-852c-4df9-9f4d-a7b19b6d1be2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Server/data/Attribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/Attribute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Server/data/ContinuousAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/ContinuousAttribute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Server/data/ContinuousAttributeIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/ContinuousAttributeIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Server/data/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/data/Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Server/database/DbAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/database/DbAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Attribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Attribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/ContinuousAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ContinuousAttribute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/ContinuousAttributeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ContinuousAttributeIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/EmergingPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/EmergingPatternException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPatternException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/EmergingPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPatternMiner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/FrequentPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/Interval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/DiscreteAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/DiscreteAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/EmptySetException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/EmptySetException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DatabaseConnectionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DatabaseConnectionException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DbAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DbAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/NoValueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/NoValueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/QUERY_TYPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/QUERY_TYPE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/TableData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TableData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/TableSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TableSchema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/EmptyQueueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/EmptyQueueException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -77,7 +84,10 @@
       <workItem from="1630663240364" duration="22000" />
       <workItem from="1631012134805" duration="1414000" />
       <workItem from="1631024929329" duration="24123000" />
-      <workItem from="1631227217902" duration="657000" />
+      <workItem from="1631227217902" duration="5135000" />
+      <workItem from="1631287327332" duration="9726000" />
+      <workItem from="1631437337304" duration="96000" />
+      <workItem from="1631437581853" duration="10425000" />
     </task>
     <servers />
   </component>

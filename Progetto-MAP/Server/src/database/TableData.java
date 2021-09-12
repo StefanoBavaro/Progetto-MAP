@@ -18,27 +18,31 @@ import database.TableSchema.Column;
  */
 public class TableData {
 
+	/**
+	 * Sessione di connessione al database.
+	 */
 	private Connection connection;
 
 	/**
-	 * Costruttore con parametro
-	 * @param connection
+	 * Costruttore: inizializza il membro <code>connection</code> con parametro in input.
+	 * @param connection sessione attuale di connessione al database.
 	 */
 	public TableData(Connection connection){this.connection=connection;}
 
 	/**
-	 * Inner class che modella una singola tupla
+	 * Inner class che modella una singola tupla.
 	 */
 	public class TupleData{
 
 		/**
-		 * Lista degli elementi della tupla
+		 * Lista degli elementi della tupla.
 		 */
 		public List<Object> tuple=new ArrayList<Object>();
 
 		/**
-		 * Override del toString() di Object
-		 * @return stringa che rappresenta una tupla (concatenazione di attributi)
+		 * Concatena gli attributi di una tupla.
+		 * Override del toString() di Object.
+		 * @return stringa che rappresenta una tupla.
 		 */
 		public String toString(){
 			String value="";
@@ -51,13 +55,13 @@ public class TableData {
 	}
 
 	/**
-	 * Ricava lo schema della tabella di nome table. Esegue una interrogazione per estrarre le tuple da tale tabella.
-	 * Per ogni tupla dell'insieme dei risultati,  si crea un oggetto, istanza della classe Tupla, il cui riferimento
-	 * va incluso nella lista da restituire. In particolare, per la tupla corrente nel resultset, si estraggono i valori
-	 * dei singoli campi (usando getFloat() o getString()),e li si aggiungono all’oggetto istanza della classe Tupla che si sta costruendo.
-	 * @param table nome della tabella nel database
-	 * @return lista di tuple memorizzate nella tabella
-	 * @throws SQLException
+	 * Ricava lo schema della tabella di nome <code>table</code>. Esegue una interrogazione per estrarre le tuple da tale tabella.
+	 * Per ogni tupla dell'insieme dei risultati, crea un oggetto, istanza della classe Tupla, il cui riferimento va incluso nella lista da restituire.
+	 * In particolare, per la tupla corrente nel resultset, estrae i valori dei singoli campi (usando <code>getFloat()</code> o <code>getString()</code>),
+	 * e li aggiunge all’oggetto istanza della classe <code>TupleData</code> che si sta costruendo.
+	 * @param table nome della tabella nel database.
+	 * @return lista di tuple memorizzate nella tabella.
+	 * @throws SQLException se si verifica un errore di accesso al database; se lo schema della tabella ha 0 come cardinalità degli attributi; se il metodo è richiamato con una connessione chiusa.
 	 */
 	public List<TupleData> getTransazioni(String table) throws SQLException{
 		LinkedList<TupleData> transSet = new LinkedList<TupleData>();
@@ -95,11 +99,11 @@ public class TableData {
 	}
 
 	/**
-	 * Formula ed esegue una interrogazione SQL per estrarre i valori distinti ordinati di column e popolare una lista da restituire.
-	 * @param table  nome della tabella
-	 * @param column nome della colonna nella tabella
-	 * @return Lista di valori distinti ordinati in modo ascendente che l’attributo di nome column assume nella tabella di nome table
-	 * @throws SQLException
+	 * Formula ed esegue una interrogazione SQL per estrarre i valori distinti ordinati di <code>column</code> e popolare una lista da restituire.
+	 * @param table  nome della tabella.
+	 * @param column nome della colonna nella tabella.
+	 * @return Lista di valori distinti ordinati in modo ascendente che l’attributo di nome column assume nella tabella di nome table.
+	 * @throws SQLException se si verifica un errore di accesso al database; se si richiama il metodo con una connessione chiusa.
 	 */
 	public  List<Object>getDistinctColumnValues(String table,Column column) throws SQLException{
 		LinkedList<Object> valueSet = new LinkedList<Object>();
@@ -132,16 +136,15 @@ public class TableData {
 	}
 
 	/**
-	 * Formula ed esegue una interrogazione SQL per estrarre il valore aggregato cercato nella colonna di nome column della tabella di nome table.
-	 * Il metodo solleva e propaga una NoValueException se il resultset è vuoto o il valore calcolato è pari a null.
-	 * @param table nome di tabella
-	 * @param column nome di colonna
-	 * @param aggregate operatore SQL di aggregazione
+	 * Formula ed esegue una interrogazione SQL per estrarre il valore aggregato cercato nella colonna di nome <code>column</code> della tabella di nome <code>table</code>.
+	 * @param table nome della tabella.
+	 * @param column nome della colonna.
+	 * @param aggregate operatore SQL di aggregazione.
 	 * @return Aggregato cercato.
-	 * @throws SQLException
-	 * @throws NoValueException
+	 * @throws SQLException se si verifica un errore di accesso al database; se si richiama il metodo con una connessione chisua.
+	 * @throws NoValueException se l'insieme dei risultati è vuoto o il valore calcolato è pari a <code>null</code>.
 	 */
-	public  Object getAggregateColumnValue(String table,Column column,QUERY_TYPE aggregate) throws SQLException,NoValueException{
+	public  Object getAggregateColumnValue(String table,Column column,QUERY_TYPE aggregate) throws SQLException, NoValueException{
 		Statement statement;
 		TableSchema tSchema=new TableSchema(table,connection);
 		Object value=null;

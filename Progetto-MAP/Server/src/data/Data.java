@@ -10,43 +10,40 @@ import database.TableData.TupleData;
 
 
 /**
- * Classe che modella un insieme di transazioni (vettori attributo-valore)
- *
+ * Classe che modella un insieme di transazioni (vettori attributo-valore).
  */
 public class Data {
 	
 	/**
-	 * Matrice di Object che ha numero di righe pari al numero di transazioni da memorizzare
-	 * e numero di colonne pari al numero di attributi in ciascuna transazione
+	 * Matrice di <code>Object</code> con numero di righe pari al numero di transazioni da memorizzare
+	 * e numero di colonne pari al numero di attributi in ciascuna transazione.
 	 */
 	private Object data [][];
 
 	/**
-	 * Cardinalità dell’insieme di transazioni
+	 * Cardinalità dell’insieme di transazioni.
 	 */
 	private int numberOfExamples;
 
 	/**
-	 * Lista di attributi, che sono avvalorati in ciascuna transazione
+	 * Lista di attributi, che sono avvalorati in ciascuna transazione.
 	 */
 	private List<Attribute> attributeSet=new LinkedList<Attribute>();
 
 	/**
-	 * Costruttore che si occupa di caricare i dati di addestramento da una tabella della base di dati.
-	 *
-	 * @param tableName nome della tabella del db da caricare.
-	 * @throws DatabaseConnectionException
-	 * @throws SQLException
-	 * @throws NoValueException
+	 * Costruttore: carica i dati di addestramento da una tabella della base di dati.
+	 * @param tableName nome della tabella del db da cui caricare i dati.
+	 * @throws DatabaseConnectionException se si verificano errori di connessione al database.
+	 * @throws SQLException se si verifica un errore di accesso al database; se lo schema della tabella ha 0 come cardinalità degli attributi; se il metodo è richiamato con una connessione chiusa.
+	 * @throws NoValueException se l'insieme dei risultati è vuoto o il valore calcolato è pari a <code>null</code>.
 	 */
-	public Data (String tableName) throws DatabaseConnectionException, SQLException, NoValueException {
+	public Data (String tableName) throws DatabaseConnectionException, SQLException, NoValueException{
 		// open db connection
 			DbAccess db= new DbAccess();
 			db.initConnection();
 
 			TableSchema tSchema;
 			try {
-
 				tSchema = new TableSchema(tableName, db.getConnection());
 				TableData tableData=new TableData(db.getConnection());
 				List<TupleData> transSet=tableData.getTransazioni(tableName);
@@ -92,7 +89,7 @@ public class Data {
 	}
 
 	/**
-	 * Restituisce il valore del membro numberOfExamples
+	 * Restituisce il valore del membro <code>numberOfExamples</code>
 	 * @return cardinalità dell'insieme di transazioni
 	 */
 	public int getNumberOfExamples(){
@@ -100,9 +97,8 @@ public class Data {
 	}
 
 	/**
-	 * Restituisce la cardinalità del membro attributeSet
+	 * Restituisce la cardinalità del membro <code>attributeSet</code>
 	 * @return cardinalità dell'insieme degli attributi
-	 * @uml.property  name="numberOfAttributes"
 	 */
 	public int getNumberOfAttributes(){
 		return attributeSet.size();
@@ -128,7 +124,7 @@ public class Data {
 	}
 
 	/**
-	 * Override del metodo toString() di Object.
+	 * Override del metodo <code>toString()</code> di <code>Object</code>.
 	 * Per ogni transazione memorizzata in data, concatena i valori assunti dagli attributi nella transazione separati da virgole in una stringa.
 	 * Le stringhe che rappresentano ogni transazione sono poi concatenate in un’unica stringa da restituire in output.
 	 * @return unica stringa che rappresenta ogni transazione in data.
