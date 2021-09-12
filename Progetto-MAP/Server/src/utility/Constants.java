@@ -5,14 +5,14 @@ package utility;
  */
 public class Constants {
 	
-	//Server messages
+	//Messaggi del server
 	public static final String OPTION = "Opzione";
 	public static final String MIN_SUP = "minSup";
 	public static final String MIN_GROW = "minGr";
 	public static final String TARGET = "TargetName";
 	public static final String BACKGROUND = "backgroundName";
 	
-	// print errors
+	//Stampe di errori
 	public static final String FREQUENT_PATTERN_SAVE_FAILED = "Impossibile salvare il file per i Frequent Pattern";
 	public static final String EMERGING_PATTERN_SAVE_FAILED = "Impossibile salvare il file per gli Emerging Pattern";
 	public static final String FREQUENT_PATTERN_ERROR_VALUE = "Frequent Pattern non trovati con questi valori di supporto e di growrate";
@@ -26,7 +26,7 @@ public class Constants {
 	public static final String CASTING_ERROR = "Errore di casting";
 	public static final String STREAM_ERROR = "Errore nella chiusura dello stream";
 	
-	// save/load files
+	//Salva/carica file
 	public static final String FP_SAVE = "FP_";
 	public static final String MIN_SUP_SAVE = "_minSup";
 	public static final String EP_SAVE = "EP_targ_";

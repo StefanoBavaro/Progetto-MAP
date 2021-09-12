@@ -3,36 +3,36 @@ package utility;
 /**
  * Classe generica che modella una struttura dati coda,
  * usata come contenitore a modalità FIFO per i pattern frequenti scoperti
- * a livello k da usare per generare i pattern candidati a livello k+1
+ * a livello k da usare per generare i pattern candidati a livello k+1.
  * @param <T> tipo parametrizzato della coda
  */
 public class Queue<T> {
     /**
-     * Cella iniziale della coda
+     * Cella iniziale della coda.
      */
     private Record begin = null;
     /**
-     * Cella finale della coda
+     * Cella finale della coda.
      */
     private Record end = null;
 
     /**
-     * Inner class che modella una cella della coda
+     * Inner class che modella una cella della coda.
      */
     private class Record {
         /**
-         * Elemento di tipo T contenuto nella cella
+         * Elemento di tipo T contenuto nella cella.
          */
         T elem;
 
         /**
-         * Riferimento alla cella successiva
+         * Riferimento alla cella successiva.
          */
         Record next;
 
         /**
-         * Costruttore di una cella
-         * @param e elemento da inserire nella cella
+         * Costruttore: inizializza il membro <code>elem</code> con il parametro in input, il membro <code>next</code> con <code>null</code>.
+         * @param e elemento da inserire nella cella.
          */
         Record(T e) {
             this.elem = e;
@@ -41,16 +41,16 @@ public class Queue<T> {
     }
 
     /**
-     * Controllato il contenuto della prima cella della coda: se null, allora nella coda non c'è nessuna cella
-     * @return booleano che indica se la cella è vuota
+     * Restituisce <code>true</code> se la prima cella della coda è <code>null</code>.
+     * @return booleano che indica se la coda è vuota.
      */
     public boolean isEmpty() {
         return this.begin == null;
     }
 
     /**
-     * Aggiunge un elemento alla coda
-     * @param e elemento da aggiungere alla coda
+     * Aggiunge un elemento alla coda.
+     * @param e elemento da aggiungere alla coda.
      */
     public void enqueue(T e) {
         if (this.isEmpty())
@@ -62,9 +62,9 @@ public class Queue<T> {
     }
 
     /**
-     * Restituisce il primo elemento della coda; se questa è vuota, restituisce un'eccezione
-     * @return primo elemento della coda
-     * @throws EmptyQueueException
+     * Restituisce il primo elemento della coda; se questa è vuota, lancia un'eccezione.
+     * @return primo elemento della coda.
+     * @throws EmptyQueueException se la coda è vuota.
      */
     public T first() throws EmptyQueueException {
         if (this.isEmpty()) {
@@ -74,8 +74,8 @@ public class Queue<T> {
     }
 
     /**
-     * Rimuove un elemento dalla coda; se questa è vuota, restituisce un'eccezione
-     * @throws EmptyQueueException
+     * Rimuove un elemento dalla coda; se questa è vuota, lancia un'eccezione
+     * @throws EmptyQueueException se la coda è vuota.
      */
     public void dequeue() throws EmptyQueueException {
         if (this.begin == this.end) {

@@ -14,11 +14,11 @@ import java.net.Socket;
 import java.sql.SQLException;
 
 /**
- * Classe che modella la comunicazione con un singolo client su un thread separato
+ * Classe che modella la comunicazione con un singolo client su un thread separato.
  */
 public class ServerOneClient extends Thread {
     /**
-     * Terminale lato server del canale tramite cui avviene lo scambio di oggetti client-server
+     * Terminale lato server del canale tramite cui avviene lo scambio di oggetti client-server.
      */
     private Socket socket;
 
@@ -28,31 +28,31 @@ public class ServerOneClient extends Thread {
     private ObjectInputStream in;
 
     /**
-     * Flusso di oggetti in output dal server al client
+     * Flusso di oggetti in output dal server al client.
      */
     private ObjectOutputStream out;
 
     /**
      * Costruttore della classe; inizializza l'attributo this.socket con il parametro.
      * Inizializza in e out e poi avvia il thread invocando il metodo start() (ereditato dalla classe Thread).
-     *
      * @param s terminale lato server
-     * @throws IOException
+     * @throws IOException  se si verifica un errore di I/O quando si creano gli stream; se la socket è chiusa o non connessa.
      */
-    public ServerOneClient(Socket s) throws IOException {
+    public ServerOneClient(Socket s) throws IOException{
         socket = s;
         in = new ObjectInputStream(s.getInputStream());
         out = new ObjectOutputStream(s.getOutputStream());
         start();
     }
 
-    /** !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-     * Ridefinisce il metodo run() della classe Thread (variazione funzionale).
+    /**
+     * Override del metodo <code>run()</code> della classe <code>Thread</code>, richiamato dal metodo <code>start()</code>.
      * Gestisce le richieste del client, in particolare:
      * <ul>
-     *     <li> Se l'opzione scelta è quella di "Nuova scoperta", apprende pattern/regole e li salva in un file.
-     *     <li> Se l'opzione scelta è quella di ..."</li>
+     *     <li> Se l'opzione scelta è quella di "Nuova scoperta", apprende i pattern e li salva in un file.
+     *     <li> Se l'opzione scelta è quella di "Ricerca in archivio", carica i pattern salvati nei file in base ai parametri. </li>
      * </ul>
+     * Trasmette quindi al client i pattern che soddisfano i criteri di ricerca passati dall'utente.
      */
     public void run() {
         try {
