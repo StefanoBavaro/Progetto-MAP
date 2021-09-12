@@ -14,12 +14,33 @@ import javafx.fxml.LoadException;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 
+/**
+ * Classe che gestisce il Controller per la connessione al Server
+ *
+ *
+ * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
+ */
 public class ControllerPort extends Controller {
+	
+	/**
+	 * <code> address </code> rappresenta l'indirizzo del Server inserito all'interno della finestra
+	 *
+	 */
 	@FXML
 	private TextField address;
+	
+	/**
+	 * <code> port </code> rappresenta la porta del Server inserito all'interno della finestra
+	 *
+	 */
 	@FXML
 	private TextField port;
 	
+	/**
+	 * Metodo che connette il Client e il Server e apre la finestra per l'inserimento dei parametri
+	 *
+	 * @param actionEvent indica l'azione eseguita nel momento in cui si preme il bottone "Connetti"
+	 */
 	@FXML
 	public void clientConnection (ActionEvent actionEvent) {
 		try {
@@ -36,13 +57,22 @@ public class ControllerPort extends Controller {
 		}
 	}
 	
-	
+	/**
+	 * Metodo che stampa un alert contenente l'help eseguito nel momento in cui si preme il bottone "Esci"
+	 *
+	 */
 	@FXML
 	public void helpCommand() {
 		printAlert(Alert.AlertType.NONE, Constants.HELP, ButtonType.OK);
 	}
 	
-	
+	/**
+	 * Metodo che si occupa del caricamento e di mostrare a video la nuova finestra per l'inserimento dei parametri
+	 *
+	 * @param actionEvent indica l'azione eseguita nel momento in cui si preme il bottone "Connetti"
+	 *
+	 * @throws IOException sollevata in caso di errore di caricamento della nuova finestra
+	 */
 	private void loadingClient(ActionEvent actionEvent) throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.INSERT_PARAMETERS));
 		setRoot(loader.load());
