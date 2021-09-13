@@ -1,25 +1,23 @@
 package utility;
 
 /**
- * Classe che rappresenta le costanti del Client
- *
- * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
+ * Classe che rappresenta le costanti del Client.
  */
 public class Constants {
-	//print errors
+	//Stampe di errore
 	public static final String CLOSING_CONNECTION_ERROR = "Errore di chiusura della connessione";
 	public static final String ERROR_SENDING_DATA_SERVER = "Errore nell'invio dei dati al Server";
 	public static final String ERROR_PORT_LOC = "Localhost o port non validi";
 	public static final String ERROR_PORT = "In port inserire un valore numerico";
 	public static final String ERROR_LOADING_PAGE = "Errore nel caricamento della pagina";
 	
-	//resources
+	//Risorse
 	public static final String INSERT_PORT = "fxml/InsertPort.fxml";
 	public static final String PRINT_RESULT = "/fxml/PrintResults.fxml";
 	public static final String INSERT_PARAMETERS = "/fxml/InsertParameters.fxml";
 	
-	//wrong values
-	public static final String NOT_SELECTED_SEARCH_OPTION = "Non è stato selezionato il criterio  di ricerca";
+	//Valori errati
+	public static final String NOT_SELECTED_SEARCH_OPTION = "Non è stato selezionato il criterio di ricerca";
 	public static final String EMPTY_TARGET_FIELD ="Non è stato inserito nessuno valore in target";
 	public static final String EMPTY_BACKGROUND_FIELD = "Non è stato inserito nessuno valore in backGround";
 	public static final String EMPTY_SUPPORT_FIELD = "Non è stato inserito nessuno valore in supporto";
@@ -29,12 +27,12 @@ public class Constants {
 	public static final String ERROR_NUMBER = "In support e growRate devono essere inseriti valori numerici";
 	public static final String ERROR_TABLES = "Tabelle non trovate";
 	
-	//VALUES
+	//VALORI
 	public static final int VALUE_ZERO = 0;
 	public static final int VALUE_ONE = 1;
 	public static final int VALUE_TWO = 2;
 
-	//prints
+	//Stampe
 	public static final String TITLE = "EP MINER";
 	public static final String FREQUENT_PATTERN_EMPTY = "Frequent pattern vuoto\n";
 	public static final String EMERGING_PATTERN_EMPTY = "\nEmerging pattern vuoto";
@@ -50,10 +48,10 @@ public class Constants {
 										"Per esempio: - Nuova Scoperta \n Tabella target:playtennistarget \n Taballa background: playtennisBackground \n Supporto: 0.3 \n GrowRate: 1 \n" +
 										"- La terza finestra, che si avvia solo se i parametri inseriti risultano validi, restituisce l'output del programma ovvero i Frequent Pattern e gli Emerging Pattern trovati";
 	
-	// default error value
+	//Valore di erorre di default
 	public static final String DEFAULT = "E";
 	
-	// limit width and height
+	//Limiti di altezza e ampiezza
 	public static int MIN_WIDTH_MAIN = 500;
 	public static int MIN_HEIGHT = 400;
 	public static int MIN_WIDTH_P = 600;

@@ -12,7 +12,6 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import utility.Constants;
 import javafx.event.ActionEvent;
-import utility.ControllerException;
 
 import java.io.IOException;
 

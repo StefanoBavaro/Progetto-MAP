@@ -9,16 +9,13 @@ import utility.Constants;
 import java.io.IOException;
 
 /**
- * Classe che rappresenta il main del Client
- *
- * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
+ * Classe che modella il main del Client.
  */
 public class MainTest extends Application {
 	
 	/**
-	 * Metodo che occupa di aprire la prima finestra dell'applicazione
-	 *
-	 * @param primaryStage indica la finestra che deve essere visualizzata
+	 * Apre la prima finestra dell'applicazione.
+	 * @param primaryStage finestra che deve essere visualizzata.
 	 */
 	@Override
 	public void start(Stage primaryStage) {
@@ -37,9 +34,8 @@ public class MainTest extends Application {
 	}
 	
 	/**
-	 * Main richiama launch in modo da poter caricare la prima finestra dell'applicazione
-	 *
-	 * @param args indica le stringhe in input
+	 * Richiama <code>launch()</code> in modo da poter caricare la prima finestra dell'applicazione.
+	 * @param args stringhe inserite al lancio del programma.
 	 */
 	public static void main(String[] args) {
 		launch(args);
