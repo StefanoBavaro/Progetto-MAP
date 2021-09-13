@@ -19,26 +19,26 @@ import java.util.*;
 import java.util.Collections;
 
 /**
- * Classe che include i metodi per la scoperta di pattern frequenti con algoritmo APRIORI
+ * Classe che include i metodi per la scoperta di pattern frequenti con algoritmo APRIORI.
  */
 public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializable{
     /**
-     * Lista che contiene riferimenti a oggetti istanza della classe FrequentPattern che definiscono il pattern
+     * Lista che contiene riferimenti a oggetti istanza della classe FrequentPattern che definiscono il pattern.
      */
     private List<FrequentPattern> outputFP = new LinkedList<FrequentPattern>();
 
     /**
      * Costruttore: genera tutti i pattern k=1 frequenti e per ognuno di questi genera quelli con k>1 richiamando <code>expandFrequentPatterns()</code>.
-     * I pattern sono memorizzati nel membro <code>OutputFP</code>
-     * @param data insieme delle transazioni
-     * @param minSup minimo supporto
-     * @throws EmptySetException
+     * I pattern sono memorizzati nel membro <code>OutputFP</code>.
+     * @param data insieme delle transazioni.
+     * @param minSup minimo supporto.
+     * @throws EmptySetException se il numero di attributi del dataset è pari a 0.
      */
     public FrequentPatternMiner(Data data, float minSup) throws EmptySetException {
         Queue<FrequentPattern> fpQueue = new Queue<FrequentPattern>();
 
         if (data.getNumberOfAttributes() == 0) {
-                throw new EmptySetException(Constants.EMPTY_TRAININGSET);  //non sono sicuro che il messaggio sia corretto
+                throw new EmptySetException(Constants.EMPTY_TRAININGSET);
         }
 
         for (int i = 0; i < data.getNumberOfAttributes(); i++) {
@@ -78,12 +78,12 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
 
     /**
      * Finché <code>fpQueue</code> contiene elementi, estrae un elemento e genera i raffinamenti per questo (aggiungendo un nuovo item non incluso).
-     * Per ogni raffinamento si verifica se è frequente e, in caso affermativo, lo si aggiunge sia ad <code>fpQueue</code> sia ad <code>outputFP</code>
-     * @param data insieme delle transazioni
-     * @param minSup minimo supporto
-     * @param fpQueue coda contente i pattern da valutare
-     * @param outputFP lista dei pattern frequenti già estratti
-     * @return  lista popolata con pattern frequenti a k>1
+     * Per ogni raffinamento si verifica se è frequente e, in caso affermativo, lo si aggiunge sia ad <code>fpQueue</code> sia ad <code>outputFP</code>.
+     * @param data insieme delle transazioni.
+     * @param minSup minimo supporto.
+     * @param fpQueue coda contente i pattern da valutare.
+     * @param outputFP lista dei pattern frequenti già estratti.
+     * @return lista popolata con pattern frequenti a k&gt1.
      */
     private List expandFrequentPatterns(Data data, float minSup, Queue<FrequentPattern> fpQueue, List outputFP) {
         try {
@@ -136,10 +136,10 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
     }
 
     /**
-     * Crea un nuovo pattern a cui aggiunge tutti gli item di <code>FP</code> e il parametro <code>item</code>
-     * @param FP pattern da raffinare
-     * @param item item da aggiungere al frequent pattern
-     * @return nuovo pattern ottenuto per effetto del raffinamento
+     * Crea un nuovo pattern a cui aggiunge tutti gli item di <code>FP</code> e il parametro <code>item</code>.
+     * @param FP pattern da raffinare.
+     * @param item item da aggiungere al frequent pattern.
+     * @return nuovo pattern ottenuto per effetto del raffinamento.
      */
     private FrequentPattern refineFrequentPattern(FrequentPattern FP, Item item) {
         FrequentPattern out = new FrequentPattern(FP);
@@ -149,8 +149,9 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
     }
 
     /**
-     * Scandisce <code>OutputFp</code> al fine di concatenare in un'unica stringa i pattern frequenti letti
-     * @return stringa rappresentante il valore di <code>OutputFP</code>
+     * Override del metodo <code>toString()</code> di <code>Object</code>.
+     * Scandisce <code>OutputFp</code> al fine di concatenare in un'unica stringa i pattern frequenti letti.
+     * @return stringa rappresentante il valore di <code>OutputFP</code>.
      */
     public String toString() {
         String out = "";
@@ -164,7 +165,7 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
     }
 
     /**
-     * Ordina <code>outputFP</code> usando il comparatore associato alla classe FrequentPattern
+     * Ordina <code>outputFP</code> usando il metodo <code>compareTo()</code> della classe <code>FrequentPattern</code>.
      */
     private void sort() {
         Collections.sort(outputFP);
@@ -172,8 +173,8 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
 
     /**
      * Implementazione del metodo <code>iterator()</code> dell'interfaccia <code>Iterable</code>.
-     * Restituisce l'iteratore del membro <code>outputFP</code>
-     * @return riferimento all'iteratore della lista di frequent pattern
+     * Restituisce l'iteratore del membro <code>outputFP</code>.
+     * @return riferimento all'iteratore della lista di frequent pattern.
      */
     public Iterator<FrequentPattern> iterator() {
         return outputFP.iterator();
@@ -182,10 +183,10 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
     /**
      * Serializza l’oggetto riferito da <code>this</code> nel file il cui nome è passato come parametro
      * @param nomeFile nome del file in cui serializzare l'oggetto
-     * @throws FileNotFoundException
-     * @throws IOException
+     * @throws FileNotFoundException se il file esiste ma è una directory piuttosto che un file; se non esiste ma non può essere creato; se il file non può essere aperto.
+     * @throws IOException se si verifica un errore di I/O.
      */
-    public void salva(String nomeFile) throws FileNotFoundException, IOException {
+    public void salva(String nomeFile) throws IOException, FileNotFoundException {
         FileOutputStream file = new FileOutputStream(nomeFile);
         ObjectOutputStream ou = new ObjectOutputStream(file);
         ou.writeObject(this);
@@ -197,11 +198,11 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
      * Legge e restituire l’oggetto che è memorizzato nel file il cui nome è passato come parametro
      * @param nomeFile nome del file in cui è memorizzato un oggetto <code>FrequentPatternMiner</code>
      * @return riferimento ad oggetto <code>FrequentPatternMiner</code> salvato nel file
-     * @throws FileNotFoundException
-     * @throws IOException
-     * @throws ClassNotFoundException
+     * @throws FileNotFoundException se il file non esiste; se il file esiste ma è una directory piuttosto che un file; se il file non può essere aperto per la lettura.
+     * @throws IOException se si verifica un errore di I/O.
+     * @throws ClassNotFoundException se la classe dell'oggetto serializzato non viene trovata.
      */
-    public static FrequentPatternMiner carica(String nomeFile) throws FileNotFoundException,IOException,ClassNotFoundException {
+    public static FrequentPatternMiner carica(String nomeFile) throws IOException, FileNotFoundException, ClassNotFoundException {
         ObjectInputStream in = new ObjectInputStream(new FileInputStream(nomeFile));
         FrequentPatternMiner obj = (FrequentPatternMiner) in.readObject();
         in.close();
@@ -209,8 +210,8 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
     }
 
     /**
-     * Restituisce il riferimento al membro <code>outputFP</code>
-     * @return lista di pattern frequenti
+     * Restituisce il riferimento al membro <code>outputFP</code>.
+     * @return lista di pattern frequenti.
      */
     List getOutputFP() {
         return outputFP;

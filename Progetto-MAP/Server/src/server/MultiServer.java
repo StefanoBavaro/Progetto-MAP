@@ -11,8 +11,6 @@ import java.net.Socket;
  * trasmesse da un generico Client; istanzia un oggetto della classe <code>ServerOneClient</code>,
  * che si occuperà di servire le richieste del client in un thread dedicato.
  * Il server sarà registrato sulla porta predefinita 8080.
- *
- * @author Stefano Bavaro, Lorenzo Cassano, Jacopo D'Abramo.
  */
 public class MultiServer {
     /**

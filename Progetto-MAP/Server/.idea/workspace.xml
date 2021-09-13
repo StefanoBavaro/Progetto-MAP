@@ -3,11 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="e9ac409f-852c-4df9-9f4d-a7b19b6d1be2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DbAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DbAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/ContinuosItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ContinuosItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/DiscreteItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/DiscreteItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/EmergingPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/EmergingPatternException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPatternException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/EmergingPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPatternMiner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/FrequentPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/Interval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/MultiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/MultiServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/ServerOneClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ServerOneClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/EmptyQueueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/EmptyQueueException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Queue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,17 +61,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MultiServer" />
@@ -85,7 +81,8 @@
       <workItem from="1631227217902" duration="5135000" />
       <workItem from="1631287327332" duration="9726000" />
       <workItem from="1631437337304" duration="96000" />
-      <workItem from="1631437581853" duration="13454000" />
+      <workItem from="1631437581853" duration="15201000" />
+      <workItem from="1631523206031" duration="3210000" />
     </task>
     <servers />
   </component>

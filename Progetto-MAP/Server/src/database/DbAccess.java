@@ -8,7 +8,6 @@ import java.sql.SQLException;
 
 /**
  * Classe che gestisce l'accesso al DB per la lettura dei dati di training.
- * @author Map Tutor.
  */
 public class DbAccess {
 
