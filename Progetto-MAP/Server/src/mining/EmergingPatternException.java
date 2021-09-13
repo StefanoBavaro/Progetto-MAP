@@ -8,7 +8,7 @@ class EmergingPatternException extends Exception {
      * Costruttore con messaggio di dettaglio.
      * @param message messaggio di dettaglio dell'eccezione.
      */
-    EmergingPatternException(final String message) {
+    EmergingPatternException(String message) {
         super(message);
     }
 

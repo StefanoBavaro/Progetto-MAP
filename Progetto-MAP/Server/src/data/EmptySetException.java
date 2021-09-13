@@ -9,7 +9,7 @@ public class EmptySetException extends Exception {
      * Costruttore con messaggio di dettaglio.
      * @param message messaggio di dettaglio dell'eccezione.
      */
-    public EmptySetException(final String message) {
+    public EmptySetException(String message) {
         super(message);
     }
 

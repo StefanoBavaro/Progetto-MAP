@@ -19,7 +19,11 @@ class DiscreteItem extends Item implements Serializable{
     /**
      * Verifica che il membro <code>value</code> sia uguale (nello stato) all’argomento passato come parametro.
      * @param value valore di cui verificare l'uguaglianza con il membro <code>value</code>.
-     * @return <code>true</code> se le stringhe (parametro e membro <code>value</code>) sono uguali, <code>false</code> altrimenti.
+     * @return booleano:
+     *	<ul>
+     * 		<li> vero se il valore passato in input è uguale al valore dell'item; </li>
+     * 		<li> falso altrimenti.</li>
+     * 	</ul>
      */
     boolean checkItemCondition(Object value) {
         String s = (String) value;

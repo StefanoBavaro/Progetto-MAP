@@ -3,18 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="e9ac409f-852c-4df9-9f4d-a7b19b6d1be2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/DbAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DbAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EP_targ_playtennisbackground_back_playtennisbackground_minSup0.3_minGr1.0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EP_targ_playtennisbackground_back_playtennistarget_minSup0.3_minGr2.0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EP_targ_playtennistarget_back_playtennisbackground_minSup0.3_minGr1.0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EP_targ_playtennistarget_back_playtennisbackground_minSup0.5_minGr11.0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EP_targ_playtennistarget_back_playtennisbackground_minSup0.9_minGr12.0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EP_targ_playtennistarget_back_playtennistarget_minSup0.3_minGr1.0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FP_playtennisbackground_minSup0.3.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FP_playtennistarget_minSup0.3.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FP_playtennistarget_minSup0.5.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FP_playtennistarget_minSup0.9.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Attribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Attribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/ContinuousAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ContinuousAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/DiscreteAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/DiscreteAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/EmptySetException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/EmptySetException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mining/ContinuosItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ContinuosItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mining/DiscreteItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/DiscreteItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/EmergingPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mining/EmergingPatternException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPatternException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/EmergingPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/EmergingPatternMiner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mining/FrequentPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/Interval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/MultiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/MultiServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +64,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

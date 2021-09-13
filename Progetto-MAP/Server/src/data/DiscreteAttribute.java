@@ -19,7 +19,7 @@ public class DiscreteAttribute extends Attribute implements Serializable {
      * @param index identificativo numerico dell'attributo.
      * @param values valori discreti che costituiscono il dominio dell'attributo.
      */
-    DiscreteAttribute(final String name, final int index, final String[] values) {
+    DiscreteAttribute(String name, int index, String[] values) {
         super(name, index);
         this.values = new String[values.length];
         this.values = values;
@@ -38,7 +38,7 @@ public class DiscreteAttribute extends Attribute implements Serializable {
      * @param index indice di tipo intero.
      * @return valore nel dominio dell’attributo.
      */
-    public String getValue(final int index) {
+    public String getValue(int index) {
         return values[index];
     }
 

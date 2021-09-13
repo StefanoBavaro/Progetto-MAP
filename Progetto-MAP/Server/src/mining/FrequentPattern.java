@@ -23,9 +23,14 @@ class FrequentPattern implements Iterable<Item>, Comparable<FrequentPattern>, Se
 
     /**
      * Metodo che implementa l'interfaccia <code>Comparable</code>.
-     * Restituisce 0 se i supporti dei frequent pattern <code>this</code> e <code>FP</code> sono uguali, 1 se il supporto di <code>FP</code> è minore di quello di <code>this</code>, -1 altrimenti.
+     * Restituisce l'esito del confronto tra i supporti di <code>this</code> e del parametro di input.
      * @param FP frequent pattern da confrontare con l'oggetto riferito da <code>this</code>.
-     * @return esito del confronto.
+     * @return intero:
+     *	<ul>
+     * 		<li> 0 se i supporti dei frequent pattern <code>this</code> e <code>FP</code> sono uguali; </li>
+     * 		<li> 1 se il supporto di <code>FP</code> è minore di quello di <code>this</code>; </li>
+     * 	    <li> -1 altrimenti.</li>
+     * 	</ul>
      */
     public int compareTo(FrequentPattern FP) {
         if (this.support == FP.getSupport()) return 0;

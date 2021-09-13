@@ -27,7 +27,7 @@ public class ContinuousAttribute extends Attribute implements Iterable<Float>, S
      * @param min estremo sinistro dell’intervallo di dominio.
      * @param max estremo destro dell’intervallo di dominio.
      */
-    public ContinuousAttribute(final String name, final int index, final float min, final float max) {
+    public ContinuousAttribute(String name, int index, float min, float max) {
         super(name, index);
         this.min = min;
         this.max = max;

@@ -21,7 +21,7 @@ public abstract class Attribute implements Serializable {
      * @param name nome simbolico dell'attributo.
      * @param index identificativo numerico dell'attributo.
      */
-    public Attribute(final String name, final int index) {
+    public Attribute(String name, int index) {
         this.name = new String(name);
         this.index = index;
     }

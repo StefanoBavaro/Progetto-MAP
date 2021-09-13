@@ -21,7 +21,11 @@ class ContinuosItem extends Item implements Serializable {
 	/**
 	 * Verifica che il parametro <code>value</code> rappresenti un numero reale incluso tra gli estremi dell’intervallo associato all'item.
 	 * @param value valore di cui si vuole verficare l'appartenenza all'intervallo.
-	 * @return booleano che indica se il valore appartiene all'intervallo.
+	 * @return booleano:
+	 *	<ul>
+	 * 		<li> vero se il valore è contenuto nell'intervallo; </li>
+	 * 		<li> falso altrimenti.</li>
+	 * 	</ul>
 	 */
 	@Override
 	boolean checkItemCondition(Object value) {
