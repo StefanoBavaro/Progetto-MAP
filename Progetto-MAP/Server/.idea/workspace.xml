@@ -2,12 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ac409f-852c-4df9-9f4d-a7b19b6d1be2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/controller/ControllerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/ControllerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/controller/ControllerParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/ControllerParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/controller/ControllerPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/ControllerPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/controller/ControllerResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/ControllerResults.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/data/Attribute.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/data/Attribute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/data/ContinuousAttribute.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/data/ContinuousAttribute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/data/ContinuousAttributeIterator.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/data/ContinuousAttributeIterator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/data/Data.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/data/Data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/data/DiscreteAttribute.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/data/DiscreteAttribute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/data/EmptySetException.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/data/EmptySetException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/data/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/data/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/data/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/data/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/data/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/data/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/DatabaseConnectionException.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/DatabaseConnectionException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/DbAccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/DbAccess.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/NoValueException.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/NoValueException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/QUERY_TYPE.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/QUERY_TYPE.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/TableData.TupleData.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/TableData.TupleData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/TableData.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/TableData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/TableSchema.Column.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/TableSchema.Column.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/TableSchema.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/TableSchema.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/database/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/database/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/ComparatorGrowRate.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/ComparatorGrowRate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/ContinuosItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/ContinuosItem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/DiscreteItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/DiscreteItem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/EmergingPattern.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/EmergingPattern.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/EmergingPatternException.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/EmergingPatternException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/EmergingPatternMiner.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/EmergingPatternMiner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/FrequentPattern.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/FrequentPattern.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/FrequentPatternMiner.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/FrequentPatternMiner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/Interval.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/Interval.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/Item.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/Item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/mining/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/mining/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/package-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/server/MultiServer.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/server/MultiServer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/server/ServerOneClient.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/server/ServerOneClient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/server/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/server/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/server/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/server/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/server/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/server/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/Constants.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/Constants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/EmptyQueueException.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/EmptyQueueException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/Queue.Record.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/Queue.Record.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/Queue.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/Queue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/ContinuousAttributeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ContinuousAttributeIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/ContinuosItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ContinuosItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/DiscreteItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/DiscreteItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +117,7 @@
       <updated>1630663235501</updated>
       <workItem from="1630663240364" duration="22000" />
       <workItem from="1631545881114" duration="42000" />
-      <workItem from="1631545953807" duration="1236000" />
+      <workItem from="1631545953807" duration="2631000" />
     </task>
     <servers />
   </component>

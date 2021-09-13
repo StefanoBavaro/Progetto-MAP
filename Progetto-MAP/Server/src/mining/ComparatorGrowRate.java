@@ -3,14 +3,14 @@ package mining;
 import java.util.Comparator;
 
 /**
- * Classe che implementa l'interfaccia generica Comparator&lt T &gt e modella il confronto tra due emerging pattern rispetto al grow rate.
+ * Classe che implementa l'interfaccia generica Comparator&#60;T&#62; e modella il confronto tra due emerging pattern rispetto al grow rate.
  */
 public class ComparatorGrowRate implements Comparator<EmergingPattern> {
     /**
-     * Implementazione del metodo compare() dell'interfaccia Comparator&lt T &gt.
-     * Restituisce un intero che indica l'esito del confronto tra due EmergingPattern, in base al loro growrate.
-     * @param e1 primo EmergingPattern da confrontare.
-     * @param e2 secondo EmergingPattern da confrontare.
+     * Implementazione del metodo <code>compare()</code> dell'interfaccia <code>Comparator&#60;T&#62;</code>.
+     * Restituisce un intero che indica l'esito del confronto tra due <code>EmergingPattern</code>, in base al loro growrate.
+     * @param e1 primo pattern emergente da confrontare.
+     * @param e2 secondo pattern emergente da confrontare.
      * @return intero:
      *	<ul>
      * 		<li> 0 se i grow rate dei due parametri sono uguali; </li>

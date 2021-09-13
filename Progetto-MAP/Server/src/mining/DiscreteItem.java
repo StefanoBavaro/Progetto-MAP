@@ -4,7 +4,7 @@ import data.DiscreteAttribute;
 import java.io.Serializable;
 
 /**
- * Classe concreta che modella una coppia &ltAttributo discreto - valore discreto&gt ; estende e realizza la classe astratta <code>Item</code>.
+ * Classe concreta che modella una coppia &#60;Attributo discreto - valore discreto&#62; ; estende e realizza la classe astratta <code>Item</code>.
  */
 class DiscreteItem extends Item implements Serializable{
     /**

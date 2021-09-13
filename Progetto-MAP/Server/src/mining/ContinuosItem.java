@@ -5,7 +5,7 @@ import data.ContinuousAttribute;
 import java.io.Serializable;
 
 /**
- * Classe che modella la coppia &ltAttributo continuo - Intervallo di valori&gt; estende e realizza la classe astratta <code>Item</code>.
+ * Classe che modella la coppia &#60;Attributo continuo - Intervallo di valori&#62;; estende e realizza la classe astratta <code>Item</code>.
  */
 class ContinuosItem extends Item implements Serializable {
 
@@ -35,9 +35,9 @@ class ContinuosItem extends Item implements Serializable {
 	}
 
 	/**
-	 * Override del metodo toString() di Object.
+	 * Override del metodo <code>toString()</code> di <code>Object</code>.
 	 * Avvalora la stringa che rappresenta lo stato dell’oggetto e ne restituisce il riferimento.
-	 * @return stringa che rappresenta lo stato dell’oggetto nella forma &ltnome attributo&gt in [< inf>,<sup>[.
+	 * @return stringa che rappresenta lo stato dell’oggetto nella forma &#60;nome attributo&#62; in [inf,sup[.
 	 */
 	public String toString() {
 		Interval interval =(Interval) getValue();
