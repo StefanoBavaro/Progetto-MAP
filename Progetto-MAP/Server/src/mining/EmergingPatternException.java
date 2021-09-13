@@ -1,8 +1,14 @@
 package mining;
 
+/**
+ * Classe di eccezione che modella la situazione in cui il pattern corrente non soddisfa la condizione di minimo grow rate.
+ */
 class EmergingPatternException extends Exception {
-
-    EmergingPatternException(final String message) {
+    /**
+     * Costruttore con messaggio di dettaglio.
+     * @param message messaggio di dettaglio dell'eccezione.
+     */
+    EmergingPatternException(String message) {
         super(message);
     }
 

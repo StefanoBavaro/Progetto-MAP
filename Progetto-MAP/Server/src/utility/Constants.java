@@ -1,16 +1,21 @@
 package utility;
 
+
+/**
+ * Classe di costanti del Server
+ */
 public class Constants {
 	
-	//Server messages
+	//Messaggi del server
 	public static final String OPTION = "Opzione";
 	public static final String MIN_SUP = "minSup";
 	public static final String MIN_GROW = "minGr";
 	public static final String TARGET = "TargetName";
 	public static final String BACKGROUND = "backgroundName";
-	public static final String NEW_CLIENT = "Nuovo client connesso";
+
 	
-	// print errors
+	//Stampe di errori
+	public static final String NEW_CLIENT = "Nuovo client connesso";
 	public static final String FREQUENT_PATTERN_SAVE_FAILED = "Impossibile salvare il file per i Frequent Pattern";
 	public static final String EMERGING_PATTERN_SAVE_FAILED = "Impossibile salvare il file per gli Emerging Pattern";
 	public static final String FREQUENT_PATTERN_ERROR_VALUE = "Frequent Pattern non trovati con questi valori di supporto e di growrate";
@@ -23,9 +28,10 @@ public class Constants {
 	public static final String COMUNICATION_CLIENT_ERROR = "Errore di comunicazione con il client";
 	public static final String CASTING_ERROR = "Errore di casting";
 	public static final String STREAM_ERROR = "Errore nella chiusura dello stream";
-	public static final String FILE_NOT_FOUND = "File non trovati";
+
 	
-	// save/load files
+	//Salva/carica file
+	public static final String FILE_NOT_FOUND = "File non trovati";
 	public static final String FP_SAVE = "FP_";
 	public static final String MIN_SUP_SAVE = "_minSup";
 	public static final String EP_SAVE = "EP_targ_";
@@ -39,8 +45,7 @@ public class Constants {
 	public static final String ERROR_SOCKET = "Errore nella creazione del socket";
 	public static final String EMPTY_TRAININGSET = "L'insieme di training � vuoto";
 	public static final String GROWRATE_NOT_VALID = "Il pattern non soddisfa il minimo grow rate";
-	
-	// error value
+
+	//Valore di errore
 	public static final String DEFAULT = "E";
-	
 }
