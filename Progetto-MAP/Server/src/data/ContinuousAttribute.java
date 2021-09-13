@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Iterator;
 import utility.Constants;
 
+
 /**
  * Classe che modella un attributo continuo (numerico) rappresentandone il dominio [min,max].
  * Estende la classe Attribute.

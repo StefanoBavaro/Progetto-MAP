@@ -39,6 +39,7 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
 
         if (data.getNumberOfAttributes() == 0) {
                 throw new EmptySetException(Constants.EMPTY_TRAININGSET);
+
         }
 
         for (int i = 0; i < data.getNumberOfAttributes(); i++) {

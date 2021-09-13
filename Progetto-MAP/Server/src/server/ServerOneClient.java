@@ -7,6 +7,9 @@ import database.NoValueException;
 import mining.EmergingPatternMiner;
 import mining.FrequentPatternMiner;
 import utility.Constants;
+
+
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -78,7 +81,6 @@ public class ServerOneClient extends Thread {
                             } catch (IOException e) {
                                 System.err.println(Constants.FREQUENT_PATTERN_SAVE_FAILED + ": " + e.getMessage());
                             }
-                            out.writeObject(fpMiner.toString());
                             try {
                                 EmergingPatternMiner epMiner = new EmergingPatternMiner(dataBackground, fpMiner, minGr);
                                 try {
@@ -86,46 +88,52 @@ public class ServerOneClient extends Thread {
                                 } catch (IOException e) {
                                     System.err.println(Constants.EMERGING_PATTERN_SAVE_FAILED + ": " + e.getMessage());
                                 }
+                                out.writeObject(fpMiner.toString());
                                 out.writeObject(epMiner.toString());
                             } catch (EmptySetException e) {
                                 System.err.println(e.getMessage());
                                 out.writeObject(Constants.FREQUENT_PATTERN_ERROR_VALUE);
-                                out.writeObject("");
+                                out.writeObject(Constants.DEFAULT);
                             } catch (ClassCastException e) {
                                 System.err.println(e.getMessage());
                                 out.writeObject(Constants.NO_COMPATIBLE_DATA);
-                                out.writeObject("");
+                                out.writeObject(Constants.DEFAULT);
                             }
                         } catch (EmptySetException e) {
                             System.err.println(e.getMessage());
                             out.writeObject(Constants.NOT_FOUND_DATA_PARAMETERS);
-                            out.writeObject("");
+                            out.writeObject(Constants.DEFAULT);
                         }
                     } catch (NoValueException e) {
                         System.err.println(e.getMessage());
                         out.writeObject(Constants.NOT_FOUND_DATA);
-                        out.writeObject("");
+                        out.writeObject(Constants.DEFAULT);
                     } catch (DatabaseConnectionException e) {
                         System.err.println(Constants.ERROR_CONNECTION_DB + e.getMessage());
                         out.writeObject(Constants.ERROR_CONNECTION_DB);
                         out.writeObject("");
                     } catch (SQLException e) {
-                        // scrivo degli oggetti per poter far ripetere il ciclo
                         System.err.println(Constants.NOT_FOUND_TABLES);
                         out.writeObject(Constants.NOT_FOUND_TABLES);
-                        out.writeObject("");
+                        out.writeObject(Constants.DEFAULT);
                     }
                 } else if (opzione == 2) {
                     try {
-                        FrequentPatternMiner fpMiner = FrequentPatternMiner.carica(Constants.FP_SAVE + targetName + Constants.MIN_SUP_SAVE + minSup + ".dat");
+                        FrequentPatternMiner fpMiner = FrequentPatternMiner.carica(
+                                Constants.FP_SAVE + targetName + Constants.MIN_SUP_SAVE + minSup + ".dat");
+                        EmergingPatternMiner epMiner = EmergingPatternMiner.carica(
+                                Constants.EP_SAVE + targetName + Constants.BACK_SAVE + backgroundName + Constants.MIN_SUP_SAVE + minSup + Constants.MIN_GROW_RATE_SAVE + minGr + ".dat");
                         out.writeObject(fpMiner.toString());
-                        EmergingPatternMiner epMiner = EmergingPatternMiner.carica(Constants.EP_SAVE + targetName + Constants.BACK_SAVE + backgroundName + Constants.MIN_SUP_SAVE + minSup + Constants.MIN_GROW_RATE_SAVE + minGr + ".dat");
                         out.writeObject(epMiner.toString());
+                    } catch(FileNotFoundException e) {
+                        System.err.println(e.getMessage());
+                        out.writeObject(Constants.FILE_NOT_FOUND);
+                        out.writeObject(Constants.DEFAULT);
                     } catch (ClassNotFoundException | IOException e) {
                         // invio messaggio al Server
                         System.err.println(e.getMessage());
                         out.writeObject(Constants.NOT_FOUND_ARCHIVE_DATA);
-                        out.writeObject("");
+                        out.writeObject(Constants.DEFAULT);
                     }
                 }
             }
