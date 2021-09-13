@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ac409f-852c-4df9-9f4d-a7b19b6d1be2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/connection/ManagerConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/connection/ManagerConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/controller/ControllerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/ControllerException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/controller/ControllerParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/ControllerParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/utility/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/utility/ControllerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/ControllerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/controller/ControllerPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/ControllerPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/controller/ControllerResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/controller/ControllerResults.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +40,7 @@
       <updated>1630663235501</updated>
       <workItem from="1630663240364" duration="22000" />
       <workItem from="1631545881114" duration="42000" />
-      <workItem from="1631545953807" duration="639000" />
+      <workItem from="1631545953807" duration="1236000" />
     </task>
     <servers />
   </component>

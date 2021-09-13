@@ -1,14 +1,13 @@
 package controller;
 
 /**
- * Classe che rappresenta le eccezioni sollevate in caso di errori nella gestione dei Controller
+ * Classe che modella le eccezioni sollevate in caso di errori nella gestione dei Controller.
  */
 class ControllerException extends Exception {
-	
+
 	/**
-	 * Costruttore per la classe ControllerException.
-	 *
-	 * @param controller Messaggio che spiega il motivo per cui l'eccezione  è stata sollevata
+	 * Costruttore con messaggio di dettaglio.
+	 * @param controller messaggio di dettaglio dell'eccezione.
 	 */
 	ControllerException(String controller) {
 		super(controller);

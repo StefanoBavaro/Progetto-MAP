@@ -16,63 +16,52 @@ import javafx.event.ActionEvent;
 import java.io.IOException;
 
 /**
- * Classe che rappresenta il Controller per la gestione dell'immissione dei parametri da inviare al Server
- *
- *
- * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
+ * Classe che modella il Controller per la gestione dell'immissione dei parametri da inviare al Server.
  */
 public class ControllerParameters extends Controller{
 	
 	/**
-	 * <code> discovery </code> rappresenta il bottone per l'inserimento del tipo di ricerca "Nuova scoperta"
-	 *
+	 * Bottone per l'inserimento del tipo di ricerca "Nuova scoperta".
 	 */
 	@FXML
 	private RadioButton discovery;
 	
 	/**
-	 * <code> discovery </code> rappresenta il bottone per l'inserimento del tipo di ricerca "Archivio"
-	 *
+	 * Bottone per l'inserimento del tipo di ricerca "Archivio".
 	 */
 	@FXML
 	private RadioButton archive;
 	
 	/**
-	 * <code> minSup </code> rappresenta il testo dove inserire il minimo Supporto per la ricerca dei pattern
-	 *
+	 * Testo dove inserire il minimo supporto per la ricerca dei pattern.
 	 */
 	@FXML
 	private TextField minSup;
 	
 	/**
-	 * <code> growRate </code> rappresenta il testo dove inserire il growRate per la ricerca dei pattern
-	 *
+	 * Testo dove inserire il grow rate per la ricerca dei pattern.
 	 */
 	@FXML
 	private TextField growRate;
 	
 	/**
-	 * <code> targ </code> rappresenta il testo dove inserire la tabella target per la ricerca dei pattern
-	 *
+	 * Testo dove inserire il nome della tabella target per la ricerca dei pattern.
 	 */
 	@FXML
 	private TextField targ;
 	
 	/**
-	 * <code> targ </code> rappresenta il testo dove inserire la tabella background per la ricerca dei pattern
-	 *
+	 * Testo dove inserire il nome della tabella di background per la ricerca dei pattern.
 	 */
 	@FXML
 	private TextField back;
 	
 	/**
-	 * Metodo che si occupa di caricare e restituire il controller della nuova finestra
-	 *
-	 * @return il controller della nuova finestra
-	 *
-	 * @throws IOException sollevata in caso di errore di caricamento della finestra
+	 * Carica e restituisce il controller della nuova finestra.
+	 * @return controller della nuova finestra.
+	 * @throws IOException se si verificano errori di caricamento della finestra.
 	 */
-	public ControllerResults loadingController() throws IOException {
+	public ControllerResults loadingController() throws IOException{
 		FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.PRINT_RESULT));
 		setRoot(loader.load());
 		setStage(new Stage());
