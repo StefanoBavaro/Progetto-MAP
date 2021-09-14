@@ -53,7 +53,7 @@ public class ControllerPort extends Controller {
 	}
 	
 	/**
-	 * Stampa un alert contenente il messaggio di aiuto; eseguito nel momento in cui si preme il bottone "Esci".
+	 * Stampa un alert contenente il messaggio di aiuto; eseguito nel momento in cui si preme il bottone "Help".
 	 */
 	@FXML
 	public void helpCommand() {
