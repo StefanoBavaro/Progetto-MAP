@@ -15,79 +15,67 @@ import utility.Constants;
 import java.io.IOException;
 
 /**
- * Classe Controller per la gestione della stampa dei pattern trovati
- *
- *
- * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
+ * Classe che modella il Controller per la stampa dei pattern trovati.
  */
 public class ControllerResults extends Controller{
 	
 	/**
-	 * <code> support </code> indica il valore del minimo Supporto immesso per la ricerca dei pattern
+	 * Valore del minimo supporto immesso per la ricerca dei pattern.
 	 */
 	@FXML
 	private Label support;
 	
 	/**
-	 * <code> growRate </code> indica il valore del growRate immesso per la ricerca dei pattern
+	 * Valore del grow rate immesso per la ricerca dei pattern.
 	 */
 	@FXML
 	private Label growRate;
 	
 	/**
-	 * <code> target </code> indica la tabella target immessa per la ricerca dei pattern
+	 * Tabella target immessa per la ricerca dei pattern.
 	 */
 	@FXML
 	private Label target;
 	
 	/**
-	 * <code> background </code> indica la tabella background immessa per la ricerca dei pattern
+	 * Tabella di background immessa per la ricerca dei pattern.
 	 */
 	@FXML
 	private Label background;
 	
 	/**
-	 * <code> area </code> indica l'area di testo dove verranno stampati i pattern trovati
+	 * Area di testo dove stampare i pattern trovati.
 	 */
 	@FXML
 	private TextArea area;
 	
-	
 	/**
-	 * Metodo che scrive i label nei vari campi e scrive i pattern trovati nell'apposita area
-	 *
-	 * @param frequentPattern indica i frequentPattren trovati
-	 *
-	 * @param mergingPattern indica gli emergingPattern trovati
-	 *
-	 * @param minsup indica il minimo supporto immesso per la ricerca dei pattern
-	 *
-	 * @param rate indica il growRate immesso per la ricerca dei pattern
-	 *
-	 * @param targetName indica il nome della tabella target sulla quale ricercare i pattern
-	 *
-	 * @param backgroundName indica il nome della tabella background sulla quale ricercare i pattern
-	 *
+	 * Scrive i label nei vari campi e scrive i pattern trovati nell'apposita area.
+	 * @param frequentPattern pattern frequenti trovati.
+	 * @param emergingPattern pattern emergenti trovati.
+	 * @param minsup minimo supporto immesso per la ricerca dei pattern.
+	 * @param rate grow rate immesso per la ricerca dei pattern.
+	 * @param targetName nome della tabella target sulla quale ricercare i pattern.
+	 * @param backgroundName nome della tabella background sulla quale ricercare i pattern.
 	 */
-	void printResults (String frequentPattern, String mergingPattern, float minsup, float rate, String targetName, String backgroundName) {
+	void printResults (String frequentPattern, String emergingPattern, float minsup, float rate, String targetName, String backgroundName) {
 		support.setText(String.valueOf(minsup));
 		growRate.setText(String.valueOf(rate));
 		target.setText(targetName);
 		background.setText(backgroundName);
 		if (frequentPattern.isEmpty()) {
-			area.setText(Constants.FREQUENT_PATTERN_EMPTY + Constants.EMERGING_PATTERN_PRINT + mergingPattern);
-		} else if (mergingPattern.isEmpty()) {
+			area.setText(Constants.FREQUENT_PATTERN_EMPTY + Constants.EMERGING_PATTERN_PRINT + emergingPattern);
+		} else if (emergingPattern.isEmpty()) {
 			area.setText(Constants.FREQUENT_PATTERN_PRINT + frequentPattern + "\nEmerging pattern vuoto");
 		} else {
 			area.setText(
-					Constants.FREQUENT_PATTERN_PRINT + frequentPattern + Constants.EMERGING_PATTERN_PRINT + mergingPattern);
+					Constants.FREQUENT_PATTERN_PRINT + frequentPattern + Constants.EMERGING_PATTERN_PRINT + emergingPattern);
 			}
 		}
 	
 	/**
-	 * Metodo che chiude la finestra e apre una nuova finestra relativa all'inserimento di nuovi parametri
-	 *
-	 * @param actionEvent indica l'azione eseguita nel momento in cui si preme il bottone "Nuova Ricerca"
+	 * Chiude la finestra e apre una nuova finestra relativa all'inserimento di nuovi parametri.
+	 * @param actionEvent azione eseguita nel momento in cui si preme il bottone "Nuova Ricerca".
 	 */
 	@FXML
 	public void newSearch(ActionEvent actionEvent) {

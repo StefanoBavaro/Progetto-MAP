@@ -15,31 +15,26 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 
 /**
- * Classe che gestisce il Controller per la connessione al Server
- *
- *
- * @author Lorenzo Cassano, Jacopo D'Abramo, Stefano Bavaro
+ * Classe che modella il Controller per la connessione al Server.
  */
 public class ControllerPort extends Controller {
 	
 	/**
-	 * <code> address </code> rappresenta l'indirizzo del Server inserito all'interno della finestra
-	 *
+	 * Indirizzo del Server inserito dall'utente nella finestra.
 	 */
 	@FXML
 	private TextField address;
 	
 	/**
-	 * <code> port </code> rappresenta la porta del Server inserito all'interno della finestra
+	 * Porta del Server inserita dall'utente nella finestra.
 	 *
 	 */
 	@FXML
 	private TextField port;
 	
 	/**
-	 * Metodo che connette il Client e il Server e apre la finestra per l'inserimento dei parametri
-	 *
-	 * @param actionEvent indica l'azione eseguita nel momento in cui si preme il bottone "Connetti"
+	 * Connette il Client e il Server e apre la finestra per l'inserimento dei parametri.
+	 * @param actionEvent azione eseguita nel momento in cui si preme il bottone "Connetti".
 	 */
 	@FXML
 	public void clientConnection (ActionEvent actionEvent) {
@@ -58,8 +53,7 @@ public class ControllerPort extends Controller {
 	}
 	
 	/**
-	 * Metodo che stampa un alert contenente l'help eseguito nel momento in cui si preme il bottone "Esci"
-	 *
+	 * Stampa un alert contenente il messaggio di aiuto; eseguito nel momento in cui si preme il bottone "Help".
 	 */
 	@FXML
 	public void helpCommand() {
@@ -67,11 +61,9 @@ public class ControllerPort extends Controller {
 	}
 	
 	/**
-	 * Metodo che si occupa del caricamento e di mostrare a video la nuova finestra per l'inserimento dei parametri
-	 *
-	 * @param actionEvent indica l'azione eseguita nel momento in cui si preme il bottone "Connetti"
-	 *
-	 * @throws IOException sollevata in caso di errore di caricamento della nuova finestra
+	 * Carica e mostra a video la nuova finestra per l'inserimento dei parametri.
+	 * @param actionEvent azione eseguita nel momento in cui si preme il bottone "Connetti".
+	 * @throws IOException se si verificano errori di caricamento della nuova finestra.
 	 */
 	private void loadingClient(ActionEvent actionEvent) throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource(Constants.INSERT_PARAMETERS));

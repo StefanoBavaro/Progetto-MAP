@@ -28,7 +28,7 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
     private List<FrequentPattern> outputFP = new LinkedList<FrequentPattern>();
 
     /**
-     * Costruttore: genera tutti i pattern k=1 frequenti e per ognuno di questi genera quelli con k>1 richiamando <code>expandFrequentPatterns()</code>.
+     * Costruttore: genera tutti i pattern k=1 frequenti e per ognuno di questi genera quelli con k&#62;1 richiamando <code>expandFrequentPatterns()</code>.
      * I pattern sono memorizzati nel membro <code>OutputFP</code>.
      * @param data insieme delle transazioni.
      * @param minSup minimo supporto.
@@ -84,7 +84,7 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
      * @param minSup minimo supporto.
      * @param fpQueue coda contente i pattern da valutare.
      * @param outputFP lista dei pattern frequenti già estratti.
-     * @return lista popolata con pattern frequenti a k&gt1.
+     * @return lista popolata con pattern frequenti a k&#62;1.
      */
     private List expandFrequentPatterns(Data data, float minSup, Queue<FrequentPattern> fpQueue, List outputFP) {
         try {
