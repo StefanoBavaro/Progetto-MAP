@@ -39,22 +39,12 @@ Il salvataggio dell'output verrà effettuato in automatico in seguito a una nuov
 durante l’esecuzione delle operazioni richieste.
 
 ## Progetto Esteso
-L’estensione per il progetto consiste in un’interfaccia grafica per desktop, sviluppata esclusivamente lato client (in server non richiede interazione con l'utente).
-Tale interfaccia è stata sviluppata tramite l'applicativo **Scene Builder** per quanto concerne la progettazione grafica delle finestre e quindi dei relativi _bottoni_, _campi di testo_ e _label_. L'altro tool utilizzato è stato il framework **javaFX**, ovvero una libreria Java per la gestione del codice relativo alle diverse finestre menzionate precedentemente.
+L’estensione per il progetto consiste in un’interfaccia grafica per desktop, sviluppata esclusivamente lato client (il server non richiede interazione con l'utente).
+Tale interfaccia è stata sviluppata tramite l'applicativo **Scene Builder** per quanto concerne la progettazione grafica delle finestre e quindi dei relativi _bottoni_, _campi di testo_ e _label_. Mentre per quando riguarda la gestione del codice il tool utilizzato è stato il framework **javaFX**, ovvero una libreria Java che contiene una serie di classi e metodi per la gestione delle finestre menzionate precedentemente. <br>
 
-Le classi utilizzate per la gestione dell'interfaccia grafica sono 4 e si trovano all'interno dei package _controller_ e _connection_ unitamente al package che contiene i file _.fxml_
-(ovvero i file generati da scene builder).
+L'estensione prevede un'interfaccia grafica suddivisa in 3 finestre principali:
+- La prima finestra viene mostrata all'avvio dell'applicativo e consente all'utente di avere a disposizione un _Help command_ e di potersi connettere al server tramite un indirizzo e una port.
 
-Tali classi sono:
+- La seconda finestra viene mostrata se la connessione con il server non ha prodotto errori. Essa permette all'utente di inserire tutti i parametri necessari per poter eseguire una ricerca nel dataset.
 
-- **ManagerConnection**:
-questa classe si occupa di inizializzare e conseguentemente chiudere la connessione con il server. Infatti il metodo _initConnection_ va ad inizializzare l'oggetto _socket_ con l'indirizzo e la port del server.
-
-- **ControllerPort**:
-Questa classe gestisce la prima finestra grafica mostrata all'avvio del software. In particolare, essa richiede l'inserimento dell'indirizzo e della port del server a cui connettersi, dopo aver premuto il pulsante _connetti_ viene richiamato il metodo _initConnection_ sopra menzionato.
-
-- **ControllerParameters**:
-Se la connessione con il server è andata a buon fine la getione viene passata alla suddetta classe che si occupa di gestire la finestra per l'inserimento dei paramentri di ricerca. Essa presenta un radio button per la selezione del criterio di ricerca e una serie di text field per l'inserimento dei valori necessari. Se quest ultimi risultano corretti i dati vengono inviati al server per la loro elaborazione.
-
-- **ControllerResults**
-Questa classe si occupa solo della gestione della finestra che contiene l'output del server. In particolare, in questa finestra vengono riportati i parametri inseriti in precedenza e la risposta del Server (eventuali _frequent pattern_ ed _emerging pattern_).
+- La terza e ultima finestra si occupa di mostrare a video l'output dell'elaborazione del server.  
