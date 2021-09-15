@@ -111,7 +111,7 @@ public class ServerOneClient extends Thread {
                     } catch (DatabaseConnectionException e) {
                         System.err.println(Constants.ERROR_CONNECTION_DB + e.getMessage());
                         out.writeObject(Constants.ERROR_CONNECTION_DB);
-                        out.writeObject("");
+                        out.writeObject(Constants.DEFAULT);
                     } catch (SQLException e) {
                         System.err.println(Constants.NOT_FOUND_TABLES);
                         out.writeObject(Constants.NOT_FOUND_TABLES);

@@ -1,13 +1,12 @@
-import java.io.FileNotFoundException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.sql.SQLException;
 
 import keyboardinput.Keyboard;
+import utility.Constants;
 
 /**
  * Classe che modella il main del Progetto Base.
@@ -51,7 +50,7 @@ public class MainTest {
 			do{
 				System.out.println(Constants.INSERT_SUPPORT);
 				minsup=Keyboard.readFloat();
-			}while(minsup<=0 || minsup>1);
+			}while(minsup <= 0 || minsup > 1);
 			
 			do{
 				System.out.println(Constants.INSERT_GROW_RATE);
@@ -76,13 +75,13 @@ public class MainTest {
 					System.out.println(fpMiner);
 				} else if(epMiner.isEmpty() && fpMiner.isEmpty()) {
 					System.out.println(Constants.ERROR_TABLES);
-				} else {
+				} else { // non sono stati trovati errori
 					System.out.println(fpMiner);
 					System.out.println(epMiner);
 				}
 			}
 			catch(IOException | ClassNotFoundException e){
-				System.out.println("Errore");
+				System.out.println(Constants.ERROR);
 				e.printStackTrace();
 			}
 			
