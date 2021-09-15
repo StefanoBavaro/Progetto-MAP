@@ -83,7 +83,7 @@ public class Keyboard {
 	
 	/**
 	 * Attributo che identifica lo stream di input
-	 * 
+	 *
 	 */
 	
 	private static BufferedReader in = new BufferedReader(
