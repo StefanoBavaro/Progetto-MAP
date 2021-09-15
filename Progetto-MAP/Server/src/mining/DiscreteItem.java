@@ -1,12 +1,11 @@
 package mining;
 
 import data.DiscreteAttribute;
-import java.io.Serializable;
 
 /**
  * Classe concreta che modella una coppia &#60;Attributo discreto - valore discreto&#62; ; estende e realizza la classe astratta <code>Item</code>.
  */
-class DiscreteItem extends Item implements Serializable{
+class DiscreteItem extends Item {
     /**
      * Costruttore: invoca il costruttore della classe madre per avvalorarne i membri.
      * @param attribute attributo discreto.

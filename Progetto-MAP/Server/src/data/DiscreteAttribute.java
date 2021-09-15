@@ -1,12 +1,11 @@
 package data;
 
-import java.io.Serializable;
 
 /**
  * Classe che modella un attributo discreto rappresentando l’insieme di valori distinti del relativo dominio.
  * Estende la classe Attribute.
  */
-public class DiscreteAttribute extends Attribute implements Serializable {
+public class DiscreteAttribute extends Attribute {
 
     /**
      * Array di stringhe, una per ciascun valore discreto, che rappresenta il domino dell’attributo.

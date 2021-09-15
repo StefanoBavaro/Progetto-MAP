@@ -1,6 +1,5 @@
 package data;
 
-import java.io.Serializable;
 import java.util.Iterator;
 import utility.Constants;
 
@@ -9,7 +8,7 @@ import utility.Constants;
  * Classe che modella un attributo continuo (numerico) rappresentandone il dominio [min,max].
  * Estende la classe Attribute.
  */
-public class ContinuousAttribute extends Attribute implements Iterable<Float>, Serializable {
+public class ContinuousAttribute extends Attribute implements Iterable<Float> {
 
     /**
      * Estremo destro del dominio.

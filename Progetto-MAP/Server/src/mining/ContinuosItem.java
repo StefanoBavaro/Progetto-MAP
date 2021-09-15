@@ -2,12 +2,10 @@ package mining;
 
 import data.ContinuousAttribute;
 
-import java.io.Serializable;
-
 /**
  * Classe che modella la coppia &#60;Attributo continuo - Intervallo di valori&#62;; estende e realizza la classe astratta <code>Item</code>.
  */
-class ContinuosItem extends Item implements Serializable {
+class ContinuosItem extends Item {
 
 	/**
 	 * Costruttore: chiama il costruttore della superclasse passandogli come argomenti <code>attribute</code> e <code>value</code>.

@@ -7,6 +7,11 @@ package utility;
 public class Constants {
 	
 	//Messaggi del server
+	
+	/**
+	 *
+	 *
+	 */
 	public static final String OPTION = "Opzione";
 	public static final String MIN_SUP = "minSup";
 	public static final String MIN_GROW = "minGr";
