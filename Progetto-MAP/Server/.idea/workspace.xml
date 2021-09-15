@@ -2,7 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ac409f-852c-4df9-9f4d-a7b19b6d1be2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ClientBase/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/MainTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/connection/ManagerConnection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/connection/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/connection/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/connection/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/controller/Controller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/controller/ControllerException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/controller/ControllerParameters.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/controller/ControllerPort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/controller/ControllerResults.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/controller/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/controller/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/controller/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-17.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-18.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-19.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/utility/Constants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/utility/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/utility/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/doc/utility/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/InsertParameters.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/MainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/connection/ManagerConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/connection/ManagerConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerParameters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerPort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerPort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/out/production/Client/controller/ControllerResults.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/controller/InsertPort.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/out/production/Client/keyboardinput/Keyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/utility/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/keyboardinput/Keyboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/keyboardinput/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/keyboardinput/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/keyboardinput/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/src/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientBase/src/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/src/utility/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/allclasses-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/allclasses-noframe.html" afterDir="false" />
@@ -66,7 +154,6 @@
       <change beforePath="$PROJECT_DIR$/doc/javadoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/overview-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/overview-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/javadoc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/package-list" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/serialized-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/server/MultiServer.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/server/MultiServer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/server/ServerOneClient.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/server/ServerOneClient.html" afterDir="false" />
@@ -80,11 +167,7 @@
       <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ContinuousAttributeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ContinuousAttributeIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/ContinuosItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ContinuosItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/DiscreteItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/DiscreteItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +201,8 @@
       <workItem from="1630663240364" duration="22000" />
       <workItem from="1631545881114" duration="42000" />
       <workItem from="1631545953807" duration="2631000" />
+      <workItem from="1631714960379" duration="36000" />
+      <workItem from="1631715919126" duration="71000" />
     </task>
     <servers />
   </component>

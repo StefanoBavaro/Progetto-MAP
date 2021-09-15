@@ -14,10 +14,11 @@ import utility.Constants;
 public class MainTest {
 	
 	/**
-	 * The entry point of application.
+	 * Main del progetto base che si occupa di collegarsi al Server ed inviare i dati
 	 *
-	 * @param args array di Stringhe che devono essere inserite per l'esecuzione del programma Crea l’oggetto InetAddress che modella l’indirizzo del Server in rete. Crea l’oggetto Socket che deve collegarsi a tale Server. Inizializza i flussi di oggetti in e out per la trasmissione/ricezione di oggetti a/da server. Interagisce con l’utente per capire se questi vuore caricare un risultato esistente su file o crearne uno nuovo. In entrambi i casi trasmette la relativa richiesta e i necessari parametri al server (per esempio, min sup, minGr, nome tabella target, nome tabella backgorund) al server e ne aspetta la risposta che sarà poi stampata video.
-	 * @throws IOException the io exception
+	 * @param args array di stringhe che rappresentano l'address e la porta da inserire per avviare l'applicazione
+	 *
+	 * @throws IOException sollevata in caso di errori di comunicazione con il Socket
 	 */
 	public static void main(String[] args) throws IOException {
 		

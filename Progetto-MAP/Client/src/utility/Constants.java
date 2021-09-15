@@ -4,6 +4,13 @@ package utility;
  * Classe che rappresenta le costanti del Client Esteso.
  */
 public class Constants {
+	
+	/**
+	 * Costruttore privato per far si che la classe non venga mai istanziata
+	 */
+	private Constants() { }
+	
+	
 	//Stampe di errore
 	
 	/**

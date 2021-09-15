@@ -6,6 +6,11 @@ package utility;
 public class Constants {
 	
 	/**
+	 * Costruttore privato per far si che la classe non venga mai istanziata
+	 */
+	private Constants() { }
+	
+	/**
 	 * Indica il valore di conferma
 	 */
 	public static final char YES = 's';
