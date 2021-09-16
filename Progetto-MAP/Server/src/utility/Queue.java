@@ -23,18 +23,18 @@ public class Queue<T> {
         /**
          * Elemento di tipo T contenuto nella cella.
          */
-        T elem;
+        private T elem;
 
         /**
          * Riferimento alla cella successiva.
          */
-        Record next;
+        private Record next;
 
         /**
          * Costruttore: inizializza il membro <code>elem</code> con il parametro in input, il membro <code>next</code> con <code>null</code>.
          * @param e elemento da inserire nella cella.
          */
-        Record(T e) {
+        private Record(T e) {
             this.elem = e;
             this.next = null;
         }

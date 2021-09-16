@@ -2,88 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ac409f-852c-4df9-9f4d-a7b19b6d1be2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/MainTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/MainTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/connection/ManagerConnection.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/connection/ManagerConnection.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/connection/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/connection/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/connection/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/connection/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/connection/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/connection/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/controller/Controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/controller/Controller.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/controller/ControllerException.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/controller/ControllerException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/controller/ControllerParameters.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/controller/ControllerParameters.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/controller/ControllerPort.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/controller/ControllerPort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/controller/ControllerResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/controller/ControllerResults.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/controller/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/controller/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/controller/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/controller/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/controller/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/controller/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/overview-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/utility/Constants.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/utility/Constants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/utility/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/utility/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/utility/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/utility/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/doc/javadoc/utility/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/doc/javadoc/utility/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/utility/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/MainTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/MainTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/keyboardinput/Keyboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/keyboardinput/Keyboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/keyboardinput/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/keyboardinput/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/keyboardinput/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/keyboardinput/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/utility/Constants.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/utility/Constants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/utility/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/utility/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClientBase/doc/javadoc/utility/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientBase/doc/javadoc/utility/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/allclasses-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/allclasses-noframe.html" afterDir="false" />
@@ -160,10 +78,9 @@
       <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ContinuousAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ContinuousAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/MultiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/MultiServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/Server/utility/Queue$Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/Server/utility/Queue$Record.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/Server/utility/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/Server/utility/Queue.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,6 +119,7 @@
       <workItem from="1631718164338" duration="34000" />
       <workItem from="1631782816817" duration="62000" />
       <workItem from="1631784084394" duration="30000" />
+      <workItem from="1631801790567" duration="49000" />
     </task>
     <servers />
   </component>
