@@ -43,14 +43,14 @@ public class MultiServer {
     private void run(){
         try {
             ServerSocket s = new ServerSocket(PORT);
-            System.out.println("Server avviato");
+            System.out.println(Constants.SERVER_START);
             try {
                 while (true) {
                     Socket socket = s.accept();
                     System.out.println(socket);
                     try {
                         new ServerOneClient(socket);
-                        System.out.println("Nuovo client connesso");
+                        System.out.println(Constants.NEW_CLIENT);
                     } catch (IOException e) { // Se fallisce chiude la socket, altrimenti questa verrà chiusa dal thread
                         socket.close();
                     }

@@ -45,8 +45,8 @@ public class Constants {
 	 */
 	public static final String INSERT_PORT = "fxml/InsertPort.fxml";
 	
-	/** Indica la terza finestra dell'interfaccia grafica
-	 *
+	/**
+	 * Indica la terza finestra dell'interfaccia grafica
 	 */
 	public static final String PRINT_RESULT = "/fxml/PrintResults.fxml";
 	
@@ -68,27 +68,27 @@ public class Constants {
 	public static final String EMPTY_TARGET_FIELD ="Non è stato inserito nessuno valore in target";
 	
 	/**
-	 * Indica che si è verificato un errore nell'inserimento della tabella background
+	 * Indica che si è verificato un errore nell'inserimento della tabella di background
 	 */
 	public static final String EMPTY_BACKGROUND_FIELD = "Non è stato inserito nessuno valore in backGround";
 	
 	/**
-	 * Indica che si è verificato un errore nell'inserimento del valore di minimo support
+	 * Indica che si è verificato un errore nell'inserimento del valore di minimo supporto
 	 */
 	public static final String EMPTY_SUPPORT_FIELD = "Non è stato inserito nessuno valore in supporto";
 	
 	/**
-	 * Indica che si è verificato un errore nell'inserimento dell valore di grow rate
+	 * Indica che si è verificato un errore nell'inserimento del valore di grow rate
 	 */
 	public static final String EMPTY_GROWRATE_FIELD = "Non è stato inserito nessuno valore in growRate";
 	
 	/**
-	 * Indica che si è verificato un errore nell'inserimento della tabella target
+	 * Indica che si è verificato un errore nell'inserimento del valore di supporto il quale deve essere compreso tra 0 e 1
 	 */
 	public static final String ERROR_SUPPORT_VALUE = "Il valore di support deve essere compreso tra 0 e 1";
 	
 	/**
-	 * Indica che si è verificato un errore nell'inserimento del valore di grow rate
+	 * Indica che si è verificato un errore nell'inserimento del valore di grow rate il quale deve essere maggiore di 0
 	 */
 	public static final String ERROR_GROWRATE_VALUE = "Il valore di growRate deve essere maggiore di 0";
 	

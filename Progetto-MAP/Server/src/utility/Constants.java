@@ -37,22 +37,26 @@ public class Constants {
 	 * tabella di background scelta
 	 */
 	public static final String BACKGROUND = "backgroundName";
-
 	
-	//Stampe di errori
+	/**
+	 * Indica che il server è stato avviato
+	 */
+	public static final String SERVER_START = "Server avviato";
 	
 	/**
 	 * Indica la connessione di un nuovo client
 	 */
 	public static final String NEW_CLIENT = "Nuovo client connesso";
 	
+	//Stampe di errori
+	
 	/**
-	 * Indica che si è verificato un errore nel salvataggio del file per i Frequent Pattern
+	 * Indica che si è verificato un errore nel salvataggio dei Frequent Pattern nei file
 	 */
 	public static final String FREQUENT_PATTERN_SAVE_FAILED = "Impossibile salvare il file per i Frequent Pattern";
 	
 	/**
-	 * Indica che si è verificato un errore nel salvataggio degli Emerging Pattern
+	 * Indica che si è verificato un errore nel salvataggio degli Emerging Pattern nei file
 	 */
 	public static final String EMERGING_PATTERN_SAVE_FAILED = "Impossibile salvare il file per gli Emerging Pattern";
 	
@@ -62,7 +66,7 @@ public class Constants {
 	public static final String FREQUENT_PATTERN_ERROR_VALUE = "Frequent Pattern non trovati con questi valori di supporto e di growrate";
 	
 	/**
-	 * Indica l'incompatibilità tra tabella target e tabella background
+	 * Indica l'incompatibilità tra tabella target e tabella di background
 	 */
 	public static final String NO_COMPATIBLE_DATA = "I dati della tabella di background non sono compatibili con quelli della tabella target";
 	
@@ -92,7 +96,7 @@ public class Constants {
 	public static final String NOT_FOUND_ARCHIVE_DATA = "Dati non trovati in archivio per i parametri inseriti";
 	
 	/**
-	 * Indica che si è verificato un errore nella comunicazione con il cliente
+	 * Indica che si è verificato un errore nella comunicazione con il client
 	 */
 	public static final String COMUNICATION_CLIENT_ERROR = "Errore di comunicazione con il client";
 	
@@ -160,14 +164,14 @@ public class Constants {
 	public static final String ERROR_CLOSING_CONNECTION = "Impossibile chiudere la connessione";
 	
 	/**
-	 * Indica che si è verificato un nella creazione del socket
+	 * Indica che si è verificato un errore nella creazione del socket
 	 */
 	public static final String ERROR_SOCKET = "Errore nella creazione del socket";
 	
 	/**
 	 * Training set vuoto
 	 */
-	public static final String EMPTY_TRAININGSET = "L'insieme di training � vuoto";
+	public static final String EMPTY_TRAININGSET = "L'insieme di training è vuoto";
 	
 	/**
 	 * Indica che i pattern non soddisfano il valore di grow rate scelto

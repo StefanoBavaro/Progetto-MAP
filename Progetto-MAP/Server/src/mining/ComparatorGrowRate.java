@@ -5,7 +5,7 @@ import java.util.Comparator;
 /**
  * Classe che implementa l'interfaccia generica Comparator&#60;T&#62; e modella il confronto tra due emerging pattern rispetto al grow rate.
  */
-public class ComparatorGrowRate implements Comparator<EmergingPattern> {
+class ComparatorGrowRate implements Comparator<EmergingPattern> {
     /**
      * Implementazione del metodo <code>compare()</code> dell'interfaccia <code>Comparator&#60;T&#62;</code>.
      * Restituisce un intero che indica l'esito del confronto tra due <code>EmergingPattern</code>, in base al loro growrate.
