@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ac409f-852c-4df9-9f4d-a7b19b6d1be2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/allclasses-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/allclasses-noframe.html" afterDir="false" />
@@ -66,7 +65,6 @@
       <change beforePath="$PROJECT_DIR$/doc/javadoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/overview-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/overview-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/javadoc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/package-list" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/serialized-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/server/MultiServer.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/server/MultiServer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/server/ServerOneClient.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/server/ServerOneClient.html" afterDir="false" />
@@ -80,11 +78,9 @@
       <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/javadoc/utility/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/utility/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ContinuousAttributeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ContinuousAttributeIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ComparatorGrowRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/ContinuosItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/ContinuosItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/DiscreteItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/DiscreteItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mining/FrequentPatternMiner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/Server/utility/Queue$Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/Server/utility/Queue$Record.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/Server/utility/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/Server/utility/Queue.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +114,12 @@
       <workItem from="1630663240364" duration="22000" />
       <workItem from="1631545881114" duration="42000" />
       <workItem from="1631545953807" duration="2631000" />
+      <workItem from="1631714960379" duration="36000" />
+      <workItem from="1631715919126" duration="71000" />
+      <workItem from="1631718164338" duration="34000" />
+      <workItem from="1631782816817" duration="62000" />
+      <workItem from="1631784084394" duration="30000" />
+      <workItem from="1631801790567" duration="49000" />
     </task>
     <servers />
   </component>

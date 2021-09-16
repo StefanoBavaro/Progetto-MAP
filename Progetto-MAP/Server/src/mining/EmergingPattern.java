@@ -1,11 +1,10 @@
 package mining;
 
-import java.io.Serializable;
 
 /**
  * Classe che modella un pattern emergente; estende la classe <code>FrequentPattern</code>.
  */
-class EmergingPattern extends FrequentPattern implements Serializable {
+class EmergingPattern extends FrequentPattern {
     /**
      *  Grow rate del pattern emergente.
      */
