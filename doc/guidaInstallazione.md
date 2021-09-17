@@ -1,5 +1,5 @@
 # Guida di installazione
-I file _.jar .bat_ e (ove necessario) _.sql_ sono riposti nella cartella _bin_ di ogni progetto.
+I file <i>.jar .bat </i> sono riposti nella cartella _bin_ di ogni progetto, vi è anch una cartella _bin_ per l'intero progetto contenente due file _.bat_ i quali un file avvia server e client base e l'altro server e client esteso.
 
 ## Installazione Server
 Per eseguire il Server sulla propria macchina è necessario avere:
