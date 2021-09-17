@@ -17,8 +17,8 @@ Una volta installato MySQL esso dovrà essere eseguito per poter avviare l'appli
 Per poter avviare il servizio _MySQL_ basta andare in _Servizi_ che si trova sulla barra delle applicazione trovare il servizio _MySQL_ ed eseguirlo.
 
 ## Installazione Client
-Per poter eseguire correttamente il Client bisogna avere:
+Per poter eseguire correttamente il Client (sia del progetto base che del progetto esteso) bisogna avere:
 - Installato la _Java RunTime Enviroment_ 8 o versioni successive
 - Avere un server in ascolto
 
-**NB:** Il Client potrà essere avviato anche senza nessun Server in ascolto ma al momento in cui ci si dovrà collegare al Server(prima finestra di apertura del Client) verranno sollevati degli errori di connessione.
+**NB:** Il Client del progetto esteso potrà essere avviato anche senza nessun Server in ascolto ma al momento in cui ci si dovrà collegare al Server (prima finestra di apertura del Client del progetto esteso) verranno sollevati degli errori di connessione.
