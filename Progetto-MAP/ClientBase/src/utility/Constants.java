@@ -81,6 +81,10 @@ public class Constants {
 	public static final String ERROR_TABLES = "Tabelle non trovate";
 	
 	/**
+	 * Indica un errore nella connessione con il server
+	 */
+	public static final String ERROR_CONN = "Errore nella connessione con il server";
+	/**
 	 * Indica un errore generico
 	 */
 	public static final String ERROR = "Errore";
