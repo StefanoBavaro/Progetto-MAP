@@ -77,4 +77,112 @@ Per poter eseguire correttamente il Client (sia del progetto base che del proget
 - Installato la _Java RunTime Enviroment_ 8 o versioni successive
 - Avere un server in ascolto
 
-**NB:** Il Client del progetto esteso potrà essere avviato anche senza nessun Server in ascolto ma al momento in cui ci si dovrà collegare al Server (prima finestra di apertura del Client del progetto esteso) verranno sollevati degli errori di connessione.
+**NB:** Il Client del progetto esteso potrà essere avviato anche senza nessun Server in ascolto ma al momento in cui ci si dovrà collegare al Server (prima finestra di apertura del Client del progetto esteso) verranno sollevati degli errori di connessione.<br><br>
+
+# Guida Utente
+## Avvio del Server 
+Per avviare il server è necessario eseguire il file _avvio server.bat_ nella stessa cartella di _server.jar_.
+Il server può anche essere eseguito da riga di comando,tramite l'istruzione <br>
+<p align = "center"> <i> java -jar Server.jar </i> </p>
+
+## Avvio del Client (progetto base)
+Per avviare il client è necessario eseguire il file <i> avvio client base.bat    </i> nella stessa cartella di <i> client_base.jar </i>, in questo modo il client si connetterà ad un server in esecuzione sulla propria macchina su una porta 8080 .
+Il client può anche essere eseguito da riga di comando,tramite l'istruzione <br>
+<p align = "center"> <i> java -jar client_base.jar [INDIRIZZO] [PORTA]  </i></p>
+ 
+## Avvio del Client (progetto esteso)
+Per avviare il client del progetto esteso è necessario eseguire il file <i> avvio client_esteso.bat </i> nella stessa cartella di <i> Client esteso.jar </i>, in questo modo verrà aperta una finestra dove dovranno essere inserite l'indirizzo e la porta del server sul quale ci si vuole connettere.
+Il client può anche essere eseguito da riga di comando,tramite l'istruzione <br>
+<p align = "center"> <i> java -jar Client esteso.jar </i></p>
+ 
+ ## Avvio del Server e del Client 
+All'interno della cartella <i> bin </i> vi si trovano due file <i> .bat </i>:
+- <i> avvio_server_e_client_base.bat </i> il quale avvia automaticamente il server e il client del progetto base facendolo collegare automaticamente al server.
+- <i> avvio_server_e_client_esteso </i> il quale avvia automaticamente il server e il client del progetto esteso con l'apertura della prima finestra per il collegamento al server.<br><br>
+
+ # Guida di utilizzo
+ ## Utilizzo Client (progetto base)
+
+ Una volta avviato il client del progetto base e la connessione è andata a buon fine si specifica quale operazione si vuole fare:
+ - nuova scoperta (premendo 1)
+ - risultati in archivio (premendo 2) 
+ <br>
+
+ <center><img src =  "..\img\img1" width=800></center>
+
+<br>
+
+Una volta effettuata la scelta bisogna inserire i seguenti dati:
+- valore minimo di supporto
+- growrate (o tasso di crescita)
+- tabella target
+- tabella background
+
+Questi dati saranno inviati al server.<br>
+Successivamente ci sarà la ricerca dei pattern nel dataset in base ai criteri inseriti che verranno inviati al client e stampati a video.
+ <br>
+
+ <center><img src =  "..\img\img2" width=800></center>
+
+<br>
+
+ <center><img src =  "..\img\img7" width=800></center>
+
+<br>
+
+ <center><img src =  "..\img\img8" width=800></center>
+
+<br>
+
+## Utilizzo del Client (progetto esteso)
+
+### Schermata di connessione con il Server 
+
+All'avvio del client del progetto esteso verrà aperta una finestra dove dovranno essere inseriti indirizzo e porta del server per avviare la connessione.<br>
+Nella finestra avremo due bottoni:
+- **Connetti** il quale connetterà il client con il server se i dati sono corretti
+- **Help** il quale una volta premuto stampa un avviso contenente le principali informazioni dell'applicazione.
+
+ <br>
+
+ <center><img src =  "..\img\img3" width=800></center>
+
+<br>
+
+ <center><img src =  "..\img\img4" width=800></center>
+
+
+<br>
+
+### Schermata di Inserimento dei dati
+Appena il client si collega con il server si aprirà una finestra relativa all'inserimento dei dati(i dati da inserire sono gli stessi del client base) per ricercare i pattern nel dataset.
+
+ <br>
+
+ <center><img src =  "..\img\img5" width=800></center>
+
+<br>
+
+
+Nel caso i dati non siano corretti verranno stampati a video degli avvisi relativi agli errori di inserimento dei dati.<br>
+_Es_
+ <br>
+
+ <center><img src =  "..\img\img6" width=800></center>
+
+<br>
+
+Nella schermata è anche presente un bottone pulisci il quale "pulisce" i campi dove inserire i dati per la ricerca dei pattern
+
+### Schermata di stampa dei risultati
+Se non ci dovessero essere errori sull'inserimento dei dati il server effettuerà le ricerche dei pattern, se il server trova i pattern il client aprirà una nuova finestra dove sono mostrati i risultati, altrimenti sarà mostrata a video un messaggio che ci dice che non sono stati trovati i pattern.
+
+<br>
+
+ <center><img src =  "..\img\img9" width=800></center>
+
+<br>
+
+ <center><img src =  "..\img\img10" width=800></center>
+
+<br>
