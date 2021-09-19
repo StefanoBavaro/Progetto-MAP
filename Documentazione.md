@@ -216,9 +216,6 @@ Gli output numerici attesi sono stati ricavati dalla documentazione fornita insi
 
  <center><img src =  "img/4.png" width=400></center>
 
-<br>
-
- <center><img src =  "img/5.png" width=400></center>
 
 ## Esempi di test contenenti errori
 
