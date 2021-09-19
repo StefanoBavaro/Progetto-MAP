@@ -149,7 +149,7 @@ Nella finestra avremo due bottoni:
 
 <br>
 
- <center><img src =  "img/img4.png" width=350></center>
+ <center><img src =  "img/img4.png" width=250></center>
 
 
 <br>
