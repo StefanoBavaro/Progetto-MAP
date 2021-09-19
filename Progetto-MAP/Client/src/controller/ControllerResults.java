@@ -66,7 +66,7 @@ public class ControllerResults extends Controller{
 		if (frequentPattern.isEmpty()) {
 			area.setText(Constants.FREQUENT_PATTERN_EMPTY + Constants.EMERGING_PATTERN_PRINT + emergingPattern);
 		} else if (emergingPattern.isEmpty()) {
-			area.setText(Constants.FREQUENT_PATTERN_PRINT + frequentPattern + "\nEmerging pattern vuoto");
+			area.setText(Constants.FREQUENT_PATTERN_PRINT + frequentPattern + Constants.EMERGING_PATTERN_EMPTY);
 		} else {
 			area.setText(
 					Constants.FREQUENT_PATTERN_PRINT + frequentPattern + Constants.EMERGING_PATTERN_PRINT + emergingPattern);

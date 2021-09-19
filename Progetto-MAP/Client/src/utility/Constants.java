@@ -26,12 +26,12 @@ public class Constants {
 	/**
 	 * Errore nei parametri localhost o port
 	 */
-	public static final String ERROR_PORT_LOC = "Localhost o port non validi";
+	public static final String ERROR_PORT_LOC = "Indirizzo IP o porta non validi";
 	
 	/**
 	 * Errore valore non numeric nel parametro port
 	 */
-	public static final String ERROR_PORT = "In port inserire un valore numerico";
+	public static final String ERROR_PORT = "Inserire un valore numerico nel campo porta";
 	
 	/**
 	 * Indica che si è verificato un errore nel caricamento della pagina
@@ -65,42 +65,42 @@ public class Constants {
 	/**
 	 * Indica che si è verificato un errore nell'inserimento della tabella target
 	 */
-	public static final String EMPTY_TARGET_FIELD ="Non è stato inserito nessuno valore in target";
+	public static final String EMPTY_TARGET_FIELD ="Non è stato inserito nessuno valore nel campo 'Tabella target'";
 	
 	/**
 	 * Indica che si è verificato un errore nell'inserimento della tabella di background
 	 */
-	public static final String EMPTY_BACKGROUND_FIELD = "Non è stato inserito nessuno valore in backGround";
+	public static final String EMPTY_BACKGROUND_FIELD = "Non è stato inserito nessuno valore nel campo 'Tabella background'";
 	
 	/**
 	 * Indica che si è verificato un errore nell'inserimento del valore di minimo supporto
 	 */
-	public static final String EMPTY_SUPPORT_FIELD = "Non è stato inserito nessuno valore in supporto";
+	public static final String EMPTY_SUPPORT_FIELD = "Non è stato inserito nessuno valore nel campo 'Supporto'";
 	
 	/**
 	 * Indica che si è verificato un errore nell'inserimento del valore di grow rate
 	 */
-	public static final String EMPTY_GROWRATE_FIELD = "Non è stato inserito nessuno valore in growRate";
+	public static final String EMPTY_GROWRATE_FIELD = "Non è stato inserito nessuno valore nel campo 'Growrate'";
 	
 	/**
 	 * Indica che si è verificato un errore nell'inserimento del valore di supporto il quale deve essere compreso tra 0 e 1
 	 */
-	public static final String ERROR_SUPPORT_VALUE = "Il valore di support deve essere compreso tra 0 e 1";
+	public static final String ERROR_SUPPORT_VALUE = "Il valore di supporto deve essere compreso tra 0 e 1";
 	
 	/**
 	 * Indica che si è verificato un errore nell'inserimento del valore di grow rate il quale deve essere maggiore di 0
 	 */
-	public static final String ERROR_GROWRATE_VALUE = "Il valore di growRate deve essere maggiore di 0";
+	public static final String ERROR_GROWRATE_VALUE = "Il valore del growrate deve essere maggiore di 0";
 	
 	/**
 	 * Indica che non sono stati inseriti valori numerici come minimo supporto e grow rate
 	 */
-	public static final String ERROR_NUMBER = "In support e growRate devono essere inseriti valori numerici";
+	public static final String ERROR_NUMBER = "Come supporto e growrate devono essere inseriti valori numerici";
 	
 	/**
-	 * Indica che non sono state trovate le tabelle desiderate
+	 * Indica che non sono stati trovati risultati
 	 */
-	public static final String ERROR_TABLES = "Tabelle non trovate";
+	public static final String ERROR_TABLES = "Risultato della ricerca vuoto";
 	
 	//VALORI
 	
@@ -128,12 +128,12 @@ public class Constants {
 	/**
 	 * Indica che il Frequent pattern è vuoto
 	 */
-	public static final String FREQUENT_PATTERN_EMPTY = "Frequent pattern vuoto\n";
+	public static final String FREQUENT_PATTERN_EMPTY = "Frequent pattern non individuati\n";
 	
 	/**
 	 * Indica che l'Emerging pattern è vuoto
 	 */
-	public static final String EMERGING_PATTERN_EMPTY = "\nEmerging pattern vuoto";
+	public static final String EMERGING_PATTERN_EMPTY = "\nEmerging pattern non individuati";
 	
 	/**
 	 * Indica Frequent pattern
