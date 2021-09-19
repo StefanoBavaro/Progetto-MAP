@@ -186,3 +186,118 @@ Se non ci dovessero essere errori sull'inserimento dei dati il server effettuer�
  <center><img src =  "img/img10.png" width=400></center>
 
 <br>
+<br>
+
+# Esempi di Test
+<i> Per i test è stata usata la versione del client esteso in quanto più precisa sui messaggi di errori.<br>
+Gli output numerici attesi sono stati ricavati dalla documentazione fornita insieme alle esercitazioni effettuate durante il corso.  
+</i> <br>
+
+## Esempi di test senza errori
+**Input:** <br>
+- tabella target = _"playtennistarget"_ <br>
+- tabella backgorund = _"playtennisBackground"_ <br>
+- minimo supporto = _0.3_ <br>
+- growrate = _1_ <br>
+
+**Output:**
+<br>
+
+ <center><img src =  "img/1.png" width=400></center>
+
+<br>
+
+ <center><img src =  "img/2.png" width=400></center>
+
+ <br>
+
+  <center><img src =  "img/3.png" width=400></center>
+<br>
+
+ <center><img src =  "img/4.png" width=400></center>
+
+<br>
+
+ <center><img src =  "img/5.png" width=400></center>
+
+## Esempi di test contenenti errori
+
+**Input:** inserire un indirizzo sbagliato <br>
+**Output:** messaggio di errore relativo all'indirizzo errato
+
+<br>
+
+ <center><img src =  "img/testAccesso1.png" width=400></center>
+
+<br>
+
+
+**Input:** inserire un valore numerico errato nel campo porta per il collegamento al server <br>
+**Output:** messaggio di errore relativo nell'inserire un valore numerico nel campo porta per collegarsi al server
+
+<br>
+
+ <center><img src =  "img/portaNonNumerica.png" width=400></center>
+
+<br>
+
+**Input:** dati relativi ad un file non esistente <br>
+**Output:** messaggio di errore relativo alla non presenza del file
+ 
+<br>
+
+ <center><img src =  "img/archivioVuoto.png" width=400></center>
+
+<br>
+
+**Input:** inserimento di dati in modo da non avere emerging pattern <br>
+**Output:** stampa dei frequent pattern con un avviso che gli emerging pattern non sono stati individuati 
+
+<br>
+
+ <center><img src =  "img/epNonIndividuati.png" width=400></center>
+
+<br>
+
+**Input:** inserire un valore di growrate minore o uguale a 0 <br>
+**Output:** messaggio di errore relativo al growrate errato
+<br>
+
+ <center><img src =  "img/growrateErrato.png" width=400></center>
+
+<br>
+
+**Input:** lasciare i campi vuoti dei dati relativi alla ricerca dei pattern<br>
+**Output:** messaggio di errore relativi ai dati non inseriti
+<br>
+
+ <center><img src =  "img/noBGnoSupporto.png" width=400></center>
+
+<br>
+
+**Input:** inserire valori in modo tale da avere i frequent pattern e gli emerging pattern vuoti <br>
+**Output:** messaggio di errore relativo all'assenza di risultati nella ricerca
+<br>
+
+ <center><img src =  "img/risultatiVuoti.png" width=400></center>
+
+<br>
+
+**Input:** inserire un valore di supporto maggiore di 1 o minore di 0 <br>
+**Output:** messaggio di errore relativo al supporto errato
+<br>
+
+ <center><img src =  "img/supportoErrato.png" width=400></center>
+
+<br>
+
+<br>
+
+**Input:** inserire un valore non numerico nel campo growrate o nel campo del minimo supporto <br>
+**Output:** messaggio di errore relativo all'inserimento del valore non numerico
+ 
+<br>
+
+ <center><img src =  "img/valoriNonNumerici.png" width=400></center>
+
+<br>
