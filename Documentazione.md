@@ -122,15 +122,15 @@ Questi dati saranno inviati al server.<br>
 Successivamente ci sarà la ricerca dei pattern nel dataset in base ai criteri inseriti che verranno inviati al client e stampati a video.
  <br>
 
- <center><img src =  "img/img2.png" width=400></center>
+ <center><img src =  "img/img2.png" width=500></center>
 
 <br>
 
- <center><img src =  "img/img7.png" width=400></center>
+ <center><img src =  "img/img7.png" width=500></center>
 
 <br>
 
- <center><img src =  "img/img8.png" width=400></center>
+ <center><img src =  "img/img8.png" width=500></center>
 
 <br>
 
