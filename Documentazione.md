@@ -108,7 +108,7 @@ All'interno della cartella <i> bin </i> vi si trovano due file <i> .bat </i>:
  - risultati in archivio (premendo 2) 
  <br>
 
- <center><img src =  "../img/img1.png" width=800></center>
+ <center><img src =  "img/img1.png" width=800></center>
 
 <br>
 
