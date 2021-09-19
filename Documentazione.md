@@ -122,15 +122,15 @@ Questi dati saranno inviati al server.<br>
 Successivamente ci sarà la ricerca dei pattern nel dataset in base ai criteri inseriti che verranno inviati al client e stampati a video.
  <br>
 
- <center><img src =  "..\img\img2" width=800></center>
+ <center><img src =  "../img/img2.png" width=800></center>
 
 <br>
 
- <center><img src =  "..\img\img7" width=800></center>
+ <center><img src =  "../img/img7.png" width=800></center>
 
 <br>
 
- <center><img src =  "..\img\img8" width=800></center>
+ <center><img src =  "../img/img8.png" width=800></center>
 
 <br>
 
@@ -145,11 +145,11 @@ Nella finestra avremo due bottoni:
 
  <br>
 
- <center><img src =  "..\img\img3" width=800></center>
+ <center><img src =  "../img/img3.png" width=800></center>
 
 <br>
 
- <center><img src =  "..\img\img4" width=800></center>
+ <center><img src =  "../img/img4.png" width=800></center>
 
 
 <br>
@@ -159,7 +159,7 @@ Appena il client si collega con il server si aprirà una finestra relativa all'i
 
  <br>
 
- <center><img src =  "..\img\img5" width=800></center>
+ <center><img src =  "../img/img5.png" width=800></center>
 
 <br>
 
@@ -168,7 +168,7 @@ Nel caso i dati non siano corretti verranno stampati a video degli avvisi relati
 _Es_
  <br>
 
- <center><img src =  "..\img\img6" width=800></center>
+ <center><img src =  "../img/img6.png" width=800></center>
 
 <br>
 
@@ -179,10 +179,10 @@ Se non ci dovessero essere errori sull'inserimento dei dati il server effettuer�
 
 <br>
 
- <center><img src =  "..\img\img9" width=800></center>
+ <center><img src =  "../img/img9.png" width=800></center>
 
 <br>
 
- <center><img src =  "..\img\img10" width=800></center>
+ <center><img src =  "../img/img10.png" width=800></center>
 
 <br>
