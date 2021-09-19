@@ -14,7 +14,7 @@ public class Constants {
 	//Messaggi del server
 	
 	/**
-	 * Indica l'opzione di ricerca 1 nuova ricerca 2 archivio
+	 * Indica l'opzione di ricerca
 	 */
 	public static final String OPTION = "Opzione";
 	
