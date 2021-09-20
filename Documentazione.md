@@ -88,7 +88,7 @@ Il server può anche essere eseguito da riga di comando,tramite l'istruzione <br
 ## Avvio del Client (progetto base)
 Per avviare il client è necessario eseguire il file <i> avvio client base.bat    </i> nella cartella _ClientBase/bin_; in questo modo il client si connetterà al server in esecuzione sulla propria macchina sulla porta 8080.
 Il client può anche essere eseguito da riga di comando,tramite l'istruzione <br>
-<p align = "center"> <i> java -jar client_base.jar [INDIRIZZO] [PORTA] <br> ovvero java -jar client_base.jar localhost 8080</i></p>
+<p align = "center"> <i> java -jar client_base.jar [INDIRIZZO] [PORTA] <br> ovvero <br> java -jar client_base.jar localhost 8080</i></p>
  
 ## Avvio del Client (progetto esteso)
 Per avviare il client del progetto esteso è necessario eseguire il file <i> avvio client_esteso.bat </i> nella cartella _Client/bin_; in questo modo verrà aperta una finestra dove dovranno essere inserite l'indirizzo e la porta del server sul quale ci si vuole connettere.
