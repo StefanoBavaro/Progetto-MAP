@@ -1,2 +1,2 @@
-start cmd /k java -jar ..\Progetto-MAP\Server\bin\Server.jar
-start cmd /k java -jar ..\Progetto-MAP\Client\bin\Client_esteso.jar
+start cmd /k java -jar ..\Server\bin\Server.jar
+start cmd /k java -jar ..\Client\bin\Client_esteso.jar
