@@ -80,7 +80,7 @@ Per poter eseguire correttamente il Client (sia del progetto base che del proget
 **NB:** Il Client del progetto esteso potrà essere avviato anche senza nessun Server in ascolto ma al momento in cui ci si dovrà collegare al Server (prima finestra di apertura del Client del progetto esteso) verranno sollevati degli errori di connessione.<br><br>
 
 # Guida Utente
-## Avvio del Server 
+## Avvio del Server
 Per avviare il server è necessario eseguire il file _avvio server.bat_ nella cartella _Server/bin_.
 Il server può anche essere eseguito da riga di comando,tramite l'istruzione <br>
 <p align = "center"> <i> java -jar Server.jar </i> </p>
@@ -89,13 +89,13 @@ Il server può anche essere eseguito da riga di comando,tramite l'istruzione <br
 Per avviare il client è necessario eseguire il file <i> avvio client base.bat    </i> nella cartella _ClientBase/bin_; in questo modo il client si connetterà al server in esecuzione sulla propria macchina sulla porta 8080.
 Il client può anche essere eseguito da riga di comando,tramite l'istruzione <br>
 <p align = "center"> <i> java -jar client_base.jar [INDIRIZZO] [PORTA] <br> ovvero <br> java -jar client_base.jar localhost 8080</i></p>
- 
+
 ## Avvio del Client (progetto esteso)
 Per avviare il client del progetto esteso è necessario eseguire il file <i> avvio client_esteso.bat </i> nella cartella _Client/bin_; in questo modo verrà aperta una finestra dove dovranno essere inserite l'indirizzo e la porta del server sul quale ci si vuole connettere.
 Il client può anche essere eseguito da riga di comando,tramite l'istruzione <br>
 <p align = "center"> <i> java -jar Client esteso.jar </i></p>
- 
- ## Avvio del Server e del Client 
+
+ ## Avvio del Server e del Client
 All'interno della cartella <i> bin </i> si trovano due file <i> .bat </i>:
 - <i> avvio_server_e_client_base.bat </i> il quale avvia automaticamente il server e il client del progetto base facendolo collegare automaticamente al server.
 - <i> avvio_server_e_client_esteso </i> il quale avvia automaticamente il server e il client del progetto esteso con l'apertura della prima finestra per il collegamento al server.<br><br>
@@ -105,7 +105,7 @@ All'interno della cartella <i> bin </i> si trovano due file <i> .bat </i>:
 
  Una volta avviato il client del progetto base e la connessione è andata a buon fine si specifica quale operazione si vuole effettuare:
  - nuova scoperta (digitando 1)
- - risultati in archivio (digitando 2) 
+ - risultati in archivio (digitando 2)
  <br>
 
  <center><img src =  "img/img1.png" width=400></center>
@@ -136,7 +136,7 @@ Successivamente ci sarà la ricerca dei pattern nel dataset in base ai criteri i
 
 ## Utilizzo del Client (progetto esteso)
 
-### Schermata di connessione con il Server 
+### Schermata di connessione con il Server
 
 All'avvio del client del progetto esteso verrà aperta una finestra dove dovranno essere inseriti indirizzo e porta del server per avviare la connessione.<br>
 Nella finestra avremo tre bottoni:
@@ -240,7 +240,7 @@ Se non ci dovessero essere errori sull'inserimento dei dati il server effettuer�
 
 **Input:** dati relativi ad un file non esistente <br>
 **Output:** messaggio di errore relativo alla non presenza del file
- 
+
 <br>
 
  <center><img src =  "img/archivioVuoto.png" width=400></center>
@@ -248,7 +248,7 @@ Se non ci dovessero essere errori sull'inserimento dei dati il server effettuer�
 <br>
 
 **Input:** dati tali da non avere emerging pattern <br>
-**Output:** stampa dei frequent pattern con un avviso che gli emerging pattern non sono stati individuati 
+**Output:** stampa dei frequent pattern con un avviso che gli emerging pattern non sono stati individuati
 
 <br>
 
@@ -292,7 +292,7 @@ Se non ci dovessero essere errori sull'inserimento dei dati il server effettuer�
 
 **Input:** valore non numerico nel campo growrate o nel campo del minimo supporto <br>
 **Output:** messaggio di errore relativo all'inserimento del valore non numerico
- 
+
 <br>
 
  <center><img src =  "img/valoriNonNumerici.png" width=400></center>
